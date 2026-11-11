@@ -1,0 +1,136 @@
+{
+  "completed_at_utc": "2026-11-07T23:08:17.520283+00:00",
+  "live_failover_verification": {
+    "submitted": true,
+    "status": "COMPLETED",
+    "reservation_retained": false,
+    "provider_job_id": "dbnq0n0ou4as73b4v2kg",
+    "backend_name": "ibm_kingston",
+    "actual_cost": 1.1336,
+    "job_status": "COMPLETED"
+  },
+  "live_ambiguous_timeout_reconciliation": {
+    "submitted": true,
+    "status": "COMPLETED",
+    "reservation_retained": false,
+    "reconcile_polls_performed": 1,
+    "provider_job_id": "dbnq17lt7fqc73ak0nv0",
+    "backend_name": "ibm_kingston",
+    "actual_cost": 1.1918,
+    "job_status": "COMPLETED"
+  },
+  "failover_events_logged": [
+    {
+      "failed_backend": "ibm_maintenance_primary",
+      "fallback_backend": "ibm_kingston",
+      "error_detail": "HTTP 503: ibm_maintenance_primary locked for calibration maintenance"
+    }
+  ],
+  "ledger_policy_summary": {
+    "policy_id": "Stage5_Live_Policy",
+    "account_id": "Stage5_Live_Account",
+    "total_submitted_workloads": 2,
+    "accepted_workloads": 2,
+    "unconditional_queue_yield_fraction": 1.0,
+    "charged_hardware_cost": 2.3254,
+    "reserved_pending_cost": 0.0,
+    "effective_committed_cost": 2.3254,
+    "budget_ceiling": 10.0,
+    "accepted_per_unit_charged_cost": 0.860067,
+    "conditional_mean_fb_executed": 0.949553,
+    "unconditional_mean_fb_all_submitted": 0.949553,
+    "workload_status_breakdown": {
+      "COMPLETED": 2
+    }
+  },
+  "telemetry_by_job_id": {
+    "dbnq0n0ou4as73b4v2kg": {
+      "job_id": "dbnq0n0ou4as73b4v2kg",
+      "status": "DONE",
+      "quantum_seconds_billed": 1.1336,
+      "raw_metrics": {
+        "caller": "qiskit_ibm_runtime~sampler.py",
+        "qiskit_version": "qiskit_ibm_runtime-0.48.0,qiskit-2.5.1*,qiskit_aer-0.17.2",
+        "timestamps": {
+          "created": "2026-11-07T22:04:12.949295Z",
+          "finished": "2026-11-07T22:05:15.057779Z",
+          "running": "2026-11-07T22:04:28.793382Z"
+        },
+        "usage": {
+          "qpu_charge_time_seconds": 2,
+          "value": 0.032863,
+          "unit": "resource_units",
+          "status": "complete",
+          "details": [
+            {
+              "value": 0.032863,
+              "unit": "resource_units",
+              "metric": {
+                "id": "caffe3ca-729c-5750-8777-df63bbf8bfd9",
+                "value": 2
+              }
+            }
+          ]
+        },
+        "circuits_execution_time_ns": 269715968
+      },
+      "timestamps": {
+        "created": "2026-11-07T22:04:12.949295Z",
+        "finished": "2026-11-07T22:05:15.057779Z",
+        "running": "2026-11-07T22:04:28.793382Z"
+      },
+      "execution_spans": [
+        {
+          "start": "2026-11-07 22:05:12.644214",
+          "stop": "2026-11-07 22:05:13.777765",
+          "duration_s": 1.133551,
+          "size": 1024
+        }
+      ]
+    },
+    "dbnq17lt7fqc73ak0nv0": {
+      "job_id": "dbnq17lt7fqc73ak0nv0",
+      "status": "DONE",
+      "quantum_seconds_billed": 1.1918,
+      "raw_metrics": {
+        "caller": "qiskit_ibm_runtime~sampler.py",
+        "qiskit_version": "qiskit_ibm_runtime-0.48.0,qiskit-2.5.1*,qiskit_aer-0.17.2",
+        "timestamps": {
+          "created": "2026-11-07T22:05:19.007074Z",
+          "finished": "2026-11-07T23:08:16.170725Z",
+          "running": "2026-11-07T23:08:02.42305Z"
+        },
+        "usage": {
+          "qpu_charge_time_seconds": 2,
+          "value": 0.032853,
+          "unit": "resource_units",
+          "status": "pending",
+          "details": [
+            {
+              "value": 0.032853,
+              "unit": "resource_units",
+              "metric": {
+                "id": "caffe3ca-729c-5750-8777-df63bbf8bfd9",
+                "value": 2
+              }
+            }
+          ]
+        },
+        "circuits_execution_time_ns": 269134848
+      },
+      "timestamps": {
+        "created": "2026-11-07T22:05:19.007074Z",
+        "finished": "2026-11-07T23:08:16.170725Z",
+        "running": "2026-11-07T23:08:02.42305Z"
+      },
+      "execution_spans": [
+        {
+          "start": "2026-11-07 23:08:12.683706",
+          "stop": "2026-11-07 23:08:13.875466",
+          "duration_s": 1.19176,
+          "size": 1024
+        }
+      ]
+    }
+  }
+}

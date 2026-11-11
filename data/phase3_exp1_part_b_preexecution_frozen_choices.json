@@ -1,0 +1,959 @@
+{
+  "original_private_ledger_sha256": "1dcd4f4e0d16721353ff5238eb2fa6ca707b11b6af808d687a87bf71c8a2794b",
+  "schema_version": "phase3-exp1-part-b-preexecution-frozen-choices-v1",
+  "split": "Part_B_Blind_Holdout (W_P3_ModHold_001..036, 36 workloads = 9 groups)",
+  "locked_selector_sha256": "77bb8ac25c55af34993edcdd1335f76f64e65de157e478f5700bf40c22cdb14b",
+  "locked_selector_timestamp_utc": "2026-11-09T20:53:30.752092+00:00",
+  "frozen_before_execution_at_utc": "2026-11-09T21:07:49.035113+00:00",
+  "live_qpu_telemetry_at_freeze": {
+    "ibm_kingston": {
+      "calibration_timestamp": "2026-11-09 17:30:42-03:00",
+      "pending_jobs": 48,
+      "median_cz_error": 0.001562,
+      "median_readout_error": 0.010254,
+      "mean_4way_predicted_fb": 0.829693
+    },
+    "ibm_fez": {
+      "calibration_timestamp": "2026-11-09 17:22:17-03:00",
+      "pending_jobs": 2,
+      "median_cz_error": 0.002284,
+      "median_readout_error": 0.010742,
+      "mean_4way_predicted_fb": 0.818488
+    },
+    "iqm_emerald_54q": {
+      "calibration_set_id": "47baedfc-27b6-4c13-b58f-39be7cd3e47d",
+      "median_cz_error": 0.006188,
+      "median_readout_error": 0.0104
+    },
+    "iqm_garnet_20q": {
+      "calibration_set_id": "d191d167-f11f-4e65-8aaf-49407ec7ea14",
+      "median_cz_error": 0.010871,
+      "median_readout_error": 0.0199
+    }
+  },
+  "ibm_a6_autonomous_selector": {
+    "selected_qpu": "ibm_kingston",
+    "total_pubs_allocated": 11,
+    "group_decisions": [
+      {
+        "arrival_group_id": "G_Hold_01",
+        "selected_qpu": "ibm_kingston",
+        "alternate_qpu_evaluated": "ibm_fez",
+        "packing_rule_decision": "locked_packed_k4",
+        "pubs_allocated": 1,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 4,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_001",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "673be5ccaa2002eb88ff69ec",
+                "compiled_2q_gates": 4,
+                "compiled_depth": 18,
+                "tau_sched_ns": 504.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_002",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "65dd6a603377e5a81b1aa6ae",
+                "compiled_2q_gates": 24,
+                "compiled_depth": 33,
+                "tau_sched_ns": 992.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_003",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "e30212f197beffb1bbeec227",
+                "compiled_2q_gates": 6,
+                "compiled_depth": 24,
+                "tau_sched_ns": 664.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_004",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "6d334cc645a26922bab17f04",
+                "compiled_2q_gates": 38,
+                "compiled_depth": 54,
+                "tau_sched_ns": 1960.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrival_group_id": "G_Hold_02",
+        "selected_qpu": "ibm_kingston",
+        "alternate_qpu_evaluated": "ibm_fez",
+        "packing_rule_decision": "locked_packed_k4",
+        "pubs_allocated": 1,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 4,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_005",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "673be5ccaa2002eb88ff69ec",
+                "compiled_2q_gates": 4,
+                "compiled_depth": 18,
+                "tau_sched_ns": 504.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_006",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "65dd6a603377e5a81b1aa6ae",
+                "compiled_2q_gates": 38,
+                "compiled_depth": 62,
+                "tau_sched_ns": 2160.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_007",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "e30212f197beffb1bbeec227",
+                "compiled_2q_gates": 118,
+                "compiled_depth": 200,
+                "tau_sched_ns": 7248.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_008",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "6d334cc645a26922bab17f04",
+                "compiled_2q_gates": 141,
+                "compiled_depth": 299,
+                "tau_sched_ns": 10304.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrival_group_id": "G_Hold_03",
+        "selected_qpu": "ibm_kingston",
+        "alternate_qpu_evaluated": "ibm_fez",
+        "packing_rule_decision": "locked_packed_k4",
+        "pubs_allocated": 1,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 4,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_009",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "673be5ccaa2002eb88ff69ec",
+                "compiled_2q_gates": 30,
+                "compiled_depth": 72,
+                "tau_sched_ns": 2580.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_010",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "65dd6a603377e5a81b1aa6ae",
+                "compiled_2q_gates": 34,
+                "compiled_depth": 63,
+                "tau_sched_ns": 1920.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_011",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "e30212f197beffb1bbeec227",
+                "compiled_2q_gates": 66,
+                "compiled_depth": 130,
+                "tau_sched_ns": 4044.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_012",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "6d334cc645a26922bab17f04",
+                "compiled_2q_gates": 63,
+                "compiled_depth": 102,
+                "tau_sched_ns": 3524.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrival_group_id": "G_Hold_04",
+        "selected_qpu": "ibm_kingston",
+        "alternate_qpu_evaluated": "ibm_fez",
+        "packing_rule_decision": "locked_packed_k4",
+        "pubs_allocated": 1,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 4,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_013",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "673be5ccaa2002eb88ff69ec",
+                "compiled_2q_gates": 20,
+                "compiled_depth": 54,
+                "tau_sched_ns": 1724.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_014",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "65dd6a603377e5a81b1aa6ae",
+                "compiled_2q_gates": 110,
+                "compiled_depth": 128,
+                "tau_sched_ns": 4352.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_015",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "e30212f197beffb1bbeec227",
+                "compiled_2q_gates": 63,
+                "compiled_depth": 130,
+                "tau_sched_ns": 4076.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_016",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "6d334cc645a26922bab17f04",
+                "compiled_2q_gates": 168,
+                "compiled_depth": 218,
+                "tau_sched_ns": 7884.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrival_group_id": "G_Hold_05",
+        "selected_qpu": "ibm_kingston",
+        "alternate_qpu_evaluated": "ibm_fez",
+        "packing_rule_decision": "locked_packed_k4",
+        "pubs_allocated": 1,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 4,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_017",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "673be5ccaa2002eb88ff69ec",
+                "compiled_2q_gates": 50,
+                "compiled_depth": 130,
+                "tau_sched_ns": 4580.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_018",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "65dd6a603377e5a81b1aa6ae",
+                "compiled_2q_gates": 110,
+                "compiled_depth": 128,
+                "tau_sched_ns": 4352.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_019",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "e30212f197beffb1bbeec227",
+                "compiled_2q_gates": 88,
+                "compiled_depth": 134,
+                "tau_sched_ns": 4516.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_020",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "6d334cc645a26922bab17f04",
+                "compiled_2q_gates": 138,
+                "compiled_depth": 155,
+                "tau_sched_ns": 5548.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrival_group_id": "G_Hold_06",
+        "selected_qpu": "ibm_kingston",
+        "alternate_qpu_evaluated": "ibm_fez",
+        "packing_rule_decision": "locked_k2_plus_k2_duration_split",
+        "pubs_allocated": 2,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 3,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_021",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "673be5ccaa2002eb88ff69ec",
+                "compiled_2q_gates": 30,
+                "compiled_depth": 75,
+                "tau_sched_ns": 2740.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_022",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "65dd6a603377e5a81b1aa6ae",
+                "compiled_2q_gates": 66,
+                "compiled_depth": 122,
+                "tau_sched_ns": 3916.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_023",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "d78bd1e3693638c78c1f2d1f",
+                "compiled_2q_gates": 35,
+                "compiled_depth": 70,
+                "tau_sched_ns": 2192.0
+              }
+            ]
+          },
+          {
+            "pub_index_within_group": 2,
+            "k": 1,
+            "realized_min_d_G": null,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_024",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "6d334cc645a26922bab17f04",
+                "compiled_2q_gates": 234,
+                "compiled_depth": 434,
+                "tau_sched_ns": 15328.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrival_group_id": "G_Hold_07",
+        "selected_qpu": "ibm_kingston",
+        "alternate_qpu_evaluated": "ibm_fez",
+        "packing_rule_decision": "locked_packed_k4",
+        "pubs_allocated": 1,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 4,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_025",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "673be5ccaa2002eb88ff69ec",
+                "compiled_2q_gates": 20,
+                "compiled_depth": 53,
+                "tau_sched_ns": 1724.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_026",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "65dd6a603377e5a81b1aa6ae",
+                "compiled_2q_gates": 34,
+                "compiled_depth": 62,
+                "tau_sched_ns": 1920.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_027",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "e30212f197beffb1bbeec227",
+                "compiled_2q_gates": 66,
+                "compiled_depth": 123,
+                "tau_sched_ns": 3948.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_028",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "6d334cc645a26922bab17f04",
+                "compiled_2q_gates": 114,
+                "compiled_depth": 146,
+                "tau_sched_ns": 5752.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrival_group_id": "G_Hold_08",
+        "selected_qpu": "ibm_kingston",
+        "alternate_qpu_evaluated": "ibm_fez",
+        "packing_rule_decision": "locked_k2_plus_k2_duration_split",
+        "pubs_allocated": 2,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 2,
+            "realized_min_d_G": 8,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_029",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "673be5ccaa2002eb88ff69ec",
+                "compiled_2q_gates": 30,
+                "compiled_depth": 76,
+                "tau_sched_ns": 2676.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_030",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "65dd6a603377e5a81b1aa6ae",
+                "compiled_2q_gates": 6,
+                "compiled_depth": 24,
+                "tau_sched_ns": 664.0
+              }
+            ]
+          },
+          {
+            "pub_index_within_group": 2,
+            "k": 2,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_031",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "65dd6a603377e5a81b1aa6ae",
+                "compiled_2q_gates": 110,
+                "compiled_depth": 128,
+                "tau_sched_ns": 4352.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_032",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "6d334cc645a26922bab17f04",
+                "compiled_2q_gates": 168,
+                "compiled_depth": 215,
+                "tau_sched_ns": 7852.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrival_group_id": "G_Hold_09",
+        "selected_qpu": "ibm_kingston",
+        "alternate_qpu_evaluated": "ibm_fez",
+        "packing_rule_decision": "locked_packed_k4",
+        "pubs_allocated": 1,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 4,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_033",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "673be5ccaa2002eb88ff69ec",
+                "compiled_2q_gates": 16,
+                "compiled_depth": 43,
+                "tau_sched_ns": 1312.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_034",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "65dd6a603377e5a81b1aa6ae",
+                "compiled_2q_gates": 38,
+                "compiled_depth": 86,
+                "tau_sched_ns": 2984.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_035",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "e30212f197beffb1bbeec227",
+                "compiled_2q_gates": 63,
+                "compiled_depth": 131,
+                "tau_sched_ns": 4076.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_036",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "6d334cc645a26922bab17f04",
+                "compiled_2q_gates": 18,
+                "compiled_depth": 65,
+                "tau_sched_ns": 1992.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "iqm_a6_autonomous_selector": {
+    "selected_qpu": "emerald",
+    "total_pubs_allocated": 14,
+    "group_decisions": [
+      {
+        "arrival_group_id": "G_Hold_01",
+        "selected_qpu": "emerald",
+        "alternate_qpu_evaluated": "garnet (rejected: 28Q group > 20Q capacity and higher live CZ/RO error)",
+        "packing_rule_decision": "locked_k2_plus_k2_dG3",
+        "pubs_allocated": 2,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 2,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_001",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "5fce819fd7d0e5a0eb810faa",
+                "compiled_2q_gates": 4,
+                "compiled_depth": 14,
+                "tau_sched_ns": 720.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_004",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "699ed30b71ea0dfcc07fcac0",
+                "compiled_2q_gates": 32,
+                "compiled_depth": 26,
+                "tau_sched_ns": 1360.0
+              }
+            ]
+          },
+          {
+            "pub_index_within_group": 2,
+            "k": 2,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_002",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "f6af4f7146ce23583c58e206",
+                "compiled_2q_gates": 24,
+                "compiled_depth": 26,
+                "tau_sched_ns": 1360.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_003",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "d61f5677b6f0d110206dabf7",
+                "compiled_2q_gates": 6,
+                "compiled_depth": 20,
+                "tau_sched_ns": 1040.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrival_group_id": "G_Hold_02",
+        "selected_qpu": "emerald",
+        "alternate_qpu_evaluated": "garnet (rejected: 28Q group > 20Q capacity and higher live CZ/RO error)",
+        "packing_rule_decision": "locked_packed_k4_dG2",
+        "pubs_allocated": 1,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 4,
+            "realized_min_d_G": 2,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_005",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "b22b2087b8bc37e9bebd956a",
+                "compiled_2q_gates": 4,
+                "compiled_depth": 14,
+                "tau_sched_ns": 720.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_006",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "c19cab62c53d7841fbfb1e48",
+                "compiled_2q_gates": 25,
+                "compiled_depth": 44,
+                "tau_sched_ns": 2320.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_007",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "d0cc104d6e3a5c620161dfb5",
+                "compiled_2q_gates": 72,
+                "compiled_depth": 129,
+                "tau_sched_ns": 7200.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_008",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "699ed30b71ea0dfcc07fcac0",
+                "compiled_2q_gates": 124,
+                "compiled_depth": 199,
+                "tau_sched_ns": 10840.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrival_group_id": "G_Hold_03",
+        "selected_qpu": "emerald",
+        "alternate_qpu_evaluated": "garnet (rejected: 28Q group > 20Q capacity and higher live CZ/RO error)",
+        "packing_rule_decision": "locked_k2_plus_k2_dG3",
+        "pubs_allocated": 2,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 2,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_009",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "5fce819fd7d0e5a0eb810faa",
+                "compiled_2q_gates": 26,
+                "compiled_depth": 55,
+                "tau_sched_ns": 2960.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_012",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "699ed30b71ea0dfcc07fcac0",
+                "compiled_2q_gates": 56,
+                "compiled_depth": 89,
+                "tau_sched_ns": 4840.0
+              }
+            ]
+          },
+          {
+            "pub_index_within_group": 2,
+            "k": 2,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_010",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "f6af4f7146ce23583c58e206",
+                "compiled_2q_gates": 30,
+                "compiled_depth": 60,
+                "tau_sched_ns": 3200.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_011",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "d61f5677b6f0d110206dabf7",
+                "compiled_2q_gates": 55,
+                "compiled_depth": 77,
+                "tau_sched_ns": 4160.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrival_group_id": "G_Hold_04",
+        "selected_qpu": "emerald",
+        "alternate_qpu_evaluated": "garnet (rejected: 28Q group > 20Q capacity and higher live CZ/RO error)",
+        "packing_rule_decision": "locked_packed_k4_dG2",
+        "pubs_allocated": 1,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 4,
+            "realized_min_d_G": 2,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_013",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "b22b2087b8bc37e9bebd956a",
+                "compiled_2q_gates": 20,
+                "compiled_depth": 44,
+                "tau_sched_ns": 2360.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_014",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "c19cab62c53d7841fbfb1e48",
+                "compiled_2q_gates": 65,
+                "compiled_depth": 95,
+                "tau_sched_ns": 5120.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_015",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "d0cc104d6e3a5c620161dfb5",
+                "compiled_2q_gates": 53,
+                "compiled_depth": 85,
+                "tau_sched_ns": 4560.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_016",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "699ed30b71ea0dfcc07fcac0",
+                "compiled_2q_gates": 122,
+                "compiled_depth": 156,
+                "tau_sched_ns": 8560.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrival_group_id": "G_Hold_05",
+        "selected_qpu": "emerald",
+        "alternate_qpu_evaluated": "garnet (rejected: 28Q group > 20Q capacity and higher live CZ/RO error)",
+        "packing_rule_decision": "locked_packed_k4_dG2",
+        "pubs_allocated": 1,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 4,
+            "realized_min_d_G": 2,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_017",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "b22b2087b8bc37e9bebd956a",
+                "compiled_2q_gates": 50,
+                "compiled_depth": 110,
+                "tau_sched_ns": 6040.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_018",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "c19cab62c53d7841fbfb1e48",
+                "compiled_2q_gates": 65,
+                "compiled_depth": 95,
+                "tau_sched_ns": 5120.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_019",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "d0cc104d6e3a5c620161dfb5",
+                "compiled_2q_gates": 55,
+                "compiled_depth": 92,
+                "tau_sched_ns": 5000.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_020",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "699ed30b71ea0dfcc07fcac0",
+                "compiled_2q_gates": 81,
+                "compiled_depth": 81,
+                "tau_sched_ns": 4360.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrival_group_id": "G_Hold_06",
+        "selected_qpu": "emerald",
+        "alternate_qpu_evaluated": "garnet (rejected: 28Q group > 20Q capacity and higher live CZ/RO error)",
+        "packing_rule_decision": "locked_packed_k4_dG2",
+        "pubs_allocated": 1,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 4,
+            "realized_min_d_G": 2,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_021",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "b22b2087b8bc37e9bebd956a",
+                "compiled_2q_gates": 30,
+                "compiled_depth": 64,
+                "tau_sched_ns": 3480.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_022",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "c19cab62c53d7841fbfb1e48",
+                "compiled_2q_gates": 59,
+                "compiled_depth": 122,
+                "tau_sched_ns": 6760.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_023",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "d0cc104d6e3a5c620161dfb5",
+                "compiled_2q_gates": 22,
+                "compiled_depth": 40,
+                "tau_sched_ns": 2120.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_024",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "699ed30b71ea0dfcc07fcac0",
+                "compiled_2q_gates": 212,
+                "compiled_depth": 327,
+                "tau_sched_ns": 17880.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrival_group_id": "G_Hold_07",
+        "selected_qpu": "emerald",
+        "alternate_qpu_evaluated": "garnet (rejected: 28Q group > 20Q capacity and higher live CZ/RO error)",
+        "packing_rule_decision": "locked_k2_plus_k2_dG3",
+        "pubs_allocated": 2,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 3,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_025",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "9cecd54fa0c0af8a8b2578c0",
+                "compiled_2q_gates": 17,
+                "compiled_depth": 45,
+                "tau_sched_ns": 2400.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_026",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "f6af4f7146ce23583c58e206",
+                "compiled_2q_gates": 30,
+                "compiled_depth": 59,
+                "tau_sched_ns": 3160.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_027",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "d61f5677b6f0d110206dabf7",
+                "compiled_2q_gates": 53,
+                "compiled_depth": 80,
+                "tau_sched_ns": 4280.0
+              }
+            ]
+          },
+          {
+            "pub_index_within_group": 2,
+            "k": 1,
+            "realized_min_d_G": null,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_028",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "699ed30b71ea0dfcc07fcac0",
+                "compiled_2q_gates": 67,
+                "compiled_depth": 78,
+                "tau_sched_ns": 4200.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrival_group_id": "G_Hold_08",
+        "selected_qpu": "emerald",
+        "alternate_qpu_evaluated": "garnet (rejected: 28Q group > 20Q capacity and higher live CZ/RO error)",
+        "packing_rule_decision": "locked_k2_plus_k2_dG3",
+        "pubs_allocated": 2,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 2,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_029",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "5fce819fd7d0e5a0eb810faa",
+                "compiled_2q_gates": 26,
+                "compiled_depth": 50,
+                "tau_sched_ns": 2680.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_030",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "f6af4f7146ce23583c58e206",
+                "compiled_2q_gates": 6,
+                "compiled_depth": 18,
+                "tau_sched_ns": 960.0
+              }
+            ]
+          },
+          {
+            "pub_index_within_group": 2,
+            "k": 2,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_031",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "d61f5677b6f0d110206dabf7",
+                "compiled_2q_gates": 65,
+                "compiled_depth": 95,
+                "tau_sched_ns": 5120.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_032",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "699ed30b71ea0dfcc07fcac0",
+                "compiled_2q_gates": 122,
+                "compiled_depth": 155,
+                "tau_sched_ns": 8520.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrival_group_id": "G_Hold_09",
+        "selected_qpu": "emerald",
+        "alternate_qpu_evaluated": "garnet (rejected: 28Q group > 20Q capacity and higher live CZ/RO error)",
+        "packing_rule_decision": "locked_k2_plus_k2_dG3",
+        "pubs_allocated": 2,
+        "sub_packs": [
+          {
+            "pub_index_within_group": 1,
+            "k": 3,
+            "realized_min_d_G": 3,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_033",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "9cecd54fa0c0af8a8b2578c0",
+                "compiled_2q_gates": 15,
+                "compiled_depth": 33,
+                "tau_sched_ns": 1760.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_034",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "f6af4f7146ce23583c58e206",
+                "compiled_2q_gates": 24,
+                "compiled_depth": 45,
+                "tau_sched_ns": 2400.0
+              },
+              {
+                "workload_id": "W_P3_ModHold_035",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "d61f5677b6f0d110206dabf7",
+                "compiled_2q_gates": 55,
+                "compiled_depth": 77,
+                "tau_sched_ns": 4160.0
+              }
+            ]
+          },
+          {
+            "pub_index_within_group": 2,
+            "k": 1,
+            "realized_min_d_G": null,
+            "workloads": [
+              {
+                "workload_id": "W_P3_ModHold_036",
+                "selected_compiler": "REDACTED_COMPILER_ORIGIN",
+                "subgraph_sha256": "699ed30b71ea0dfcc07fcac0",
+                "compiled_2q_gates": 16,
+                "compiled_depth": 46,
+                "tau_sched_ns": 2480.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

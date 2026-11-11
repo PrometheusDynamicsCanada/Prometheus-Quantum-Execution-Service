@@ -1,0 +1,1539 @@
+{
+  "schema_version": "phase3-exp1-complete-28job-standalone-ledger-v1",
+  "created_at_utc": "2026-11-09T21:53:16.076307+00:00",
+  "manifest_sha256": "86968d1471af9228dd1902b0266569ac95b143e237027718cffaa383ab03cfba",
+  "locked_selector_sha256": "77bb8ac25c55af34993edcdd1335f76f64e65de157e478f5700bf40c22cdb14b",
+  "chronological_chain": {
+    "part_a_preexecution_frozen_choices_sha256": "37db800770c66ad28bce94afc3a6be3c97cbc48197ace5eb3863e12deedd2376",
+    "part_a_completed_at_utc": "2026-11-09T20:50:35.115254+00:00",
+    "selector_locked_at_utc": "2026-11-09T20:53:30.752092+00:00",
+    "part_b_preexecution_frozen_choices_sha256": "1dcd4f4e0d16721353ff5238eb2fa6ca707b11b6af808d687a87bf71c8a2794b",
+    "part_b_completed_at_utc": "2026-11-09T21:53:16.057249+00:00"
+  },
+  "campaign_totals_28_jobs": {
+    "total_standalone_jobs": 28,
+    "ibm_standalone_jobs": 14,
+    "iqm_standalone_jobs": 14,
+    "total_pubs": 488,
+    "ibm_pubs": 247,
+    "iqm_pubs": 241,
+    "ibm_physical_shots": 252928,
+    "iqm_physical_shots": 123392,
+    "total_physical_shots": 376320,
+    "ibm_total_charged_seconds": 100.0,
+    "iqm_total_including_warmup_credits": 74.25
+  },
+  "part_a_development_24_workloads": {
+    "totals": {
+      "jobs_executed": 14,
+      "ibm_jobs": 7,
+      "iqm_jobs": 7,
+      "ibm_pubs": 101,
+      "iqm_pubs": 100,
+      "ibm_physical_shots": 103424,
+      "iqm_physical_shots": 51200,
+      "ibm_total_charged_seconds": 44.0,
+      "iqm_policy_arms_charged_credits": 30.75,
+      "iqm_station_warmup_job_id": "01a1c1f9-e28c-738f-93e2-e35367d755c8",
+      "iqm_station_warmup_charged_credits": 2.25,
+      "iqm_total_including_warmup_credits": 33.0
+    },
+    "ibm_summary": {
+      "provider": "IBM",
+      "standalone_arms": {
+        "A1_SABRE_Isolated": {
+          "arm_id": "A1_SABRE_Isolated",
+          "job_id": "dbp2bjs4148s739trihg",
+          "randomized_submission_slot": 2,
+          "pubs_executed": 24,
+          "physical_shots": 24576,
+          "standalone_billed_units": 9.0,
+          "active_execution_seconds": 7.5621,
+          "qualifying_workloads_accepted": 19,
+          "total_workloads": 24,
+          "quality_target_attainment_rate": 0.791667,
+          "qualifying_per_billed_unit": 2.1111,
+          "qualifying_per_active_second": 2.5125,
+          "qualifying_per_pub": 0.7917,
+          "mean_fb": 0.923052,
+          "median_fb": 0.956604,
+          "mean_fh": 0.858867,
+          "mean_tvd": 0.217672,
+          "mean_shannon_entropy_bits": 4.010056,
+          "mean_compiled_2q_gates": 71.88,
+          "mean_compiled_depth": 127.54
+        },
+        "A2_TKET_Isolated": {
+          "arm_id": "A2_TKET_Isolated",
+          "job_id": "dbp2bl8qtr0c738dll4g",
+          "randomized_submission_slot": 4,
+          "pubs_executed": 24,
+          "physical_shots": 24576,
+          "standalone_billed_units": 9.0,
+          "active_execution_seconds": 7.472,
+          "qualifying_workloads_accepted": 18,
+          "total_workloads": 24,
+          "quality_target_attainment_rate": 0.75,
+          "qualifying_per_billed_unit": 2.0,
+          "qualifying_per_active_second": 2.409,
+          "qualifying_per_pub": 0.75,
+          "mean_fb": 0.930276,
+          "median_fb": 0.949002,
+          "mean_fh": 0.870375,
+          "mean_tvd": 0.204641,
+          "mean_shannon_entropy_bits": 3.947009,
+          "mean_compiled_2q_gates": 70.42,
+          "mean_compiled_depth": 124.58
+        },
+        "A3_Prometheus_Isolated": {
+          "arm_id": "A3_Prometheus_Isolated",
+          "job_id": "dbp2bm0qtr0c738dll5g",
+          "randomized_submission_slot": 5,
+          "pubs_executed": 24,
+          "physical_shots": 24576,
+          "standalone_billed_units": 9.0,
+          "active_execution_seconds": 7.4049,
+          "qualifying_workloads_accepted": 19,
+          "total_workloads": 24,
+          "quality_target_attainment_rate": 0.791667,
+          "qualifying_per_billed_unit": 2.1111,
+          "qualifying_per_active_second": 2.5659,
+          "qualifying_per_pub": 0.7917,
+          "mean_fb": 0.925017,
+          "median_fb": 0.958419,
+          "mean_fh": 0.861647,
+          "mean_tvd": 0.215992,
+          "mean_shannon_entropy_bits": 4.013804,
+          "mean_compiled_2q_gates": 69.42,
+          "mean_compiled_depth": 116.88
+        },
+        "A4_Fixed_4Way_Prometheus": {
+          "arm_id": "A4_Fixed_4Way_Prometheus",
+          "job_id": "dbp2bkoqtr0c738dll20",
+          "randomized_submission_slot": 3,
+          "pubs_executed": 6,
+          "physical_shots": 6144,
+          "standalone_billed_units": 4.0,
+          "active_execution_seconds": 4.644,
+          "qualifying_workloads_accepted": 18,
+          "total_workloads": 24,
+          "quality_target_attainment_rate": 0.75,
+          "qualifying_per_billed_unit": 4.5,
+          "qualifying_per_active_second": 3.876,
+          "qualifying_per_pub": 3.0,
+          "mean_fb": 0.914032,
+          "median_fb": 0.940516,
+          "mean_fh": 0.842017,
+          "mean_tvd": 0.240558,
+          "mean_shannon_entropy_bits": 4.132013,
+          "mean_compiled_2q_gates": 69.42,
+          "mean_compiled_depth": 116.96
+        },
+        "A5_Best_Phase2_Fixed_4Way": {
+          "arm_id": "A5_Best_Phase2_Fixed_4Way",
+          "job_id": "dbp2bmoqtr0c738dll70",
+          "randomized_submission_slot": 6,
+          "pubs_executed": 6,
+          "physical_shots": 6144,
+          "standalone_billed_units": 4.0,
+          "active_execution_seconds": 2.8017,
+          "qualifying_workloads_accepted": 18,
+          "total_workloads": 24,
+          "quality_target_attainment_rate": 0.75,
+          "qualifying_per_billed_unit": 4.5,
+          "qualifying_per_active_second": 6.4247,
+          "qualifying_per_pub": 3.0,
+          "mean_fb": 0.907799,
+          "median_fb": 0.939107,
+          "mean_fh": 0.831035,
+          "mean_tvd": 0.25297,
+          "mean_shannon_entropy_bits": 4.197493,
+          "mean_compiled_2q_gates": 70.33,
+          "mean_compiled_depth": 124.42
+        },
+        "A6_Prometheus_Autonomous_Selector": {
+          "arm_id": "A6_Prometheus_Autonomous_Selector",
+          "job_id": "dbp2bigou4as73csto30",
+          "randomized_submission_slot": 1,
+          "pubs_executed": 11,
+          "physical_shots": 11264,
+          "standalone_billed_units": 5.0,
+          "active_execution_seconds": 4.0807,
+          "qualifying_workloads_accepted": 19,
+          "total_workloads": 24,
+          "quality_target_attainment_rate": 0.791667,
+          "qualifying_per_billed_unit": 3.8,
+          "qualifying_per_active_second": 4.6561,
+          "qualifying_per_pub": 1.7273,
+          "mean_fb": 0.919733,
+          "median_fb": 0.945002,
+          "mean_fh": 0.851752,
+          "mean_tvd": 0.226743,
+          "mean_shannon_entropy_bits": 4.068169,
+          "mean_compiled_2q_gates": 69.25,
+          "mean_compiled_depth": 117.67
+        },
+        "A7_AltQPU_Counterfactual_Fez": {
+          "arm_id": "A7_AltQPU_Counterfactual_Fez",
+          "job_id": "dbp2bn8ou4as73csto9g",
+          "randomized_submission_slot": 7,
+          "pubs_executed": 6,
+          "physical_shots": 6144,
+          "standalone_billed_units": 4.0,
+          "active_execution_seconds": 2.7278,
+          "qualifying_workloads_accepted": 14,
+          "total_workloads": 24,
+          "quality_target_attainment_rate": 0.583333,
+          "qualifying_per_billed_unit": 3.5,
+          "qualifying_per_active_second": 5.1323,
+          "qualifying_per_pub": 2.3333,
+          "mean_fb": 0.892077,
+          "median_fb": 0.946395,
+          "mean_fh": 0.812638,
+          "mean_tvd": 0.268852,
+          "mean_shannon_entropy_bits": 4.347605,
+          "mean_compiled_2q_gates": 67.88,
+          "mean_compiled_depth": 125.96
+        }
+      },
+      "best_dev_fixed_baseline_id": "A4_Fixed_4Way_Prometheus",
+      "post_hoc_oracles": {
+        "A_Oracle_MaxEfficiency": {
+          "qualifying_workloads_accepted": 19,
+          "quality_target_attainment_rate": 0.791667,
+          "allocated_billed_units": 3.6061,
+          "pubs_equivalent": 7,
+          "qualifying_per_billed_unit": 5.2689,
+          "mean_fb": 0.91696,
+          "a6_efficiency_attainment_ratio_of_oracle": 0.7212,
+          "a6_efficiency_shortfall_pct_vs_oracle": 27.88,
+          "group_choices": [
+            {
+              "group_id": "G_Dev_01",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 4,
+              "allocated_cost": 0.4545,
+              "pubs": 1,
+              "mean_fb": 0.974105
+            },
+            {
+              "group_id": "G_Dev_02",
+              "best_arm": "A5_Best_Phase2_Fixed_4Way",
+              "accepted": 3,
+              "allocated_cost": 0.6667,
+              "pubs": 1,
+              "mean_fb": 0.895678
+            },
+            {
+              "group_id": "G_Dev_03",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 4,
+              "allocated_cost": 0.4545,
+              "pubs": 1,
+              "mean_fb": 0.910653
+            },
+            {
+              "group_id": "G_Dev_04",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 3,
+              "allocated_cost": 0.9091,
+              "pubs": 2,
+              "mean_fb": 0.919847
+            },
+            {
+              "group_id": "G_Dev_05",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 2,
+              "allocated_cost": 0.4545,
+              "pubs": 1,
+              "mean_fb": 0.937877
+            },
+            {
+              "group_id": "G_Dev_06",
+              "best_arm": "A4_Fixed_4Way_Prometheus",
+              "accepted": 3,
+              "allocated_cost": 0.6667,
+              "pubs": 1,
+              "mean_fb": 0.863599
+            }
+          ]
+        },
+        "A_Oracle_MaxYield": {
+          "qualifying_workloads_accepted": 19,
+          "quality_target_attainment_rate": 0.791667,
+          "allocated_billed_units": 3.6061,
+          "pubs_equivalent": 7,
+          "qualifying_per_billed_unit": 5.2689,
+          "mean_fb": 0.91696,
+          "a6_yield_shortfall_workloads_vs_oracle": 0,
+          "group_choices": [
+            {
+              "group_id": "G_Dev_01",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 4,
+              "allocated_cost": 0.4545,
+              "pubs": 1,
+              "mean_fb": 0.974105
+            },
+            {
+              "group_id": "G_Dev_02",
+              "best_arm": "A5_Best_Phase2_Fixed_4Way",
+              "accepted": 3,
+              "allocated_cost": 0.6667,
+              "pubs": 1,
+              "mean_fb": 0.895678
+            },
+            {
+              "group_id": "G_Dev_03",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 4,
+              "allocated_cost": 0.4545,
+              "pubs": 1,
+              "mean_fb": 0.910653
+            },
+            {
+              "group_id": "G_Dev_04",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 3,
+              "allocated_cost": 0.9091,
+              "pubs": 2,
+              "mean_fb": 0.919847
+            },
+            {
+              "group_id": "G_Dev_05",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 2,
+              "allocated_cost": 0.4545,
+              "pubs": 1,
+              "mean_fb": 0.937877
+            },
+            {
+              "group_id": "G_Dev_06",
+              "best_arm": "A4_Fixed_4Way_Prometheus",
+              "accepted": 3,
+              "allocated_cost": 0.6667,
+              "pubs": 1,
+              "mean_fb": 0.863599
+            }
+          ]
+        }
+      },
+      "group_level_paired_comparison_a6_vs_best_fixed": {
+        "num_groups_K": 6,
+        "df": 5,
+        "best_fixed_arm": "A4_Fixed_4Way_Prometheus",
+        "mean_delta_fb_a6_minus_best_fixed": 0.005701,
+        "se_group_delta_fb": 0.003212
+      }
+    },
+    "iqm_summary": {
+      "provider": "IQM",
+      "standalone_arms": {
+        "A1_SABRE_Isolated": {
+          "arm_id": "A1_SABRE_Isolated",
+          "job_id": "01a1c1fa-432f-7474-9088-47bce8443a15",
+          "randomized_submission_slot": 2,
+          "pubs_executed": 24,
+          "physical_shots": 12288,
+          "standalone_billed_units": 6.75,
+          "active_execution_seconds": 5.8651,
+          "qualifying_workloads_accepted": 13,
+          "total_workloads": 24,
+          "quality_target_attainment_rate": 0.541667,
+          "qualifying_per_billed_unit": 1.9259,
+          "qualifying_per_active_second": 2.2165,
+          "qualifying_per_pub": 0.5417,
+          "mean_fb": 0.870158,
+          "median_fb": 0.93371,
+          "mean_fh": 0.779544,
+          "mean_tvd": 0.296047,
+          "mean_shannon_entropy_bits": 4.260222,
+          "mean_compiled_2q_gates": 55.46,
+          "mean_compiled_depth": 94.29
+        },
+        "A2_TKET_Isolated": {
+          "arm_id": "A2_TKET_Isolated",
+          "job_id": "01a1c1fa-e6f3-75d5-871d-5dfefba972b6",
+          "randomized_submission_slot": 5,
+          "pubs_executed": 24,
+          "physical_shots": 12288,
+          "standalone_billed_units": 5.25,
+          "active_execution_seconds": 5.886,
+          "qualifying_workloads_accepted": 11,
+          "total_workloads": 24,
+          "quality_target_attainment_rate": 0.458333,
+          "qualifying_per_billed_unit": 2.0952,
+          "qualifying_per_active_second": 1.8688,
+          "qualifying_per_pub": 0.4583,
+          "mean_fb": 0.83387,
+          "median_fb": 0.907278,
+          "mean_fh": 0.722238,
+          "mean_tvd": 0.357934,
+          "mean_shannon_entropy_bits": 4.442195,
+          "mean_compiled_2q_gates": 61.83,
+          "mean_compiled_depth": 112.0
+        },
+        "A3_Prometheus_Isolated": {
+          "arm_id": "A3_Prometheus_Isolated",
+          "job_id": "01a1c1fa-0477-7247-83db-949ecce3326a",
+          "randomized_submission_slot": 1,
+          "pubs_executed": 24,
+          "physical_shots": 12288,
+          "standalone_billed_units": 6.75,
+          "active_execution_seconds": 6.207,
+          "qualifying_workloads_accepted": 14,
+          "total_workloads": 24,
+          "quality_target_attainment_rate": 0.583333,
+          "qualifying_per_billed_unit": 2.0741,
+          "qualifying_per_active_second": 2.2555,
+          "qualifying_per_pub": 0.5833,
+          "mean_fb": 0.880352,
+          "median_fb": 0.930052,
+          "mean_fh": 0.789286,
+          "mean_tvd": 0.289529,
+          "mean_shannon_entropy_bits": 4.241793,
+          "mean_compiled_2q_gates": 53.21,
+          "mean_compiled_depth": 86.08
+        },
+        "A4_Fixed_4Way_Prometheus": {
+          "arm_id": "A4_Fixed_4Way_Prometheus",
+          "job_id": "01a1c1fa-8394-702a-8790-c16f84df3a68",
+          "randomized_submission_slot": 3,
+          "pubs_executed": 6,
+          "physical_shots": 3072,
+          "standalone_billed_units": 3.75,
+          "active_execution_seconds": 2.5879,
+          "qualifying_workloads_accepted": 11,
+          "total_workloads": 24,
+          "quality_target_attainment_rate": 0.458333,
+          "qualifying_per_billed_unit": 2.9333,
+          "qualifying_per_active_second": 4.2506,
+          "qualifying_per_pub": 1.8333,
+          "mean_fb": 0.832603,
+          "median_fb": 0.889611,
+          "mean_fh": 0.713328,
+          "mean_tvd": 0.373886,
+          "mean_shannon_entropy_bits": 4.514647,
+          "mean_compiled_2q_gates": 54.08,
+          "mean_compiled_depth": 85.75
+        },
+        "A5_Best_Phase2_Fixed_4Way": {
+          "arm_id": "A5_Best_Phase2_Fixed_4Way",
+          "job_id": "01a1c1fa-b13a-74c5-8c25-674d7c0774a0",
+          "randomized_submission_slot": 4,
+          "pubs_executed": 6,
+          "physical_shots": 3072,
+          "standalone_billed_units": 3.75,
+          "active_execution_seconds": 2.6079,
+          "qualifying_workloads_accepted": 10,
+          "total_workloads": 24,
+          "quality_target_attainment_rate": 0.416667,
+          "qualifying_per_billed_unit": 2.6667,
+          "qualifying_per_active_second": 3.8346,
+          "qualifying_per_pub": 1.6667,
+          "mean_fb": 0.813829,
+          "median_fb": 0.901034,
+          "mean_fh": 0.690292,
+          "mean_tvd": 0.388455,
+          "mean_shannon_entropy_bits": 4.534459,
+          "mean_compiled_2q_gates": 57.0,
+          "mean_compiled_depth": 94.88
+        },
+        "A6_Prometheus_Autonomous_Selector": {
+          "arm_id": "A6_Prometheus_Autonomous_Selector",
+          "job_id": "01a1c1fb-1b7a-73f6-8047-8c6d8e660762",
+          "randomized_submission_slot": 6,
+          "pubs_executed": 15,
+          "physical_shots": 7680,
+          "standalone_billed_units": 4.5,
+          "active_execution_seconds": 4.6425,
+          "qualifying_workloads_accepted": 13,
+          "total_workloads": 24,
+          "quality_target_attainment_rate": 0.541667,
+          "qualifying_per_billed_unit": 2.8889,
+          "qualifying_per_active_second": 2.8002,
+          "qualifying_per_pub": 0.8667,
+          "mean_fb": 0.852659,
+          "median_fb": 0.892095,
+          "mean_fh": 0.747913,
+          "mean_tvd": 0.335874,
+          "mean_shannon_entropy_bits": 4.424664,
+          "mean_compiled_2q_gates": 54.62,
+          "mean_compiled_depth": 90.33
+        }
+      },
+      "best_dev_fixed_baseline_id": "A4_Fixed_4Way_Prometheus",
+      "post_hoc_oracles": {
+        "A_Oracle_MaxEfficiency": {
+          "qualifying_workloads_accepted": 13,
+          "quality_target_attainment_rate": 0.541667,
+          "allocated_billed_units": 3.825,
+          "pubs_equivalent": 13,
+          "qualifying_per_billed_unit": 3.3987,
+          "mean_fb": 0.858862,
+          "a6_efficiency_attainment_ratio_of_oracle": 0.85,
+          "a6_efficiency_shortfall_pct_vs_oracle": 15.0,
+          "group_choices": [
+            {
+              "group_id": "G_Dev_01",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 2,
+              "allocated_cost": 0.3,
+              "pubs": 1,
+              "mean_fb": 0.953318
+            },
+            {
+              "group_id": "G_Dev_02",
+              "best_arm": "A2_TKET_Isolated",
+              "accepted": 3,
+              "allocated_cost": 0.875,
+              "pubs": 4,
+              "mean_fb": 0.849249
+            },
+            {
+              "group_id": "G_Dev_03",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 3,
+              "allocated_cost": 0.6,
+              "pubs": 2,
+              "mean_fb": 0.847652
+            },
+            {
+              "group_id": "G_Dev_04",
+              "best_arm": "A4_Fixed_4Way_Prometheus",
+              "accepted": 1,
+              "allocated_cost": 0.625,
+              "pubs": 1,
+              "mean_fb": 0.831041
+            },
+            {
+              "group_id": "G_Dev_05",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 2,
+              "allocated_cost": 0.3,
+              "pubs": 1,
+              "mean_fb": 0.889841
+            },
+            {
+              "group_id": "G_Dev_06",
+              "best_arm": "A3_Prometheus_Isolated",
+              "accepted": 2,
+              "allocated_cost": 1.125,
+              "pubs": 4,
+              "mean_fb": 0.782073
+            }
+          ]
+        },
+        "A_Oracle_MaxYield": {
+          "qualifying_workloads_accepted": 15,
+          "quality_target_attainment_rate": 0.625,
+          "allocated_billed_units": 4.15,
+          "pubs_equivalent": 13,
+          "qualifying_per_billed_unit": 3.6145,
+          "mean_fb": 0.862422,
+          "a6_yield_shortfall_workloads_vs_oracle": 2,
+          "group_choices": [
+            {
+              "group_id": "G_Dev_01",
+              "best_arm": "A4_Fixed_4Way_Prometheus",
+              "accepted": 4,
+              "allocated_cost": 0.625,
+              "pubs": 1,
+              "mean_fb": 0.974673
+            },
+            {
+              "group_id": "G_Dev_02",
+              "best_arm": "A2_TKET_Isolated",
+              "accepted": 3,
+              "allocated_cost": 0.875,
+              "pubs": 4,
+              "mean_fb": 0.849249
+            },
+            {
+              "group_id": "G_Dev_03",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 3,
+              "allocated_cost": 0.6,
+              "pubs": 2,
+              "mean_fb": 0.847652
+            },
+            {
+              "group_id": "G_Dev_04",
+              "best_arm": "A4_Fixed_4Way_Prometheus",
+              "accepted": 1,
+              "allocated_cost": 0.625,
+              "pubs": 1,
+              "mean_fb": 0.831041
+            },
+            {
+              "group_id": "G_Dev_05",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 2,
+              "allocated_cost": 0.3,
+              "pubs": 1,
+              "mean_fb": 0.889841
+            },
+            {
+              "group_id": "G_Dev_06",
+              "best_arm": "A3_Prometheus_Isolated",
+              "accepted": 2,
+              "allocated_cost": 1.125,
+              "pubs": 4,
+              "mean_fb": 0.782073
+            }
+          ]
+        }
+      },
+      "group_level_paired_comparison_a6_vs_best_fixed": {
+        "num_groups_K": 6,
+        "df": 5,
+        "best_fixed_arm": "A4_Fixed_4Way_Prometheus",
+        "mean_delta_fb_a6_minus_best_fixed": 0.020056,
+        "se_group_delta_fb": 0.021042
+      }
+    }
+  },
+  "part_b_blind_holdout_36_workloads": {
+    "totals": {
+      "jobs_executed": 14,
+      "ibm_jobs": 7,
+      "iqm_jobs": 7,
+      "ibm_pubs": 146,
+      "iqm_pubs": 141,
+      "ibm_physical_shots": 149504,
+      "iqm_physical_shots": 72192,
+      "ibm_total_charged_seconds": 56.0,
+      "iqm_policy_arms_charged_credits": 37.5,
+      "iqm_station_warmup_job_id": "01a1c224-cea1-75ae-8ef9-aef08bc5925f",
+      "iqm_station_warmup_charged_credits": 3.75,
+      "iqm_total_including_warmup_credits": 41.25
+    },
+    "ibm_summary": {
+      "provider": "IBM",
+      "standalone_arms": {
+        "A1_SABRE_Isolated": {
+          "arm_id": "A1_SABRE_Isolated",
+          "job_id": "dbp3cs0qtr0c738dmth0",
+          "randomized_submission_slot": 4,
+          "pubs_executed": 36,
+          "physical_shots": 36864,
+          "standalone_billed_units": 12.0,
+          "active_execution_seconds": 10.6923,
+          "qualifying_workloads_accepted": 26,
+          "total_workloads": 36,
+          "quality_target_attainment_rate": 0.722222,
+          "qualifying_per_billed_unit": 2.1667,
+          "qualifying_per_active_second": 2.4317,
+          "qualifying_per_pub": 0.7222,
+          "mean_fb": 0.930656,
+          "median_fb": 0.952818,
+          "mean_fh": 0.870107,
+          "median_fh": 0.907863,
+          "mean_tvd": 0.203442,
+          "median_tvd": 0.183395,
+          "mean_shannon_entropy_bits": 3.913785,
+          "mean_compiled_2q_gates": 68.06,
+          "mean_compiled_depth": 122.58
+        },
+        "A2_TKET_Isolated": {
+          "arm_id": "A2_TKET_Isolated",
+          "job_id": "dbp3ct8ou4as73csv08g",
+          "randomized_submission_slot": 6,
+          "pubs_executed": 36,
+          "physical_shots": 36864,
+          "standalone_billed_units": 12.0,
+          "active_execution_seconds": 10.7243,
+          "qualifying_workloads_accepted": 30,
+          "total_workloads": 36,
+          "quality_target_attainment_rate": 0.833333,
+          "qualifying_per_billed_unit": 2.5,
+          "qualifying_per_active_second": 2.7974,
+          "qualifying_per_pub": 0.8333,
+          "mean_fb": 0.930838,
+          "median_fb": 0.948646,
+          "mean_fh": 0.870363,
+          "median_fh": 0.899931,
+          "mean_tvd": 0.203002,
+          "median_tvd": 0.177563,
+          "mean_shannon_entropy_bits": 3.922857,
+          "mean_compiled_2q_gates": 66.94,
+          "mean_compiled_depth": 120.5
+        },
+        "A3_Prometheus_Isolated": {
+          "arm_id": "A3_Prometheus_Isolated",
+          "job_id": "dbp3cpk4148s739tsqrg",
+          "randomized_submission_slot": 1,
+          "pubs_executed": 36,
+          "physical_shots": 36864,
+          "standalone_billed_units": 12.0,
+          "active_execution_seconds": 10.647,
+          "qualifying_workloads_accepted": 30,
+          "total_workloads": 36,
+          "quality_target_attainment_rate": 0.833333,
+          "qualifying_per_billed_unit": 2.5,
+          "qualifying_per_active_second": 2.8177,
+          "qualifying_per_pub": 0.8333,
+          "mean_fb": 0.931045,
+          "median_fb": 0.956408,
+          "mean_fh": 0.870667,
+          "median_fh": 0.914716,
+          "mean_tvd": 0.203581,
+          "median_tvd": 0.173148,
+          "mean_shannon_entropy_bits": 3.921539,
+          "mean_compiled_2q_gates": 65.69,
+          "mean_compiled_depth": 110.69
+        },
+        "A4_Fixed_4Way_Prometheus": {
+          "arm_id": "A4_Fixed_4Way_Prometheus",
+          "job_id": "dbp3crlt7fqc7388n6ig",
+          "randomized_submission_slot": 3,
+          "pubs_executed": 9,
+          "physical_shots": 9216,
+          "standalone_billed_units": 5.0,
+          "active_execution_seconds": 3.3782,
+          "qualifying_workloads_accepted": 27,
+          "total_workloads": 36,
+          "quality_target_attainment_rate": 0.75,
+          "qualifying_per_billed_unit": 5.4,
+          "qualifying_per_active_second": 7.9924,
+          "qualifying_per_pub": 3.0,
+          "mean_fb": 0.91806,
+          "median_fb": 0.94579,
+          "mean_fh": 0.849452,
+          "median_fh": 0.894579,
+          "mean_tvd": 0.225851,
+          "median_tvd": 0.178671,
+          "mean_shannon_entropy_bits": 4.029472,
+          "mean_compiled_2q_gates": 65.64,
+          "mean_compiled_depth": 110.64
+        },
+        "A5_Best_Phase2_Fixed_4Way": {
+          "arm_id": "A5_Best_Phase2_Fixed_4Way",
+          "job_id": "dbp3csoou4as73csv07g",
+          "randomized_submission_slot": 5,
+          "pubs_executed": 9,
+          "physical_shots": 9216,
+          "standalone_billed_units": 5.0,
+          "active_execution_seconds": 3.4054,
+          "qualifying_workloads_accepted": 26,
+          "total_workloads": 36,
+          "quality_target_attainment_rate": 0.722222,
+          "qualifying_per_billed_unit": 5.2,
+          "qualifying_per_active_second": 7.6349,
+          "qualifying_per_pub": 2.8889,
+          "mean_fb": 0.917536,
+          "median_fb": 0.945569,
+          "mean_fh": 0.848168,
+          "median_fh": 0.894165,
+          "mean_tvd": 0.227259,
+          "median_tvd": 0.178961,
+          "mean_shannon_entropy_bits": 4.018428,
+          "mean_compiled_2q_gates": 66.92,
+          "mean_compiled_depth": 120.19
+        },
+        "A6_Prometheus_Autonomous_Selector": {
+          "arm_id": "A6_Prometheus_Autonomous_Selector",
+          "job_id": "dbp3cqk4148s739tsqtg",
+          "randomized_submission_slot": 2,
+          "pubs_executed": 11,
+          "physical_shots": 11264,
+          "standalone_billed_units": 5.0,
+          "active_execution_seconds": 3.9601,
+          "qualifying_workloads_accepted": 26,
+          "total_workloads": 36,
+          "quality_target_attainment_rate": 0.722222,
+          "qualifying_per_billed_unit": 5.2,
+          "qualifying_per_active_second": 6.5655,
+          "qualifying_per_pub": 2.3636,
+          "mean_fb": 0.921172,
+          "median_fb": 0.95646,
+          "mean_fh": 0.854738,
+          "median_fh": 0.914816,
+          "mean_tvd": 0.217779,
+          "median_tvd": 0.190333,
+          "mean_shannon_entropy_bits": 4.001282,
+          "mean_compiled_2q_gates": 65.58,
+          "mean_compiled_depth": 111.25
+        },
+        "A7_AltQPU_Counterfactual_Fez": {
+          "arm_id": "A7_AltQPU_Counterfactual_Fez",
+          "job_id": "dbp3cu0qtr0c738dmtj0",
+          "randomized_submission_slot": 7,
+          "pubs_executed": 9,
+          "physical_shots": 9216,
+          "standalone_billed_units": 5.0,
+          "active_execution_seconds": 3.6508,
+          "qualifying_workloads_accepted": 23,
+          "total_workloads": 36,
+          "quality_target_attainment_rate": 0.638889,
+          "qualifying_per_billed_unit": 4.6,
+          "qualifying_per_active_second": 6.3,
+          "qualifying_per_pub": 2.5556,
+          "mean_fb": 0.90135,
+          "median_fb": 0.944217,
+          "mean_fh": 0.822747,
+          "median_fh": 0.891599,
+          "mean_tvd": 0.255892,
+          "median_tvd": 0.219448,
+          "mean_shannon_entropy_bits": 4.283088,
+          "mean_compiled_2q_gates": 64.72,
+          "mean_compiled_depth": 119.19
+        }
+      },
+      "dev_selected_fixed_baseline_id": "A4_Fixed_4Way_Prometheus",
+      "best_holdout_fixed_baseline_id": "A4_Fixed_4Way_Prometheus",
+      "post_hoc_oracles": {
+        "A_Oracle_MaxEfficiency": {
+          "qualifying_workloads_accepted": 27,
+          "quality_target_attainment_rate": 0.75,
+          "allocated_billed_units": 4.3939,
+          "pubs_equivalent": 9,
+          "qualifying_per_billed_unit": 6.1448,
+          "mean_fb": 0.919574,
+          "a6_efficiency_attainment_ratio_of_oracle": 0.8462,
+          "a6_efficiency_shortfall_pct_vs_oracle": 15.38,
+          "group_choices": [
+            {
+              "group_id": "G_Hold_01",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 4,
+              "allocated_cost": 0.4545,
+              "pubs": 1,
+              "mean_fb": 0.975685
+            },
+            {
+              "group_id": "G_Hold_02",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 3,
+              "allocated_cost": 0.4545,
+              "pubs": 1,
+              "mean_fb": 0.90414
+            },
+            {
+              "group_id": "G_Hold_03",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 4,
+              "allocated_cost": 0.4545,
+              "pubs": 1,
+              "mean_fb": 0.916804
+            },
+            {
+              "group_id": "G_Hold_04",
+              "best_arm": "A4_Fixed_4Way_Prometheus",
+              "accepted": 2,
+              "allocated_cost": 0.5556,
+              "pubs": 1,
+              "mean_fb": 0.886917
+            },
+            {
+              "group_id": "G_Hold_05",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 2,
+              "allocated_cost": 0.4545,
+              "pubs": 1,
+              "mean_fb": 0.943227
+            },
+            {
+              "group_id": "G_Hold_06",
+              "best_arm": "A4_Fixed_4Way_Prometheus",
+              "accepted": 3,
+              "allocated_cost": 0.5556,
+              "pubs": 1,
+              "mean_fb": 0.884318
+            },
+            {
+              "group_id": "G_Hold_07",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 3,
+              "allocated_cost": 0.4545,
+              "pubs": 1,
+              "mean_fb": 0.918241
+            },
+            {
+              "group_id": "G_Hold_08",
+              "best_arm": "A4_Fixed_4Way_Prometheus",
+              "accepted": 3,
+              "allocated_cost": 0.5556,
+              "pubs": 1,
+              "mean_fb": 0.936779
+            },
+            {
+              "group_id": "G_Hold_09",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 3,
+              "allocated_cost": 0.4545,
+              "pubs": 1,
+              "mean_fb": 0.910057
+            }
+          ]
+        },
+        "A_Oracle_MaxYield": {
+          "qualifying_workloads_accepted": 30,
+          "quality_target_attainment_rate": 0.833333,
+          "allocated_billed_units": 6.9293,
+          "pubs_equivalent": 18,
+          "qualifying_per_billed_unit": 4.3294,
+          "mean_fb": 0.929014,
+          "a6_yield_shortfall_workloads_vs_oracle": 4,
+          "group_choices": [
+            {
+              "group_id": "G_Hold_01",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 4,
+              "allocated_cost": 0.4545,
+              "pubs": 1,
+              "mean_fb": 0.975685
+            },
+            {
+              "group_id": "G_Hold_02",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 3,
+              "allocated_cost": 0.4545,
+              "pubs": 1,
+              "mean_fb": 0.90414
+            },
+            {
+              "group_id": "G_Hold_03",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 4,
+              "allocated_cost": 0.4545,
+              "pubs": 1,
+              "mean_fb": 0.916804
+            },
+            {
+              "group_id": "G_Hold_04",
+              "best_arm": "A3_Prometheus_Isolated",
+              "accepted": 3,
+              "allocated_cost": 1.3333,
+              "pubs": 4,
+              "mean_fb": 0.925391
+            },
+            {
+              "group_id": "G_Hold_05",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 2,
+              "allocated_cost": 0.4545,
+              "pubs": 1,
+              "mean_fb": 0.943227
+            },
+            {
+              "group_id": "G_Hold_06",
+              "best_arm": "A4_Fixed_4Way_Prometheus",
+              "accepted": 3,
+              "allocated_cost": 0.5556,
+              "pubs": 1,
+              "mean_fb": 0.884318
+            },
+            {
+              "group_id": "G_Hold_07",
+              "best_arm": "A3_Prometheus_Isolated",
+              "accepted": 4,
+              "allocated_cost": 1.3333,
+              "pubs": 4,
+              "mean_fb": 0.933099
+            },
+            {
+              "group_id": "G_Hold_08",
+              "best_arm": "A4_Fixed_4Way_Prometheus",
+              "accepted": 3,
+              "allocated_cost": 0.5556,
+              "pubs": 1,
+              "mean_fb": 0.936779
+            },
+            {
+              "group_id": "G_Hold_09",
+              "best_arm": "A2_TKET_Isolated",
+              "accepted": 4,
+              "allocated_cost": 1.3333,
+              "pubs": 4,
+              "mean_fb": 0.941685
+            }
+          ]
+        }
+      },
+      "arrival_group_cluster_comparisons": {
+        "vs_A4_dev_selected_and_best_holdout_fixed": {
+          "reference_arm": "A4_Fixed_4Way_Prometheus",
+          "num_arrival_groups_K": 9,
+          "df": 8,
+          "observed_standalone_efficiency_delta_pct_no_pvalue": -3.7,
+          "observed_attainment_delta_percentage_points": -2.78,
+          "group_mean_delta_fb": 0.003113,
+          "group_se_delta_fb": 0.001488,
+          "group_ci95_delta_fb": [
+            -0.000318,
+            0.006543
+          ],
+          "group_paired_t_fb": 2.0921,
+          "unadjusted_group_paired_p_two_sided_fb": 0.069787,
+          "group_mean_delta_attainment": -0.027778,
+          "group_se_delta_attainment": 0.027778,
+          "group_paired_t_attainment": -1.0,
+          "unadjusted_group_paired_p_two_sided_attainment": 0.346594,
+          "statistical_inference_scope": "Arrival-group paired t-tests (K=9, df=8) test within-group overlap (Delta F_B) and within-group attainment only; standalone billing efficiency delta is an observed ratio across single standalone job bills.",
+          "holm_bonferroni_m3_adjusted_p_two_sided_fb": 0.139574
+        },
+        "vs_A5_best_phase2_fixed_4way": {
+          "reference_arm": "A5_Best_Phase2_Fixed_4Way",
+          "num_arrival_groups_K": 9,
+          "df": 8,
+          "observed_standalone_efficiency_delta_pct_no_pvalue": 0.0,
+          "observed_attainment_delta_percentage_points": 0.0,
+          "group_mean_delta_fb": 0.003636,
+          "group_se_delta_fb": 0.00265,
+          "group_ci95_delta_fb": [
+            -0.002476,
+            0.009748
+          ],
+          "group_paired_t_fb": 1.3719,
+          "unadjusted_group_paired_p_two_sided_fb": 0.207344,
+          "group_mean_delta_attainment": 0.0,
+          "group_se_delta_attainment": 0.041667,
+          "group_paired_t_attainment": 0.0,
+          "unadjusted_group_paired_p_two_sided_attainment": 1.0,
+          "statistical_inference_scope": "Arrival-group paired t-tests (K=9, df=8) test within-group overlap (Delta F_B) and within-group attainment only; standalone billing efficiency delta is an observed ratio across single standalone job bills.",
+          "holm_bonferroni_m3_adjusted_p_two_sided_fb": 0.207344
+        },
+        "vs_A7_alt_qpu_counterfactual_fez": {
+          "reference_arm": "A7_AltQPU_Counterfactual_Fez",
+          "num_arrival_groups_K": 9,
+          "df": 8,
+          "observed_standalone_efficiency_delta_pct_no_pvalue": 13.04,
+          "observed_attainment_delta_percentage_points": 8.33,
+          "group_mean_delta_fb": 0.019822,
+          "group_se_delta_fb": 0.007433,
+          "group_ci95_delta_fb": [
+            0.00268,
+            0.036964
+          ],
+          "group_paired_t_fb": 2.6666,
+          "unadjusted_group_paired_p_two_sided_fb": 0.028512,
+          "group_mean_delta_attainment": 0.083333,
+          "group_se_delta_attainment": 0.041667,
+          "group_paired_t_attainment": 2.0,
+          "unadjusted_group_paired_p_two_sided_attainment": 0.080516,
+          "statistical_inference_scope": "Arrival-group paired t-tests (K=9, df=8) test within-group overlap (Delta F_B) and within-group attainment only; standalone billing efficiency delta is an observed ratio across single standalone job bills.",
+          "holm_bonferroni_m3_adjusted_p_two_sided_fb": 0.085536
+        }
+      },
+      "best_observed_holdout_fixed_prometheus_id": "A4_Fixed_4Way_Prometheus",
+      "best_observed_holdout_fixed_overall_id": "A4_Fixed_4Way_Prometheus"
+    },
+    "iqm_summary": {
+      "provider": "IQM",
+      "standalone_arms": {
+        "A1_SABRE_Isolated": {
+          "arm_id": "A1_SABRE_Isolated",
+          "job_id": "01a1c226-92cb-75f1-b8d0-ca04ee587838",
+          "randomized_submission_slot": 3,
+          "pubs_executed": 36,
+          "physical_shots": 18432,
+          "standalone_billed_units": 9.75,
+          "active_execution_seconds": 11.6197,
+          "qualifying_workloads_accepted": 19,
+          "total_workloads": 36,
+          "quality_target_attainment_rate": 0.527778,
+          "qualifying_per_billed_unit": 1.9487,
+          "qualifying_per_active_second": 1.6352,
+          "qualifying_per_pub": 0.5278,
+          "mean_fb": 0.874187,
+          "median_fb": 0.935362,
+          "mean_fh": 0.781894,
+          "median_fh": 0.874903,
+          "mean_tvd": 0.293261,
+          "median_tvd": 0.234375,
+          "mean_shannon_entropy_bits": 4.219206,
+          "mean_compiled_2q_gates": 52.39,
+          "mean_compiled_depth": 89.33
+        },
+        "A2_TKET_Isolated": {
+          "arm_id": "A2_TKET_Isolated",
+          "job_id": "01a1c226-100a-7236-bd24-5b556884d154",
+          "randomized_submission_slot": 1,
+          "pubs_executed": 36,
+          "physical_shots": 18432,
+          "standalone_billed_units": 6.75,
+          "active_execution_seconds": 8.4476,
+          "qualifying_workloads_accepted": 18,
+          "total_workloads": 36,
+          "quality_target_attainment_rate": 0.5,
+          "qualifying_per_billed_unit": 2.6667,
+          "qualifying_per_active_second": 2.1308,
+          "qualifying_per_pub": 0.5,
+          "mean_fb": 0.838758,
+          "median_fb": 0.883117,
+          "mean_fh": 0.725783,
+          "median_fh": 0.780052,
+          "mean_tvd": 0.350465,
+          "median_tvd": 0.314296,
+          "mean_shannon_entropy_bits": 4.376414,
+          "mean_compiled_2q_gates": 57.64,
+          "mean_compiled_depth": 106.0
+        },
+        "A3_Prometheus_Isolated": {
+          "arm_id": "A3_Prometheus_Isolated",
+          "job_id": "01a1c228-192a-7766-89ab-4029030d9910",
+          "randomized_submission_slot": 4,
+          "pubs_executed": 36,
+          "physical_shots": 18432,
+          "standalone_billed_units": 7.5,
+          "active_execution_seconds": 8.3951,
+          "qualifying_workloads_accepted": 22,
+          "total_workloads": 36,
+          "quality_target_attainment_rate": 0.611111,
+          "qualifying_per_billed_unit": 2.9333,
+          "qualifying_per_active_second": 2.6206,
+          "qualifying_per_pub": 0.6111,
+          "mean_fb": 0.875003,
+          "median_fb": 0.927994,
+          "mean_fh": 0.779346,
+          "median_fh": 0.861185,
+          "mean_tvd": 0.295773,
+          "median_tvd": 0.238903,
+          "mean_shannon_entropy_bits": 4.264064,
+          "mean_compiled_2q_gates": 49.75,
+          "mean_compiled_depth": 82.03
+        },
+        "A4_Fixed_4Way_Prometheus": {
+          "arm_id": "A4_Fixed_4Way_Prometheus",
+          "job_id": "01a1c228-a338-76f1-8f97-142d6e42aaa3",
+          "randomized_submission_slot": 6,
+          "pubs_executed": 9,
+          "physical_shots": 4608,
+          "standalone_billed_units": 5.25,
+          "active_execution_seconds": 5.8082,
+          "qualifying_workloads_accepted": 15,
+          "total_workloads": 36,
+          "quality_target_attainment_rate": 0.416667,
+          "qualifying_per_billed_unit": 2.8571,
+          "qualifying_per_active_second": 2.5826,
+          "qualifying_per_pub": 1.6667,
+          "mean_fb": 0.827403,
+          "median_fb": 0.870253,
+          "mean_fh": 0.704508,
+          "median_fh": 0.757434,
+          "mean_tvd": 0.375697,
+          "median_tvd": 0.345013,
+          "mean_shannon_entropy_bits": 4.478252,
+          "mean_compiled_2q_gates": 49.89,
+          "mean_compiled_depth": 80.17
+        },
+        "A5_Best_Phase2_Fixed_4Way": {
+          "arm_id": "A5_Best_Phase2_Fixed_4Way",
+          "job_id": "01a1c228-66c3-754e-b870-54e2e95abe5f",
+          "randomized_submission_slot": 5,
+          "pubs_executed": 9,
+          "physical_shots": 4608,
+          "standalone_billed_units": 3.75,
+          "active_execution_seconds": 3.0862,
+          "qualifying_workloads_accepted": 13,
+          "total_workloads": 36,
+          "quality_target_attainment_rate": 0.361111,
+          "qualifying_per_billed_unit": 3.4667,
+          "qualifying_per_active_second": 4.2122,
+          "qualifying_per_pub": 1.4444,
+          "mean_fb": 0.810521,
+          "median_fb": 0.873242,
+          "mean_fh": 0.682233,
+          "median_fh": 0.762558,
+          "mean_tvd": 0.392844,
+          "median_tvd": 0.355354,
+          "mean_shannon_entropy_bits": 4.552823,
+          "mean_compiled_2q_gates": 52.83,
+          "mean_compiled_depth": 87.92
+        },
+        "A6_Prometheus_Autonomous_Selector": {
+          "arm_id": "A6_Prometheus_Autonomous_Selector",
+          "job_id": "01a1c226-576a-7503-b4ac-4429067f194f",
+          "randomized_submission_slot": 2,
+          "pubs_executed": 14,
+          "physical_shots": 7168,
+          "standalone_billed_units": 4.5,
+          "active_execution_seconds": 4.8356,
+          "qualifying_workloads_accepted": 14,
+          "total_workloads": 36,
+          "quality_target_attainment_rate": 0.388889,
+          "qualifying_per_billed_unit": 3.1111,
+          "qualifying_per_active_second": 2.8952,
+          "qualifying_per_pub": 1.0,
+          "mean_fb": 0.843551,
+          "median_fb": 0.866745,
+          "mean_fh": 0.727214,
+          "median_fh": 0.751274,
+          "mean_tvd": 0.357137,
+          "median_tvd": 0.361881,
+          "mean_shannon_entropy_bits": 4.432498,
+          "mean_compiled_2q_gates": 49.67,
+          "mean_compiled_depth": 79.03
+        }
+      },
+      "dev_selected_fixed_baseline_id": "A4_Fixed_4Way_Prometheus",
+      "best_holdout_fixed_baseline_id": "A5_Best_Phase2_Fixed_4Way",
+      "post_hoc_oracles": {
+        "A_Oracle_MaxEfficiency": {
+          "qualifying_workloads_accepted": 22,
+          "quality_target_attainment_rate": 0.611111,
+          "allocated_billed_units": 5.2143,
+          "pubs_equivalent": 19,
+          "qualifying_per_billed_unit": 4.2192,
+          "mean_fb": 0.85432,
+          "a6_efficiency_attainment_ratio_of_oracle": 0.7374,
+          "a6_efficiency_shortfall_pct_vs_oracle": 26.26,
+          "group_choices": [
+            {
+              "group_id": "G_Hold_01",
+              "best_arm": "A5_Best_Phase2_Fixed_4Way",
+              "accepted": 4,
+              "allocated_cost": 0.4167,
+              "pubs": 1,
+              "mean_fb": 0.967585
+            },
+            {
+              "group_id": "G_Hold_02",
+              "best_arm": "A3_Prometheus_Isolated",
+              "accepted": 3,
+              "allocated_cost": 0.8333,
+              "pubs": 4,
+              "mean_fb": 0.866588
+            },
+            {
+              "group_id": "G_Hold_03",
+              "best_arm": "A5_Best_Phase2_Fixed_4Way",
+              "accepted": 2,
+              "allocated_cost": 0.4167,
+              "pubs": 1,
+              "mean_fb": 0.813672
+            },
+            {
+              "group_id": "G_Hold_04",
+              "best_arm": "A2_TKET_Isolated",
+              "accepted": 1,
+              "allocated_cost": 0.75,
+              "pubs": 4,
+              "mean_fb": 0.817624
+            },
+            {
+              "group_id": "G_Hold_05",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 2,
+              "allocated_cost": 0.3214,
+              "pubs": 1,
+              "mean_fb": 0.905879
+            },
+            {
+              "group_id": "G_Hold_06",
+              "best_arm": "A3_Prometheus_Isolated",
+              "accepted": 2,
+              "allocated_cost": 0.8333,
+              "pubs": 4,
+              "mean_fb": 0.762158
+            },
+            {
+              "group_id": "G_Hold_07",
+              "best_arm": "A4_Fixed_4Way_Prometheus",
+              "accepted": 3,
+              "allocated_cost": 0.5833,
+              "pubs": 1,
+              "mean_fb": 0.868433
+            },
+            {
+              "group_id": "G_Hold_08",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 2,
+              "allocated_cost": 0.6429,
+              "pubs": 2,
+              "mean_fb": 0.845185
+            },
+            {
+              "group_id": "G_Hold_09",
+              "best_arm": "A5_Best_Phase2_Fixed_4Way",
+              "accepted": 3,
+              "allocated_cost": 0.4167,
+              "pubs": 1,
+              "mean_fb": 0.841758
+            }
+          ]
+        },
+        "A_Oracle_MaxYield": {
+          "qualifying_workloads_accepted": 23,
+          "quality_target_attainment_rate": 0.638889,
+          "allocated_billed_units": 5.631,
+          "pubs_equivalent": 22,
+          "qualifying_per_billed_unit": 4.0846,
+          "mean_fb": 0.859172,
+          "a6_yield_shortfall_workloads_vs_oracle": 9,
+          "group_choices": [
+            {
+              "group_id": "G_Hold_01",
+              "best_arm": "A5_Best_Phase2_Fixed_4Way",
+              "accepted": 4,
+              "allocated_cost": 0.4167,
+              "pubs": 1,
+              "mean_fb": 0.967585
+            },
+            {
+              "group_id": "G_Hold_02",
+              "best_arm": "A3_Prometheus_Isolated",
+              "accepted": 3,
+              "allocated_cost": 0.8333,
+              "pubs": 4,
+              "mean_fb": 0.866588
+            },
+            {
+              "group_id": "G_Hold_03",
+              "best_arm": "A3_Prometheus_Isolated",
+              "accepted": 3,
+              "allocated_cost": 0.8333,
+              "pubs": 4,
+              "mean_fb": 0.857339
+            },
+            {
+              "group_id": "G_Hold_04",
+              "best_arm": "A2_TKET_Isolated",
+              "accepted": 1,
+              "allocated_cost": 0.75,
+              "pubs": 4,
+              "mean_fb": 0.817624
+            },
+            {
+              "group_id": "G_Hold_05",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 2,
+              "allocated_cost": 0.3214,
+              "pubs": 1,
+              "mean_fb": 0.905879
+            },
+            {
+              "group_id": "G_Hold_06",
+              "best_arm": "A3_Prometheus_Isolated",
+              "accepted": 2,
+              "allocated_cost": 0.8333,
+              "pubs": 4,
+              "mean_fb": 0.762158
+            },
+            {
+              "group_id": "G_Hold_07",
+              "best_arm": "A4_Fixed_4Way_Prometheus",
+              "accepted": 3,
+              "allocated_cost": 0.5833,
+              "pubs": 1,
+              "mean_fb": 0.868433
+            },
+            {
+              "group_id": "G_Hold_08",
+              "best_arm": "A6_Prometheus_Autonomous_Selector",
+              "accepted": 2,
+              "allocated_cost": 0.6429,
+              "pubs": 2,
+              "mean_fb": 0.845185
+            },
+            {
+              "group_id": "G_Hold_09",
+              "best_arm": "A5_Best_Phase2_Fixed_4Way",
+              "accepted": 3,
+              "allocated_cost": 0.4167,
+              "pubs": 1,
+              "mean_fb": 0.841758
+            }
+          ]
+        }
+      },
+      "arrival_group_cluster_comparisons": {
+        "vs_A4_dev_selected_fixed_4way": {
+          "reference_arm": "A4_Fixed_4Way_Prometheus",
+          "num_arrival_groups_K": 9,
+          "df": 8,
+          "observed_standalone_efficiency_delta_pct_no_pvalue": 8.89,
+          "observed_attainment_delta_percentage_points": -2.78,
+          "group_mean_delta_fb": 0.016147,
+          "group_se_delta_fb": 0.006199,
+          "group_ci95_delta_fb": [
+            0.001853,
+            0.030441
+          ],
+          "group_paired_t_fb": 2.605,
+          "unadjusted_group_paired_p_two_sided_fb": 0.031373,
+          "group_mean_delta_attainment": -0.027778,
+          "group_se_delta_attainment": 0.050077,
+          "group_paired_t_attainment": -0.5547,
+          "unadjusted_group_paired_p_two_sided_attainment": 0.594264,
+          "statistical_inference_scope": "Arrival-group paired t-tests (K=9, df=8) test within-group overlap (Delta F_B) and within-group attainment only; standalone billing efficiency delta is an observed ratio across single standalone job bills.",
+          "holm_bonferroni_m3_adjusted_p_two_sided_fb": 0.062746
+        },
+        "vs_A5_best_observed_holdout_fixed_overall": {
+          "reference_arm": "A5_Best_Phase2_Fixed_4Way",
+          "num_arrival_groups_K": 9,
+          "df": 8,
+          "observed_standalone_efficiency_delta_pct_no_pvalue": -10.26,
+          "observed_attainment_delta_percentage_points": 2.78,
+          "group_mean_delta_fb": 0.03303,
+          "group_se_delta_fb": 0.007956,
+          "group_ci95_delta_fb": [
+            0.014683,
+            0.051377
+          ],
+          "group_paired_t_fb": 4.1515,
+          "unadjusted_group_paired_p_two_sided_fb": 0.003202,
+          "group_mean_delta_attainment": 0.027778,
+          "group_se_delta_attainment": 0.07733,
+          "group_paired_t_attainment": 0.3592,
+          "unadjusted_group_paired_p_two_sided_attainment": 0.728734,
+          "statistical_inference_scope": "Arrival-group paired t-tests (K=9, df=8) test within-group overlap (Delta F_B) and within-group attainment only; standalone billing efficiency delta is an observed ratio across single standalone job bills.",
+          "holm_bonferroni_m3_adjusted_p_two_sided_fb": 0.009606
+        },
+        "vs_A3_best_observed_holdout_fixed_prometheus": {
+          "reference_arm": "A3_Prometheus_Isolated",
+          "num_arrival_groups_K": 9,
+          "df": 8,
+          "observed_standalone_efficiency_delta_pct_no_pvalue": 6.06,
+          "observed_attainment_delta_percentage_points": -22.22,
+          "group_mean_delta_fb": -0.031453,
+          "group_se_delta_fb": 0.01582,
+          "group_ci95_delta_fb": [
+            -0.067933,
+            0.005027
+          ],
+          "group_paired_t_fb": -1.9882,
+          "unadjusted_group_paired_p_two_sided_fb": 0.081999,
+          "group_mean_delta_attainment": -0.222222,
+          "group_se_delta_attainment": 0.07733,
+          "group_paired_t_attainment": -2.8737,
+          "unadjusted_group_paired_p_two_sided_attainment": 0.020711,
+          "statistical_inference_scope": "Arrival-group paired t-tests (K=9, df=8) test within-group overlap (Delta F_B) and within-group attainment only; standalone billing efficiency delta is an observed ratio across single standalone job bills.",
+          "holm_bonferroni_m3_adjusted_p_two_sided_fb": 0.081999
+        }
+      },
+      "best_observed_holdout_fixed_prometheus_id": "A3_Prometheus_Isolated",
+      "best_observed_holdout_fixed_overall_id": "A5_Best_Phase2_Fixed_4Way",
+      "baseline_ranking_note": "On IQM Part B Holdout, A4_Fixed_4Way_Prometheus (2.8571 Acc/cr, 15/36) is the legitimate pre-registered Development-selected fixed baseline (having won Part A Dev at 2.9333 Acc/cr). Among fixed Prometheus policies on Holdout, isolated A3_Prometheus_Isolated achieved higher observed efficiency (2.9333 Acc/cr) and highest overall attainment (22/36 = 61.11%), while A5_Best_Phase2_Fixed_4Way (SABRE k=4) achieved the highest observed standalone efficiency overall (3.4667 Acc/cr at 13/36 = 36.11%)."
+    }
+  },
+  "job_and_cost_reconciliation": {
+    "experiment_1_breakdown": {
+      "competing_policy_benchmark_jobs": {
+        "count": 24,
+        "ibm_jobs": 12,
+        "iqm_jobs": 12,
+        "ibm_pubs": 232,
+        "iqm_pubs": 239,
+        "ibm_physical_shots": 237568,
+        "iqm_physical_shots": 122368,
+        "ibm_charged_seconds": 91.0,
+        "iqm_charged_credits": 68.25
+      },
+      "counterfactual_alt_qpu_benchmark_jobs": {
+        "count": 2,
+        "ibm_jobs": 2,
+        "iqm_jobs": 0,
+        "job_ids": [
+          "dbp2bn8ou4as73csto9g",
+          "dbp3cu0qtr0c738dmtj0"
+        ],
+        "ibm_pubs": 15,
+        "ibm_physical_shots": 15360,
+        "ibm_charged_seconds": 9.0
+      },
+      "scheduled_iqm_station_warmup_jobs": {
+        "count": 2,
+        "job_ids": [
+          "01a1c1f9-e28c-738f-93e2-e35367d755c8",
+          "01a1c224-cea1-75ae-8ef9-aef08bc5925f"
+        ],
+        "iqm_pubs": 2,
+        "iqm_physical_shots": 1024,
+        "iqm_charged_credits": 6.0,
+        "role": "Occupied scheduled Slot #0 in Part A and Part B so Slot #1 wake-up overhead did not bias any competing policy arm."
+      },
+      "scheduled_manifest_28_job_subtotal": {
+        "total_jobs": 28,
+        "benchmark_evaluation_jobs": 26,
+        "scheduled_warmup_jobs": 2,
+        "ibm_pubs": 247,
+        "iqm_pubs": 241,
+        "total_pubs": 488,
+        "total_physical_shots": 376320,
+        "ibm_charged_seconds": 100.0,
+        "iqm_charged_credits": 74.25
+      },
+      "additional_troubleshooting_and_cold_wakeup_jobs_retained": {
+        "total_job_records": 4,
+        "completed_jobs": 3,
+        "cancelled_zero_cost_jobs": 1,
+        "records": [
+          {
+            "job_id": "01a1c1e3-ecb6-715b-b8b4-b9f8aa611ad0",
+            "status": "cancelled",
+            "pubs_executed": 0,
+            "shots_executed": 0,
+            "charged_credits": 0.0,
+            "reason": "Server-cancelled while queued prior to Part A burst."
+          },
+          {
+            "job_id": "01a1c1f7-41b3-76da-86ce-869e9311fc19",
+            "status": "completed",
+            "pubs_executed": 1,
+            "shots_executed": 512,
+            "charged_credits": 7.5,
+            "reason": "Initial cold-station wakeup on emerald prior to iqm-client 'completed' status check fix."
+          },
+          {
+            "job_id": "01a1c1f7-8638-702d-b987-0b0a7a8264e3",
+            "status": "completed",
+            "pubs_executed": 1,
+            "shots_executed": 512,
+            "charged_credits": 2.25,
+            "reason": "Retry #2 prior to 'completed' status string fix."
+          },
+          {
+            "job_id": "01a1c1f7-ae26-73ed-8243-3dcb131e9e80",
+            "status": "completed",
+            "pubs_executed": 1,
+            "shots_executed": 512,
+            "charged_credits": 2.25,
+            "reason": "Retry #3 prior to 'completed' status string fix."
+          }
+        ],
+        "iqm_pubs_executed": 3,
+        "iqm_physical_shots_executed": 1536,
+        "iqm_charged_credits_retained": 12.0
+      },
+      "experiment_1_all_inclusive_spend": {
+        "ibm_charged_seconds": 100.0,
+        "iqm_charged_credits": 86.25
+      }
+    },
+    "cumulative_phase3_campaign_through_exp1": {
+      "stage_3_0_pilot": {
+        "benchmark_jobs": 2,
+        "ibm_s": 4.0,
+        "iqm_cr": 6.0
+      },
+      "experiment_3_packing_calibration": {
+        "benchmark_jobs": 8,
+        "ibm_s": 46.0,
+        "iqm_cr": 38.25
+      },
+      "experiment_1_benchmark_and_scheduled_warmup": {
+        "benchmark_jobs": 26,
+        "scheduled_warmup_jobs": 2,
+        "ibm_s": 100.0,
+        "iqm_cr": 74.25
+      },
+      "experiment_1_troubleshooting_retained": {
+        "completed_jobs": 3,
+        "cancelled_jobs": 1,
+        "ibm_s": 0.0,
+        "iqm_cr": 12.0
+      },
+      "total_benchmark_jobs": 36,
+      "total_scheduled_warmup_jobs": 2,
+      "total_scheduled_manifest_jobs": 38,
+      "total_additional_troubleshooting_jobs": 4,
+      "total_provider_job_records": 42,
+      "cumulative_ibm_settled_seconds": 150.0,
+      "cumulative_iqm_settled_credits": 130.5,
+      "remaining_ibm_ceiling_seconds": 229.0,
+      "remaining_iqm_ceiling_credits": 162.5
+    }
+  }
+}

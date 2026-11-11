@@ -1,0 +1,2648 @@
+{
+  "completed_at_utc": "2026-11-07T14:52:09.319650+00:00",
+  "ibm_stage0_pilot": {
+    "backend": "ibm_kingston",
+    "calibration_last_update_T0": "2026-11-07 11:18:26-03:00",
+    "shots_per_pub": 1024,
+    "usage_before": {
+      "instance_id": "crn:v1:bluemix:public:quantum-computing:us-east:a/7f2222524b19462e854c1254b7e95bd0:5d74bed1-5bd5-4142-a98b-e1d2faec7436::",
+      "plan_id": "850b21a7-71de-4e53-9441-1abdd202f35d",
+      "usage_consumed_seconds": 8,
+      "usage_consumed_ru": 0.115894,
+      "usage_period": {
+        "start_time": "2026-10-10T14:51:30.742Z",
+        "end_time": "2026-11-07T14:51:30.742Z"
+      },
+      "usage_limit_seconds": 600,
+      "usage_limit_ru": 10,
+      "usage_limit_reached": false,
+      "usage_remaining_seconds": 592
+    },
+    "usage_after": {
+      "instance_id": "crn:v1:bluemix:public:quantum-computing:us-east:a/7f2222524b19462e854c1254b7e95bd0:5d74bed1-5bd5-4142-a98b-e1d2faec7436::",
+      "plan_id": "850b21a7-71de-4e53-9441-1abdd202f35d",
+      "usage_consumed_seconds": 8,
+      "usage_consumed_ru": 0.115894,
+      "usage_period": {
+        "start_time": "2026-10-10T14:51:50.340Z",
+        "end_time": "2026-11-07T14:51:50.340Z"
+      },
+      "usage_limit_seconds": 600,
+      "usage_limit_ru": 10,
+      "usage_limit_reached": false,
+      "usage_remaining_seconds": 592
+    },
+    "job1_isolated_and_matched_delay": {
+      "job_id": "dbnj0igqtr0c73ad5pr0",
+      "status": "DONE",
+      "quantum_seconds_billed": 8.4163,
+      "raw_metrics": {
+        "caller": "qiskit_ibm_runtime~sampler.py",
+        "qiskit_version": "qiskit_ibm_runtime-0.48.0,qiskit-2.5.1*,qiskit_aer-0.17.2",
+        "timestamps": {
+          "created": "2026-11-07T14:06:02.355062Z",
+          "finished": "2026-11-07T14:20:08.086743Z",
+          "running": "2026-11-07T14:14:24.058748Z"
+        },
+        "usage": {
+          "qpu_charge_time_seconds": 5,
+          "value": 0.073856,
+          "unit": "resource_units",
+          "status": "complete",
+          "details": [
+            {
+              "value": 0.073856,
+              "unit": "resource_units",
+              "metric": {
+                "id": "caffe3ca-729c-5750-8777-df63bbf8bfd9",
+                "value": 5
+              }
+            }
+          ]
+        },
+        "circuits_execution_time_ns": 2711264768
+      },
+      "timestamps": {
+        "created": "2026-11-07T14:06:02.355062Z",
+        "finished": "2026-11-07T14:20:08.086743Z",
+        "running": "2026-11-07T14:14:24.058748Z"
+      },
+      "execution_spans": [
+        {
+          "start": "2026-11-07 14:19:57.971906",
+          "stop": "2026-11-07 14:20:06.388207",
+          "duration_s": 8.416301,
+          "size": 10240
+        }
+      ],
+      "detailed_evaluations": {
+        "W_F1_dense_kn_05Q_A_Short": {
+          "workload_id": "W_F1_dense_kn_05Q_A_Short",
+          "family_id": "F1_dense_kn",
+          "width_q": 5,
+          "duration_tier": "Short",
+          "fb_measured": 0.937148,
+          "fh_measured": 0.878246,
+          "tvd_measured": 0.14915,
+          "fb_threshold": 0.85,
+          "fb_uniform_random": 0.441669,
+          "fb_normalized_excess_over_uniform": 0.8874,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.937148,
+          "observable_target": 0.85,
+          "observable_uniform_random": 0.441669,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.02656,
+            "drift_hw_last_minus_first": 0.01328,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.26875,
+                "mean_magnetization_z_minus1_1": 0.4625,
+                "zero_state_survival_0_1": 0.00781
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.27734,
+                "mean_magnetization_z_minus1_1": 0.44531,
+                "zero_state_survival_0_1": 0.01172
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.27969,
+                "mean_magnetization_z_minus1_1": 0.44062,
+                "zero_state_survival_0_1": 0.02344
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.28203,
+                "mean_magnetization_z_minus1_1": 0.43594,
+                "zero_state_survival_0_1": 0.01953
+              }
+            ]
+          },
+          "tau_sched_ns": 2524.0
+        },
+        "W_F4_qft_phase_05Q_B_Long": {
+          "workload_id": "W_F4_qft_phase_05Q_B_Long",
+          "family_id": "F4_qft_phase",
+          "width_q": 5,
+          "duration_tier": "Long",
+          "fb_measured": 0.961297,
+          "fh_measured": 0.924092,
+          "tvd_measured": 0.1391,
+          "fb_threshold": 0.75,
+          "fb_uniform_random": 0.348694,
+          "fb_normalized_excess_over_uniform": 0.9406,
+          "observable_metric": "Top2_Fourier_Peak_Mass",
+          "observable_measured": 0.816406,
+          "observable_target": 0.5,
+          "observable_uniform_random": 0.0625,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.03594,
+            "drift_hw_last_minus_first": -0.01797,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.42344,
+                "mean_magnetization_z_minus1_1": 0.15312,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.41641,
+                "mean_magnetization_z_minus1_1": 0.16719,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.40625,
+                "mean_magnetization_z_minus1_1": 0.1875,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.40547,
+                "mean_magnetization_z_minus1_1": 0.18906,
+                "zero_state_survival_0_1": 0.0
+              }
+            ]
+          },
+          "tau_sched_ns": 3216.0
+        },
+        "W_F2_bipartite_07Q_A_Short": {
+          "workload_id": "W_F2_bipartite_07Q_A_Short",
+          "family_id": "F2_bipartite",
+          "width_q": 7,
+          "duration_tier": "Short",
+          "fb_measured": 0.975037,
+          "fh_measured": 0.950698,
+          "tvd_measured": 0.126124,
+          "fb_threshold": 0.82,
+          "fb_uniform_random": 0.385076,
+          "fb_normalized_excess_over_uniform": 0.9594,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.975037,
+          "observable_target": 0.82,
+          "observable_uniform_random": 0.385076,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.01898,
+            "drift_hw_last_minus_first": -0.00949,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.10826,
+                "mean_magnetization_z_minus1_1": 0.78348,
+                "zero_state_survival_0_1": 0.53516
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.11105,
+                "mean_magnetization_z_minus1_1": 0.7779,
+                "zero_state_survival_0_1": 0.47656
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.0904,
+                "mean_magnetization_z_minus1_1": 0.8192,
+                "zero_state_survival_0_1": 0.60547
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.09877,
+                "mean_magnetization_z_minus1_1": 0.80246,
+                "zero_state_survival_0_1": 0.53516
+              }
+            ]
+          },
+          "tau_sched_ns": 1888.0
+        },
+        "W_F5_trotter_ising_07Q_B_Long": {
+          "workload_id": "W_F5_trotter_ising_07Q_B_Long",
+          "family_id": "F5_trotter_ising",
+          "width_q": 7,
+          "duration_tier": "Long",
+          "fb_measured": 0.85097,
+          "fh_measured": 0.724151,
+          "tvd_measured": 0.455435,
+          "fb_threshold": 0.7,
+          "fb_uniform_random": 0.55409,
+          "fb_normalized_excess_over_uniform": 0.6658,
+          "observable_metric": "Site_Magnetization_MAE",
+          "observable_measured": 0.277123,
+          "observable_target": 0.08,
+          "observable_uniform_random": 0.730945,
+          "fb_pass": true,
+          "observable_pass": false,
+          "accepted": 0,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.0413,
+            "drift_hw_last_minus_first": 0.02065,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.54799,
+                "mean_magnetization_z_minus1_1": -0.09598,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.56752,
+                "mean_magnetization_z_minus1_1": -0.13504,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.56864,
+                "mean_magnetization_z_minus1_1": -0.13728,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.56864,
+                "mean_magnetization_z_minus1_1": -0.13728,
+                "zero_state_survival_0_1": 0.0
+              }
+            ]
+          },
+          "tau_sched_ns": 5516.0
+        },
+        "W_F3_qaoa_maxcut_09Q_A_Short": {
+          "workload_id": "W_F3_qaoa_maxcut_09Q_A_Short",
+          "family_id": "F3_qaoa_maxcut",
+          "width_q": 9,
+          "duration_tier": "Short",
+          "fb_measured": 0.919925,
+          "fh_measured": 0.846261,
+          "tvd_measured": 0.242485,
+          "fb_threshold": 0.818,
+          "fb_uniform_random": 0.740029,
+          "fb_normalized_excess_over_uniform": 0.692,
+          "observable_metric": "QAOA_MaxCut_Approx_Ratio",
+          "observable_measured": 0.767933,
+          "observable_target": 0.6925,
+          "observable_uniform_random": 0.590909,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.0026,
+            "drift_hw_last_minus_first": 0.0013,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.50521,
+                "mean_magnetization_z_minus1_1": -0.01042,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.49913,
+                "mean_magnetization_z_minus1_1": 0.00174,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.5,
+                "mean_magnetization_z_minus1_1": 0.0,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.50651,
+                "mean_magnetization_z_minus1_1": -0.01302,
+                "zero_state_survival_0_1": 0.0
+              }
+            ]
+          },
+          "tau_sched_ns": 2788.0
+        },
+        "W_F6_sparse_ctrl_09Q_B_Long": {
+          "workload_id": "W_F6_sparse_ctrl_09Q_B_Long",
+          "family_id": "F6_sparse_ctrl",
+          "width_q": 9,
+          "duration_tier": "Long",
+          "fb_measured": 0.942789,
+          "fh_measured": 0.888852,
+          "tvd_measured": 0.207554,
+          "fb_threshold": 0.9,
+          "fb_uniform_random": 0.365077,
+          "fb_normalized_excess_over_uniform": 0.9099,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.942789,
+          "observable_target": 0.9,
+          "observable_uniform_random": 0.365077,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.01215,
+            "drift_hw_last_minus_first": -0.00608,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.18056,
+                "mean_magnetization_z_minus1_1": 0.63889,
+                "zero_state_survival_0_1": 0.30469
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.16059,
+                "mean_magnetization_z_minus1_1": 0.67882,
+                "zero_state_survival_0_1": 0.28906
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.15668,
+                "mean_magnetization_z_minus1_1": 0.68663,
+                "zero_state_survival_0_1": 0.31641
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.17448,
+                "mean_magnetization_z_minus1_1": 0.65104,
+                "zero_state_survival_0_1": 0.27344
+              }
+            ]
+          },
+          "tau_sched_ns": 2360.0
+        },
+        "W_F5_trotter_ising_11Q_A_Short": {
+          "workload_id": "W_F5_trotter_ising_11Q_A_Short",
+          "family_id": "F5_trotter_ising",
+          "width_q": 11,
+          "duration_tier": "Short",
+          "fb_measured": 0.930964,
+          "fh_measured": 0.866695,
+          "tvd_measured": 0.215477,
+          "fb_threshold": 0.6,
+          "fb_uniform_random": 0.211923,
+          "fb_normalized_excess_over_uniform": 0.9124,
+          "observable_metric": "Site_Magnetization_MAE",
+          "observable_measured": 0.075646,
+          "observable_target": 0.08,
+          "observable_uniform_random": 0.864886,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.02486,
+            "drift_hw_last_minus_first": -0.01243,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.55504,
+                "mean_magnetization_z_minus1_1": -0.11009,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.55398,
+                "mean_magnetization_z_minus1_1": -0.10795,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.54048,
+                "mean_magnetization_z_minus1_1": -0.08097,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.54261,
+                "mean_magnetization_z_minus1_1": -0.08523,
+                "zero_state_survival_0_1": 0.0
+              }
+            ]
+          },
+          "tau_sched_ns": 1796.0
+        },
+        "W_F3_qaoa_maxcut_11Q_B_Long": {
+          "workload_id": "W_F3_qaoa_maxcut_11Q_B_Long",
+          "family_id": "F3_qaoa_maxcut",
+          "width_q": 11,
+          "duration_tier": "Long",
+          "fb_measured": 0.8203,
+          "fh_measured": 0.672892,
+          "tvd_measured": 0.382318,
+          "fb_threshold": 0.75,
+          "fb_uniform_random": 0.528539,
+          "fb_normalized_excess_over_uniform": 0.6188,
+          "observable_metric": "QAOA_MaxCut_Approx_Ratio",
+          "observable_measured": 0.754297,
+          "observable_target": 0.6694,
+          "observable_uniform_random": 0.533333,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.00142,
+            "drift_hw_last_minus_first": -0.00071,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.49893,
+                "mean_magnetization_z_minus1_1": 0.00213,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.50817,
+                "mean_magnetization_z_minus1_1": -0.01634,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.49716,
+                "mean_magnetization_z_minus1_1": 0.00568,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.49822,
+                "mean_magnetization_z_minus1_1": 0.00355,
+                "zero_state_survival_0_1": 0.0
+              }
+            ]
+          },
+          "tau_sched_ns": 5188.0
+        },
+        "W_F1_dense_kn_05Q_A_Short__M0b": {
+          "workload_id": "W_F1_dense_kn_05Q_A_Short",
+          "family_id": "F1_dense_kn",
+          "width_q": 5,
+          "duration_tier": "Short",
+          "fb_measured": 0.927646,
+          "fh_measured": 0.860527,
+          "tvd_measured": 0.155204,
+          "fb_threshold": 0.85,
+          "fb_uniform_random": 0.441669,
+          "fb_normalized_excess_over_uniform": 0.8704,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.927646,
+          "observable_target": 0.85,
+          "observable_uniform_random": 0.441669,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.00781,
+            "drift_hw_last_minus_first": -0.00391,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.27188,
+                "mean_magnetization_z_minus1_1": 0.45625,
+                "zero_state_survival_0_1": 0.02344
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.27031,
+                "mean_magnetization_z_minus1_1": 0.45937,
+                "zero_state_survival_0_1": 0.03516
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.26484,
+                "mean_magnetization_z_minus1_1": 0.47031,
+                "zero_state_survival_0_1": 0.04297
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.26797,
+                "mean_magnetization_z_minus1_1": 0.46406,
+                "zero_state_survival_0_1": 0.03906
+              }
+            ]
+          },
+          "pad_meta": {
+            "short_natural_tau_ns": 2524.0,
+            "target_long_tau_ns": 5516.0,
+            "injected_delay_ns": 3008.0,
+            "injected_delay_dt": 752,
+            "padded_total_tau_ns": 5532.0
+          }
+        },
+        "W_F2_bipartite_07Q_A_Short__M0b": {
+          "workload_id": "W_F2_bipartite_07Q_A_Short",
+          "family_id": "F2_bipartite",
+          "width_q": 7,
+          "duration_tier": "Short",
+          "fb_measured": 0.970118,
+          "fh_measured": 0.94113,
+          "tvd_measured": 0.153689,
+          "fb_threshold": 0.82,
+          "fb_uniform_random": 0.385076,
+          "fb_normalized_excess_over_uniform": 0.9514,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.970118,
+          "observable_target": 0.82,
+          "observable_uniform_random": 0.385076,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.01563,
+            "drift_hw_last_minus_first": -0.00781,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.10658,
+                "mean_magnetization_z_minus1_1": 0.78683,
+                "zero_state_survival_0_1": 0.55469
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.12333,
+                "mean_magnetization_z_minus1_1": 0.75335,
+                "zero_state_survival_0_1": 0.42188
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.11161,
+                "mean_magnetization_z_minus1_1": 0.77679,
+                "zero_state_survival_0_1": 0.47266
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.09877,
+                "mean_magnetization_z_minus1_1": 0.80246,
+                "zero_state_survival_0_1": 0.51172
+              }
+            ]
+          },
+          "pad_meta": {
+            "short_natural_tau_ns": 1888.0,
+            "target_long_tau_ns": 5516.0,
+            "injected_delay_ns": 3648.0,
+            "injected_delay_dt": 912,
+            "padded_total_tau_ns": 5536.0
+          }
+        }
+      }
+    },
+    "job2_packed_4way_and_8way": {
+      "job_id": "dbnj77dt7fqc73ajnupg",
+      "status": "DONE",
+      "quantum_seconds_billed": 1.7433,
+      "raw_metrics": {
+        "caller": "qiskit_ibm_runtime~sampler.py",
+        "qiskit_version": "qiskit_ibm_runtime-0.48.0,qiskit-2.5.1*,qiskit_aer-0.17.2",
+        "timestamps": {
+          "created": "2026-11-07T14:20:13.271454Z",
+          "finished": "2026-11-07T14:46:09.087924Z",
+          "running": "2026-11-07T14:46:03.689395Z"
+        },
+        "usage": {
+          "qpu_charge_time_seconds": 3,
+          "value": 0.042038,
+          "unit": "resource_units",
+          "status": "complete",
+          "details": [
+            {
+              "value": 0.042038,
+              "unit": "resource_units",
+              "metric": {
+                "id": "caffe3ca-729c-5750-8777-df63bbf8bfd9",
+                "value": 3
+              }
+            }
+          ]
+        },
+        "circuits_execution_time_ns": 816176896
+      },
+      "timestamps": {
+        "created": "2026-11-07T14:20:13.271454Z",
+        "finished": "2026-11-07T14:46:09.087924Z",
+        "running": "2026-11-07T14:46:03.689395Z"
+      },
+      "execution_spans": [
+        {
+          "start": "2026-11-07 14:46:06.321368",
+          "stop": "2026-11-07 14:46:08.064668",
+          "duration_s": 1.7433,
+          "size": 3072
+        }
+      ],
+      "detailed_evaluations": {
+        "W_F1_dense_kn_05Q_A_Short__8Way_Mixed": {
+          "workload_id": "W_F1_dense_kn_05Q_A_Short",
+          "family_id": "F1_dense_kn",
+          "width_q": 5,
+          "duration_tier": "Short",
+          "fb_measured": 0.941749,
+          "fh_measured": 0.886891,
+          "tvd_measured": 0.119922,
+          "fb_threshold": 0.85,
+          "fb_uniform_random": 0.441669,
+          "fb_normalized_excess_over_uniform": 0.8957,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.941749,
+          "observable_target": 0.85,
+          "observable_uniform_random": 0.441669,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.02031,
+            "drift_hw_last_minus_first": 0.01016,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.25781,
+                "mean_magnetization_z_minus1_1": 0.48437,
+                "zero_state_survival_0_1": 0.01562
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.26875,
+                "mean_magnetization_z_minus1_1": 0.4625,
+                "zero_state_survival_0_1": 0.01562
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.28047,
+                "mean_magnetization_z_minus1_1": 0.43906,
+                "zero_state_survival_0_1": 0.01953
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.26797,
+                "mean_magnetization_z_minus1_1": 0.46406,
+                "zero_state_survival_0_1": 0.01953
+              }
+            ]
+          }
+        },
+        "W_F4_qft_phase_05Q_B_Long__8Way_Mixed": {
+          "workload_id": "W_F4_qft_phase_05Q_B_Long",
+          "family_id": "F4_qft_phase",
+          "width_q": 5,
+          "duration_tier": "Long",
+          "fb_measured": 0.961274,
+          "fh_measured": 0.924048,
+          "tvd_measured": 0.146385,
+          "fb_threshold": 0.75,
+          "fb_uniform_random": 0.348694,
+          "fb_normalized_excess_over_uniform": 0.9405,
+          "observable_metric": "Top2_Fourier_Peak_Mass",
+          "observable_measured": 0.818359,
+          "observable_target": 0.5,
+          "observable_uniform_random": 0.0625,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.00625,
+            "drift_hw_last_minus_first": -0.00312,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.40625,
+                "mean_magnetization_z_minus1_1": 0.1875,
+                "zero_state_survival_0_1": 0.00391
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.41953,
+                "mean_magnetization_z_minus1_1": 0.16094,
+                "zero_state_survival_0_1": 0.00391
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.41172,
+                "mean_magnetization_z_minus1_1": 0.17656,
+                "zero_state_survival_0_1": 0.00781
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.40313,
+                "mean_magnetization_z_minus1_1": 0.19375,
+                "zero_state_survival_0_1": 0.00391
+              }
+            ]
+          }
+        },
+        "W_F2_bipartite_07Q_A_Short__8Way_Mixed": {
+          "workload_id": "W_F2_bipartite_07Q_A_Short",
+          "family_id": "F2_bipartite",
+          "width_q": 7,
+          "duration_tier": "Short",
+          "fb_measured": 0.975379,
+          "fh_measured": 0.951363,
+          "tvd_measured": 0.13348,
+          "fb_threshold": 0.82,
+          "fb_uniform_random": 0.385076,
+          "fb_normalized_excess_over_uniform": 0.96,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.975379,
+          "observable_target": 0.82,
+          "observable_uniform_random": 0.385076,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.05022,
+            "drift_hw_last_minus_first": 0.02511,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.08147,
+                "mean_magnetization_z_minus1_1": 0.83705,
+                "zero_state_survival_0_1": 0.58984
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.10826,
+                "mean_magnetization_z_minus1_1": 0.78348,
+                "zero_state_survival_0_1": 0.46094
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.09487,
+                "mean_magnetization_z_minus1_1": 0.81027,
+                "zero_state_survival_0_1": 0.51562
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.10658,
+                "mean_magnetization_z_minus1_1": 0.78683,
+                "zero_state_survival_0_1": 0.51172
+              }
+            ]
+          }
+        },
+        "W_F5_trotter_ising_07Q_B_Long__8Way_Mixed": {
+          "workload_id": "W_F5_trotter_ising_07Q_B_Long",
+          "family_id": "F5_trotter_ising",
+          "width_q": 7,
+          "duration_tier": "Long",
+          "fb_measured": 0.870357,
+          "fh_measured": 0.757521,
+          "tvd_measured": 0.431888,
+          "fb_threshold": 0.7,
+          "fb_uniform_random": 0.55409,
+          "fb_normalized_excess_over_uniform": 0.7093,
+          "observable_metric": "Site_Magnetization_MAE",
+          "observable_measured": 0.242664,
+          "observable_target": 0.08,
+          "observable_uniform_random": 0.730945,
+          "fb_pass": true,
+          "observable_pass": false,
+          "accepted": 0,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.00782,
+            "drift_hw_last_minus_first": 0.00391,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.53906,
+                "mean_magnetization_z_minus1_1": -0.07812,
+                "zero_state_survival_0_1": 0.01172
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.55413,
+                "mean_magnetization_z_minus1_1": -0.10826,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.56027,
+                "mean_magnetization_z_minus1_1": -0.12054,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.54297,
+                "mean_magnetization_z_minus1_1": -0.08594,
+                "zero_state_survival_0_1": 0.0
+              }
+            ]
+          }
+        },
+        "W_F3_qaoa_maxcut_09Q_A_Short__8Way_Mixed": {
+          "workload_id": "W_F3_qaoa_maxcut_09Q_A_Short",
+          "family_id": "F3_qaoa_maxcut",
+          "width_q": 9,
+          "duration_tier": "Short",
+          "fb_measured": 0.911236,
+          "fh_measured": 0.830351,
+          "tvd_measured": 0.262032,
+          "fb_threshold": 0.818,
+          "fb_uniform_random": 0.740029,
+          "fb_normalized_excess_over_uniform": 0.6586,
+          "observable_metric": "QAOA_MaxCut_Approx_Ratio",
+          "observable_measured": 0.758523,
+          "observable_target": 0.6925,
+          "observable_uniform_random": 0.590909,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.0217,
+            "drift_hw_last_minus_first": 0.01085,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.48828,
+                "mean_magnetization_z_minus1_1": 0.02344,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.4987,
+                "mean_magnetization_z_minus1_1": 0.0026,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.4809,
+                "mean_magnetization_z_minus1_1": 0.03819,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.49913,
+                "mean_magnetization_z_minus1_1": 0.00174,
+                "zero_state_survival_0_1": 0.0
+              }
+            ]
+          }
+        },
+        "W_F6_sparse_ctrl_09Q_B_Long__8Way_Mixed": {
+          "workload_id": "W_F6_sparse_ctrl_09Q_B_Long",
+          "family_id": "F6_sparse_ctrl",
+          "width_q": 9,
+          "duration_tier": "Long",
+          "fb_measured": 0.935042,
+          "fh_measured": 0.874304,
+          "tvd_measured": 0.242487,
+          "fb_threshold": 0.9,
+          "fb_uniform_random": 0.365077,
+          "fb_normalized_excess_over_uniform": 0.8977,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.935042,
+          "observable_target": 0.9,
+          "observable_uniform_random": 0.365077,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.03125,
+            "drift_hw_last_minus_first": 0.01562,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.16233,
+                "mean_magnetization_z_minus1_1": 0.67535,
+                "zero_state_survival_0_1": 0.31641
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.1658,
+                "mean_magnetization_z_minus1_1": 0.6684,
+                "zero_state_survival_0_1": 0.31641
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.15451,
+                "mean_magnetization_z_minus1_1": 0.69097,
+                "zero_state_survival_0_1": 0.33984
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.17795,
+                "mean_magnetization_z_minus1_1": 0.6441,
+                "zero_state_survival_0_1": 0.21094
+              }
+            ]
+          }
+        },
+        "W_F5_trotter_ising_11Q_A_Short__8Way_Mixed": {
+          "workload_id": "W_F5_trotter_ising_11Q_A_Short",
+          "family_id": "F5_trotter_ising",
+          "width_q": 11,
+          "duration_tier": "Short",
+          "fb_measured": 0.945688,
+          "fh_measured": 0.894327,
+          "tvd_measured": 0.176555,
+          "fb_threshold": 0.6,
+          "fb_uniform_random": 0.211923,
+          "fb_normalized_excess_over_uniform": 0.9311,
+          "observable_metric": "Site_Magnetization_MAE",
+          "observable_measured": 0.052074,
+          "observable_target": 0.08,
+          "observable_uniform_random": 0.864886,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.00142,
+            "drift_hw_last_minus_first": -0.00071,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.54794,
+                "mean_magnetization_z_minus1_1": -0.09588,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.54581,
+                "mean_magnetization_z_minus1_1": -0.09162,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.54119,
+                "mean_magnetization_z_minus1_1": -0.08239,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.54723,
+                "mean_magnetization_z_minus1_1": -0.09446,
+                "zero_state_survival_0_1": 0.0
+              }
+            ]
+          }
+        },
+        "W_F3_qaoa_maxcut_11Q_B_Long__8Way_Mixed": {
+          "workload_id": "W_F3_qaoa_maxcut_11Q_B_Long",
+          "family_id": "F3_qaoa_maxcut",
+          "width_q": 11,
+          "duration_tier": "Long",
+          "fb_measured": 0.824556,
+          "fh_measured": 0.679892,
+          "tvd_measured": 0.360042,
+          "fb_threshold": 0.75,
+          "fb_uniform_random": 0.528539,
+          "fb_normalized_excess_over_uniform": 0.6279,
+          "observable_metric": "QAOA_MaxCut_Approx_Ratio",
+          "observable_measured": 0.762109,
+          "observable_target": 0.6694,
+          "observable_uniform_random": 0.533333,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.00852,
+            "drift_hw_last_minus_first": 0.00426,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.49432,
+                "mean_magnetization_z_minus1_1": 0.01136,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.49574,
+                "mean_magnetization_z_minus1_1": 0.00852,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.49574,
+                "mean_magnetization_z_minus1_1": 0.00852,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.49858,
+                "mean_magnetization_z_minus1_1": 0.00284,
+                "zero_state_survival_0_1": 0.0
+              }
+            ]
+          }
+        },
+        "W_F1_dense_kn_05Q_A_Short__4Way_Short": {
+          "workload_id": "W_F1_dense_kn_05Q_A_Short",
+          "family_id": "F1_dense_kn",
+          "width_q": 5,
+          "duration_tier": "Short",
+          "fb_measured": 0.92916,
+          "fh_measured": 0.863339,
+          "tvd_measured": 0.154253,
+          "fb_threshold": 0.85,
+          "fb_uniform_random": 0.441669,
+          "fb_normalized_excess_over_uniform": 0.8731,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.92916,
+          "observable_target": 0.85,
+          "observable_uniform_random": 0.441669,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.02656,
+            "drift_hw_last_minus_first": 0.01328,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.27344,
+                "mean_magnetization_z_minus1_1": 0.45312,
+                "zero_state_survival_0_1": 0.03125
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.28281,
+                "mean_magnetization_z_minus1_1": 0.43437,
+                "zero_state_survival_0_1": 0.02344
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.27266,
+                "mean_magnetization_z_minus1_1": 0.45469,
+                "zero_state_survival_0_1": 0.01953
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.28672,
+                "mean_magnetization_z_minus1_1": 0.42656,
+                "zero_state_survival_0_1": 0.00781
+              }
+            ]
+          }
+        },
+        "W_F2_bipartite_07Q_A_Short__4Way_Short": {
+          "workload_id": "W_F2_bipartite_07Q_A_Short",
+          "family_id": "F2_bipartite",
+          "width_q": 7,
+          "duration_tier": "Short",
+          "fb_measured": 0.975193,
+          "fh_measured": 0.951002,
+          "tvd_measured": 0.133923,
+          "fb_threshold": 0.82,
+          "fb_uniform_random": 0.385076,
+          "fb_normalized_excess_over_uniform": 0.9597,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.975193,
+          "observable_target": 0.82,
+          "observable_uniform_random": 0.385076,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.04464,
+            "drift_hw_last_minus_first": -0.02232,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.10826,
+                "mean_magnetization_z_minus1_1": 0.78348,
+                "zero_state_survival_0_1": 0.51953
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.10491,
+                "mean_magnetization_z_minus1_1": 0.79018,
+                "zero_state_survival_0_1": 0.50781
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.10435,
+                "mean_magnetization_z_minus1_1": 0.79129,
+                "zero_state_survival_0_1": 0.49609
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.08594,
+                "mean_magnetization_z_minus1_1": 0.82812,
+                "zero_state_survival_0_1": 0.58984
+              }
+            ]
+          }
+        },
+        "W_F3_qaoa_maxcut_09Q_A_Short__4Way_Short": {
+          "workload_id": "W_F3_qaoa_maxcut_09Q_A_Short",
+          "family_id": "F3_qaoa_maxcut",
+          "width_q": 9,
+          "duration_tier": "Short",
+          "fb_measured": 0.911751,
+          "fh_measured": 0.83129,
+          "tvd_measured": 0.255731,
+          "fb_threshold": 0.818,
+          "fb_uniform_random": 0.740029,
+          "fb_normalized_excess_over_uniform": 0.6605,
+          "observable_metric": "QAOA_MaxCut_Approx_Ratio",
+          "observable_measured": 0.767489,
+          "observable_target": 0.6925,
+          "observable_uniform_random": 0.590909,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.00087,
+            "drift_hw_last_minus_first": 0.00043,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.48872,
+                "mean_magnetization_z_minus1_1": 0.02257,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.5013,
+                "mean_magnetization_z_minus1_1": -0.0026,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.50477,
+                "mean_magnetization_z_minus1_1": -0.00955,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.48915,
+                "mean_magnetization_z_minus1_1": 0.0217,
+                "zero_state_survival_0_1": 0.0
+              }
+            ]
+          }
+        },
+        "W_F5_trotter_ising_11Q_A_Short__4Way_Short": {
+          "workload_id": "W_F5_trotter_ising_11Q_A_Short",
+          "family_id": "F5_trotter_ising",
+          "width_q": 11,
+          "duration_tier": "Short",
+          "fb_measured": 0.94634,
+          "fh_measured": 0.895559,
+          "tvd_measured": 0.188072,
+          "fb_threshold": 0.6,
+          "fb_uniform_random": 0.211923,
+          "fb_normalized_excess_over_uniform": 0.9319,
+          "observable_metric": "Site_Magnetization_MAE",
+          "observable_measured": 0.060554,
+          "observable_target": 0.08,
+          "observable_uniform_random": 0.864886,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.0135,
+            "drift_hw_last_minus_first": -0.00675,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.5451,
+                "mean_magnetization_z_minus1_1": -0.0902,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.54581,
+                "mean_magnetization_z_minus1_1": -0.09162,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.5277,
+                "mean_magnetization_z_minus1_1": -0.0554,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.53835,
+                "mean_magnetization_z_minus1_1": -0.0767,
+                "zero_state_survival_0_1": 0.0
+              }
+            ]
+          }
+        },
+        "W_F4_qft_phase_05Q_B_Long__4Way_Long": {
+          "workload_id": "W_F4_qft_phase_05Q_B_Long",
+          "family_id": "F4_qft_phase",
+          "width_q": 5,
+          "duration_tier": "Long",
+          "fb_measured": 0.964466,
+          "fh_measured": 0.930195,
+          "tvd_measured": 0.133834,
+          "fb_threshold": 0.75,
+          "fb_uniform_random": 0.348694,
+          "fb_normalized_excess_over_uniform": 0.9454,
+          "observable_metric": "Top2_Fourier_Peak_Mass",
+          "observable_measured": 0.824219,
+          "observable_target": 0.5,
+          "observable_uniform_random": 0.0625,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.01875,
+            "drift_hw_last_minus_first": -0.00937,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.41484,
+                "mean_magnetization_z_minus1_1": 0.17031,
+                "zero_state_survival_0_1": 0.00781
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.41484,
+                "mean_magnetization_z_minus1_1": 0.17031,
+                "zero_state_survival_0_1": 0.00781
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.40859,
+                "mean_magnetization_z_minus1_1": 0.18281,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.40547,
+                "mean_magnetization_z_minus1_1": 0.18906,
+                "zero_state_survival_0_1": 0.00391
+              }
+            ]
+          }
+        },
+        "W_F5_trotter_ising_07Q_B_Long__4Way_Long": {
+          "workload_id": "W_F5_trotter_ising_07Q_B_Long",
+          "family_id": "F5_trotter_ising",
+          "width_q": 7,
+          "duration_tier": "Long",
+          "fb_measured": 0.870689,
+          "fh_measured": 0.7581,
+          "tvd_measured": 0.430112,
+          "fb_threshold": 0.7,
+          "fb_uniform_random": 0.55409,
+          "fb_normalized_excess_over_uniform": 0.71,
+          "observable_metric": "Site_Magnetization_MAE",
+          "observable_measured": 0.254662,
+          "observable_target": 0.08,
+          "observable_uniform_random": 0.730945,
+          "fb_pass": true,
+          "observable_pass": false,
+          "accepted": 0,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.02344,
+            "drift_hw_last_minus_first": -0.01171,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.56417,
+                "mean_magnetization_z_minus1_1": -0.12835,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.55525,
+                "mean_magnetization_z_minus1_1": -0.11049,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.54967,
+                "mean_magnetization_z_minus1_1": -0.09933,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.55246,
+                "mean_magnetization_z_minus1_1": -0.10491,
+                "zero_state_survival_0_1": 0.0
+              }
+            ]
+          }
+        },
+        "W_F6_sparse_ctrl_09Q_B_Long__4Way_Long": {
+          "workload_id": "W_F6_sparse_ctrl_09Q_B_Long",
+          "family_id": "F6_sparse_ctrl",
+          "width_q": 9,
+          "duration_tier": "Long",
+          "fb_measured": 0.93234,
+          "fh_measured": 0.869257,
+          "tvd_measured": 0.237578,
+          "fb_threshold": 0.9,
+          "fb_uniform_random": 0.365077,
+          "fb_normalized_excess_over_uniform": 0.8934,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.93234,
+          "observable_target": 0.9,
+          "observable_uniform_random": 0.365077,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.01042,
+            "drift_hw_last_minus_first": -0.00521,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.17405,
+                "mean_magnetization_z_minus1_1": 0.65191,
+                "zero_state_survival_0_1": 0.27734
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.15842,
+                "mean_magnetization_z_minus1_1": 0.68316,
+                "zero_state_survival_0_1": 0.30078
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.16059,
+                "mean_magnetization_z_minus1_1": 0.67882,
+                "zero_state_survival_0_1": 0.30859
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.16884,
+                "mean_magnetization_z_minus1_1": 0.66233,
+                "zero_state_survival_0_1": 0.30078
+              }
+            ]
+          }
+        },
+        "W_F3_qaoa_maxcut_11Q_B_Long__4Way_Long": {
+          "workload_id": "W_F3_qaoa_maxcut_11Q_B_Long",
+          "family_id": "F3_qaoa_maxcut",
+          "width_q": 11,
+          "duration_tier": "Long",
+          "fb_measured": 0.821977,
+          "fh_measured": 0.675646,
+          "tvd_measured": 0.374384,
+          "fb_threshold": 0.75,
+          "fb_uniform_random": 0.528539,
+          "fb_normalized_excess_over_uniform": 0.6224,
+          "observable_metric": "QAOA_MaxCut_Approx_Ratio",
+          "observable_measured": 0.757422,
+          "observable_target": 0.6694,
+          "observable_uniform_random": 0.533333,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 1024,
+            "slice_size": 256,
+            "num_slices": 4,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.00071,
+            "drift_hw_last_minus_first": -0.00036,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.49716,
+                "mean_magnetization_z_minus1_1": 0.00568,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.49645,
+                "mean_magnetization_z_minus1_1": 0.0071,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 2,
+                "shot_range": [
+                  512,
+                  767
+                ],
+                "mean_hamming_weight_0_1": 0.50391,
+                "mean_magnetization_z_minus1_1": -0.00781,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 3,
+                "shot_range": [
+                  768,
+                  1023
+                ],
+                "mean_hamming_weight_0_1": 0.4968,
+                "mean_magnetization_z_minus1_1": 0.00639,
+                "zero_state_survival_0_1": 0.0
+              }
+            ]
+          }
+        }
+      }
+    },
+    "billing_per_pub_isolated_s": 0.8416,
+    "billing_per_pub_packed_s": 0.5811
+  },
+  "iqm_stage0_pilot": {
+    "backend": "emerald",
+    "calibration_set_id": "a91bb76b-df44-4433-97a9-3e0f6c94e7c2",
+    "calibration_created_at_T0": "2026-11-07 05:11:46.739984+00:00",
+    "shots_per_pub": 512,
+    "job1_isolated_1way": {
+      "job_id": "01a1b67e-a782-76aa-9bf4-e10cacf2ab61",
+      "calibration_set_id": "a91bb76b-df44-4433-97a9-3e0f6c94e7c2",
+      "active_execution_s": 1.914116,
+      "station_compile_s": 0.222472,
+      "end_to_end_wall_s": 3.316045,
+      "timeline": {
+        "created": "2026-11-07T14:51:56.170869+00:00",
+        "received": "2026-11-07T14:51:56.474029+00:00",
+        "validation_started": "2026-11-07T14:51:56.568267+00:00",
+        "validation_ended": "2026-11-07T14:51:56.579190+00:00",
+        "compilation_started": "2026-11-07T14:51:56.658494+00:00",
+        "compilation_ended": "2026-11-07T14:51:56.880966+00:00",
+        "execution_started": "2026-11-07T14:51:57.197809+00:00",
+        "execution_ended": "2026-11-07T14:51:59.111925+00:00",
+        "post_processing_started": "2026-11-07T14:51:59.116594+00:00",
+        "post_processing_ended": "2026-11-07T14:51:59.129561+00:00",
+        "ready": "2026-11-07T14:51:59.131979+00:00",
+        "completed": "2026-11-07T14:51:59.486914+00:00"
+      },
+      "qpu_pulse_execution_s": 0.8378900479999999,
+      "sweep_execution_estimate_s": 2.437890048,
+      "playlist_repeats": 512,
+      "server_compilation_s": 0.222472,
+      "server_execution_s": 1.914116,
+      "server_runtime_s": 2.136588,
+      "billed_seconds": 3.0,
+      "payg_rate_credits_per_s": 0.75,
+      "charged_credits": 2.25,
+      "unrounded_runtime_credits": 1.6024,
+      "dashboard_url": "https://resonance.iqm.tech/jobs/01a1b67e-a782-76aa-9bf4-e10cacf2ab61",
+      "detailed_evaluations": {
+        "W_F1_dense_kn_05Q_A_Short": {
+          "workload_id": "W_F1_dense_kn_05Q_A_Short",
+          "family_id": "F1_dense_kn",
+          "width_q": 5,
+          "duration_tier": "Short",
+          "fb_measured": 0.938213,
+          "fh_measured": 0.880243,
+          "tvd_measured": 0.138309,
+          "fb_threshold": 0.85,
+          "fb_uniform_random": 0.441669,
+          "fb_normalized_excess_over_uniform": 0.8893,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.938213,
+          "observable_target": 0.85,
+          "observable_uniform_random": 0.441669,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 512,
+            "slice_size": 256,
+            "num_slices": 2,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.03282,
+            "drift_hw_last_minus_first": 0.01641,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.26328,
+                "mean_magnetization_z_minus1_1": 0.47344,
+                "zero_state_survival_0_1": 0.01953
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.27969,
+                "mean_magnetization_z_minus1_1": 0.44062,
+                "zero_state_survival_0_1": 0.03516
+              }
+            ]
+          }
+        },
+        "W_F4_qft_phase_05Q_B_Long": {
+          "workload_id": "W_F4_qft_phase_05Q_B_Long",
+          "family_id": "F4_qft_phase",
+          "width_q": 5,
+          "duration_tier": "Long",
+          "fb_measured": 0.935405,
+          "fh_measured": 0.874982,
+          "tvd_measured": 0.219408,
+          "fb_threshold": 0.75,
+          "fb_uniform_random": 0.348694,
+          "fb_normalized_excess_over_uniform": 0.9008,
+          "observable_metric": "Top2_Fourier_Peak_Mass",
+          "observable_measured": 0.765625,
+          "observable_target": 0.5,
+          "observable_uniform_random": 0.0625,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 512,
+            "slice_size": 256,
+            "num_slices": 2,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.03281,
+            "drift_hw_last_minus_first": 0.01641,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.40859,
+                "mean_magnetization_z_minus1_1": 0.18281,
+                "zero_state_survival_0_1": 0.00391
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.425,
+                "mean_magnetization_z_minus1_1": 0.15,
+                "zero_state_survival_0_1": 0.00391
+              }
+            ]
+          }
+        },
+        "W_F2_bipartite_07Q_A_Short": {
+          "workload_id": "W_F2_bipartite_07Q_A_Short",
+          "family_id": "F2_bipartite",
+          "width_q": 7,
+          "duration_tier": "Short",
+          "fb_measured": 0.925394,
+          "fh_measured": 0.856354,
+          "tvd_measured": 0.296893,
+          "fb_threshold": 0.82,
+          "fb_uniform_random": 0.385076,
+          "fb_normalized_excess_over_uniform": 0.8787,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.925394,
+          "observable_target": 0.82,
+          "observable_uniform_random": 0.385076,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 512,
+            "slice_size": 256,
+            "num_slices": 2,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.07143,
+            "drift_hw_last_minus_first": -0.03571,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.16071,
+                "mean_magnetization_z_minus1_1": 0.67857,
+                "zero_state_survival_0_1": 0.27344
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.125,
+                "mean_magnetization_z_minus1_1": 0.75,
+                "zero_state_survival_0_1": 0.40625
+              }
+            ]
+          }
+        },
+        "W_F5_trotter_ising_07Q_B_Long": {
+          "workload_id": "W_F5_trotter_ising_07Q_B_Long",
+          "family_id": "F5_trotter_ising",
+          "width_q": 7,
+          "duration_tier": "Long",
+          "fb_measured": 0.905645,
+          "fh_measured": 0.820193,
+          "tvd_measured": 0.333072,
+          "fb_threshold": 0.7,
+          "fb_uniform_random": 0.55409,
+          "fb_normalized_excess_over_uniform": 0.7884,
+          "observable_metric": "Site_Magnetization_MAE",
+          "observable_measured": 0.223133,
+          "observable_target": 0.08,
+          "observable_uniform_random": 0.730945,
+          "fb_pass": true,
+          "observable_pass": false,
+          "accepted": 0,
+          "shot_slices_256": {
+            "num_shots": 512,
+            "slice_size": 256,
+            "num_slices": 2,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.03571,
+            "drift_hw_last_minus_first": 0.01786,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.53125,
+                "mean_magnetization_z_minus1_1": -0.0625,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.54911,
+                "mean_magnetization_z_minus1_1": -0.09821,
+                "zero_state_survival_0_1": 0.00391
+              }
+            ]
+          }
+        }
+      }
+    },
+    "job2_packed_2way_and_4way": {
+      "job_id": "01a1b67e-bf63-7167-a47a-7598abbbb4fb",
+      "calibration_set_id": "a91bb76b-df44-4433-97a9-3e0f6c94e7c2",
+      "active_execution_s": 2.007164,
+      "station_compile_s": 0.234729,
+      "end_to_end_wall_s": 3.342569,
+      "timeline": {
+        "created": "2026-11-07T14:52:02.288475+00:00",
+        "received": "2026-11-07T14:52:02.551949+00:00",
+        "validation_started": "2026-11-07T14:52:02.647309+00:00",
+        "validation_ended": "2026-11-07T14:52:02.657300+00:00",
+        "compilation_started": "2026-11-07T14:52:02.733753+00:00",
+        "compilation_ended": "2026-11-07T14:52:02.968482+00:00",
+        "execution_started": "2026-11-07T14:52:03.272082+00:00",
+        "execution_ended": "2026-11-07T14:52:05.279246+00:00",
+        "post_processing_started": "2026-11-07T14:52:05.281708+00:00",
+        "post_processing_ended": "2026-11-07T14:52:05.294345+00:00",
+        "ready": "2026-11-07T14:52:05.296558+00:00",
+        "completed": "2026-11-07T14:52:05.631044+00:00"
+      },
+      "qpu_pulse_execution_s": 0.62921728,
+      "sweep_execution_estimate_s": 2.2292172800000003,
+      "playlist_repeats": 512,
+      "server_compilation_s": 0.234729,
+      "server_execution_s": 2.007164,
+      "server_runtime_s": 2.241893,
+      "billed_seconds": 3.0,
+      "payg_rate_credits_per_s": 0.75,
+      "charged_credits": 2.25,
+      "unrounded_runtime_credits": 1.6814,
+      "dashboard_url": "https://resonance.iqm.tech/jobs/01a1b67e-bf63-7167-a47a-7598abbbb4fb",
+      "detailed_evaluations": {
+        "W_F1_dense_kn_05Q_A_Short__4Way_Mixed": {
+          "workload_id": "W_F1_dense_kn_05Q_A_Short",
+          "family_id": "F1_dense_kn",
+          "width_q": 5,
+          "duration_tier": "Short",
+          "fb_measured": 0.886605,
+          "fh_measured": 0.786068,
+          "tvd_measured": 0.230868,
+          "fb_threshold": 0.85,
+          "fb_uniform_random": 0.441669,
+          "fb_normalized_excess_over_uniform": 0.7969,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.886605,
+          "observable_target": 0.85,
+          "observable_uniform_random": 0.441669,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 512,
+            "slice_size": 256,
+            "num_slices": 2,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.04688,
+            "drift_hw_last_minus_first": -0.02344,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.28047,
+                "mean_magnetization_z_minus1_1": 0.43906,
+                "zero_state_survival_0_1": 0.06641
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.25703,
+                "mean_magnetization_z_minus1_1": 0.48594,
+                "zero_state_survival_0_1": 0.05469
+              }
+            ]
+          }
+        },
+        "W_F4_qft_phase_05Q_B_Long__4Way_Mixed": {
+          "workload_id": "W_F4_qft_phase_05Q_B_Long",
+          "family_id": "F4_qft_phase",
+          "width_q": 5,
+          "duration_tier": "Long",
+          "fb_measured": 0.900345,
+          "fh_measured": 0.810622,
+          "tvd_measured": 0.303016,
+          "fb_threshold": 0.75,
+          "fb_uniform_random": 0.348694,
+          "fb_normalized_excess_over_uniform": 0.847,
+          "observable_metric": "Top2_Fourier_Peak_Mass",
+          "observable_measured": 0.677734,
+          "observable_target": 0.5,
+          "observable_uniform_random": 0.0625,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 512,
+            "slice_size": 256,
+            "num_slices": 2,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.00469,
+            "drift_hw_last_minus_first": -0.00234,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.40156,
+                "mean_magnetization_z_minus1_1": 0.19687,
+                "zero_state_survival_0_1": 0.00391
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.39922,
+                "mean_magnetization_z_minus1_1": 0.20156,
+                "zero_state_survival_0_1": 0.00781
+              }
+            ]
+          }
+        },
+        "W_F2_bipartite_07Q_A_Short__4Way_Mixed": {
+          "workload_id": "W_F2_bipartite_07Q_A_Short",
+          "family_id": "F2_bipartite",
+          "width_q": 7,
+          "duration_tier": "Short",
+          "fb_measured": 0.949841,
+          "fh_measured": 0.902198,
+          "tvd_measured": 0.220398,
+          "fb_threshold": 0.82,
+          "fb_uniform_random": 0.385076,
+          "fb_normalized_excess_over_uniform": 0.9184,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.949841,
+          "observable_target": 0.82,
+          "observable_uniform_random": 0.385076,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 512,
+            "slice_size": 256,
+            "num_slices": 2,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.02455,
+            "drift_hw_last_minus_first": -0.01228,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.12891,
+                "mean_magnetization_z_minus1_1": 0.74219,
+                "zero_state_survival_0_1": 0.42969
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.11663,
+                "mean_magnetization_z_minus1_1": 0.76674,
+                "zero_state_survival_0_1": 0.41406
+              }
+            ]
+          }
+        },
+        "W_F5_trotter_ising_07Q_B_Long__4Way_Mixed": {
+          "workload_id": "W_F5_trotter_ising_07Q_B_Long",
+          "family_id": "F5_trotter_ising",
+          "width_q": 7,
+          "duration_tier": "Long",
+          "fb_measured": 0.899292,
+          "fh_measured": 0.808727,
+          "tvd_measured": 0.347146,
+          "fb_threshold": 0.7,
+          "fb_uniform_random": 0.55409,
+          "fb_normalized_excess_over_uniform": 0.7742,
+          "observable_metric": "Site_Magnetization_MAE",
+          "observable_measured": 0.251035,
+          "observable_target": 0.08,
+          "observable_uniform_random": 0.730945,
+          "fb_pass": true,
+          "observable_pass": false,
+          "accepted": 0,
+          "shot_slices_256": {
+            "num_shots": 512,
+            "slice_size": 256,
+            "num_slices": 2,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.00893,
+            "drift_hw_last_minus_first": -0.00447,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.54074,
+                "mean_magnetization_z_minus1_1": -0.08147,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.53627,
+                "mean_magnetization_z_minus1_1": -0.07254,
+                "zero_state_survival_0_1": 0.0
+              }
+            ]
+          }
+        },
+        "W_F1_dense_kn_05Q_A_Short__2Way_Short": {
+          "workload_id": "W_F1_dense_kn_05Q_A_Short",
+          "family_id": "F1_dense_kn",
+          "width_q": 5,
+          "duration_tier": "Short",
+          "fb_measured": 0.915804,
+          "fh_measured": 0.838697,
+          "tvd_measured": 0.167545,
+          "fb_threshold": 0.85,
+          "fb_uniform_random": 0.441669,
+          "fb_normalized_excess_over_uniform": 0.8492,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.915804,
+          "observable_target": 0.85,
+          "observable_uniform_random": 0.441669,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 512,
+            "slice_size": 256,
+            "num_slices": 2,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.0375,
+            "drift_hw_last_minus_first": 0.01875,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.26641,
+                "mean_magnetization_z_minus1_1": 0.46719,
+                "zero_state_survival_0_1": 0.03125
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.28516,
+                "mean_magnetization_z_minus1_1": 0.42969,
+                "zero_state_survival_0_1": 0.01953
+              }
+            ]
+          }
+        },
+        "W_F2_bipartite_07Q_A_Short__2Way_Short": {
+          "workload_id": "W_F2_bipartite_07Q_A_Short",
+          "family_id": "F2_bipartite",
+          "width_q": 7,
+          "duration_tier": "Short",
+          "fb_measured": 0.932033,
+          "fh_measured": 0.868685,
+          "tvd_measured": 0.273102,
+          "fb_threshold": 0.82,
+          "fb_uniform_random": 0.385076,
+          "fb_normalized_excess_over_uniform": 0.8895,
+          "observable_metric": "Diagnostic_Bhattacharyya_F_B",
+          "observable_measured": 0.932033,
+          "observable_target": 0.82,
+          "observable_uniform_random": 0.385076,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 512,
+            "slice_size": 256,
+            "num_slices": 2,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": 0.02567,
+            "drift_hw_last_minus_first": -0.01284,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.14286,
+                "mean_magnetization_z_minus1_1": 0.71429,
+                "zero_state_survival_0_1": 0.33984
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.13002,
+                "mean_magnetization_z_minus1_1": 0.73996,
+                "zero_state_survival_0_1": 0.39453
+              }
+            ]
+          }
+        },
+        "W_F4_qft_phase_05Q_B_Long__2Way_Long": {
+          "workload_id": "W_F4_qft_phase_05Q_B_Long",
+          "family_id": "F4_qft_phase",
+          "width_q": 5,
+          "duration_tier": "Long",
+          "fb_measured": 0.911589,
+          "fh_measured": 0.830995,
+          "tvd_measured": 0.283042,
+          "fb_threshold": 0.75,
+          "fb_uniform_random": 0.348694,
+          "fb_normalized_excess_over_uniform": 0.8643,
+          "observable_metric": "Top2_Fourier_Peak_Mass",
+          "observable_measured": 0.683594,
+          "observable_target": 0.5,
+          "observable_uniform_random": 0.0625,
+          "fb_pass": true,
+          "observable_pass": true,
+          "accepted": 1,
+          "shot_slices_256": {
+            "num_shots": 512,
+            "slice_size": 256,
+            "num_slices": 2,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.00625,
+            "drift_hw_last_minus_first": 0.00312,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.41172,
+                "mean_magnetization_z_minus1_1": 0.17656,
+                "zero_state_survival_0_1": 0.00391
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.41484,
+                "mean_magnetization_z_minus1_1": 0.17031,
+                "zero_state_survival_0_1": 0.0
+              }
+            ]
+          }
+        },
+        "W_F5_trotter_ising_07Q_B_Long__2Way_Long": {
+          "workload_id": "W_F5_trotter_ising_07Q_B_Long",
+          "family_id": "F5_trotter_ising",
+          "width_q": 7,
+          "duration_tier": "Long",
+          "fb_measured": 0.918823,
+          "fh_measured": 0.844235,
+          "tvd_measured": 0.311838,
+          "fb_threshold": 0.7,
+          "fb_uniform_random": 0.55409,
+          "fb_normalized_excess_over_uniform": 0.818,
+          "observable_metric": "Site_Magnetization_MAE",
+          "observable_measured": 0.209182,
+          "observable_target": 0.08,
+          "observable_uniform_random": 0.730945,
+          "fb_pass": true,
+          "observable_pass": false,
+          "accepted": 0,
+          "shot_slices_256": {
+            "num_shots": 512,
+            "slice_size": 256,
+            "num_slices": 2,
+            "se_bound_0_1_bernoulli": 0.03125,
+            "se_bound_minus1_1_magnetization": 0.0625,
+            "drift_z_last_minus_first": -0.03013,
+            "drift_hw_last_minus_first": 0.01507,
+            "slices": [
+              {
+                "slice_index": 0,
+                "shot_range": [
+                  0,
+                  255
+                ],
+                "mean_hamming_weight_0_1": 0.54018,
+                "mean_magnetization_z_minus1_1": -0.08036,
+                "zero_state_survival_0_1": 0.0
+              },
+              {
+                "slice_index": 1,
+                "shot_range": [
+                  256,
+                  511
+                ],
+                "mean_hamming_weight_0_1": 0.55525,
+                "mean_magnetization_z_minus1_1": -0.11049,
+                "zero_state_survival_0_1": 0.0
+              }
+            ]
+          }
+        }
+      }
+    },
+    "billing_per_pub_isolated_credits": 0.5625,
+    "billing_per_pub_packed_credits": 0.75
+  }
+}

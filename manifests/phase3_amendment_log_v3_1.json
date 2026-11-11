@@ -1,0 +1,109 @@
+{
+  "schema_version": "prometheus_phase3_amendment_log_v1",
+  "original_manifest_path": "manifests/phase3_submission_manifest_v3.json",
+  "original_manifest_file_sha256": "86968d1471af9228dd1902b0266569ac95b143e237027718cffaa383ab03cfba",
+  "original_manifest_canonical_payload_sha256": "3dcdd9ff4d36ecc12cb76ec1409090f43554829d35ff43a7e4d666cd815d8c0f",
+  "original_manifest_preserved_unmodified": true,
+  "amendments": [
+    {
+      "amendment_id": "AMEND-P3-001",
+      "recorded_at_utc": "2026-11-10T01:22:10.844080+00:00",
+      "scope": "Experiment 1 & Campaign-Level Job/Spend Accounting",
+      "original_commitment": "Experiment 1 budgeted 28 standalone jobs (14 IBM + 14 IQM) across Part A Dev (24 workloads) and Part B Holdout (36 workloads).",
+      "clarification_and_accounting_rule": "Within the 28 scheduled Experiment 1 slots, 24 jobs executed competing standalone policy arms (A1..A6: 12 IBM + 12 IQM), 2 IBM slots executed the simultaneous alternate-QPU counterfactual benchmark (A7_AltQPU_Counterfactual_Fez on ibm_fez), and 2 IQM slots executed scheduled 1-PUB station warm-up pings (A0_Station_Warmup_1PUB: 6.00 cr total) so Slot #1 cold-station initialization overhead did not bias any competing policy arm. In addition, 4 non-benchmark IQM 1-PUB wakeup/troubleshooting records from Part A (1 server-cancelled at 0.00 cr + 3 completed pings totaling 12.00 cr prior to fixing the iqm-client 'completed' status string check) are explicitly separated from the 26 benchmark / 28 scheduled jobs and retained in full within cumulative IQM campaign spend (68.25 cr policy + 6.00 cr scheduled warm-ups + 12.00 cr troubleshooting = 86.25 cr)."
+    },
+    {
+      "amendment_id": "AMEND-P3-002",
+      "recorded_at_utc": "2026-11-10T01:22:10.844080+00:00",
+      "recorded_before_experiment_4_submission": true,
+      "scope": "Priority 3 - Experiment 4 (Operational Cost of Stale Decisions & Telemetry Refresh Policy)",
+      "original_commitment": "Section 2 (Experiment 4) and Table 1B/1C of prometheus_phase3_autonomous_policy_and_service_plan.md pre-committed 12 jobs and 192 PUBs (6 jobs and 96 PUBs per provider across 3 temporal windows: 12 Dev workloads W_P3_Dev_069..080 in Window 1 + 6 Holdout workloads W_P3_ModHold_037..042 in Window 2 + 6 Holdout workloads W_P3_ModHold_043..048 in Window 3), executing C1_Keep_Original_Stale, C2_Update_Placement_Only, and C3_Recompile_Fresh_Same_QPU on the primary QPU (ibm_kingston / emerald) and C4_Switch_QPU_Live in a separate job on the alternate QPU (ibm_fez / garnet), with Window 1 calibrating the telemetry-refresh trigger rule evaluated blind on Windows 2 and 3.",
+      "amendment_and_reconciliation": "Preserves ALL FOUR original frozen hardware arms without substitution: (1) C1_Keep_Original_Stale (primary QPU), (2) C2_Update_Placement_Only (lightweight subgraph placement update on primary QPU without full resynthesis), (3) C3_Recompile_Fresh_Same_QPU (fresh compilation on live primary QPU telemetry), and (4) C4_Switch_QPU_Live (separate standalone job on alternate QPU ibm_fez on IBM and garnet 20Q on IQM; all 24 Experiment 4 workloads have widths in {5, 7, 9} <= 20Q). Clarifies that C_Triggered_Refresh_Policy (Table 1B rows 4 & 6) is evaluated as a pre-execution prospective selector overlay: Window 1 (W_P3_Dev_069..080) calibrates and cryptographically locks data/phase3_locked_refresh_policy.json (deciding per workload/window whether to keep C1, remap C2, recompile C3, or switch QPU C4 based on live telemetry drift delta between historical T0 calibration/subgraph anchor and live T_now calibration), and before submitting Windows 2 and 3 (W_P3_ModHold_037..048), Prometheus freezes its prospective choices to data/phase3_exp4_holdout_preexecution_frozen_choices.json.",
+      "iqm_station_note": "If garnet (20Q) or emerald (54Q) requires a 1-PUB cold-station wake-up ping or experiences zero-cost server cancellation, any such auxiliary job will be tracked in the separate auxiliary/troubleshooting ledger and retained in campaign spend while keeping the 12 Experiment 4 benchmark jobs strictly separate."
+    },
+    {
+      "amendment_id": "AMEND-P3-003",
+      "recorded_at_utc": "2026-11-10T01:51:42.721006+00:00",
+      "recorded_before_experiment_4_submission": true,
+      "scope": "Priority 3 - Experiment 4 Pre-Execution Candidate Search Rules, Retained Dry-Run v1 Zero-Change Finding & Compilation Effort Audit",
+      "retained_initial_dry_run_v1_finding": {
+        "description": "In the initial pre-flight dry-run (v1, zero hardware jobs submitted), subgraph selection used QOS.select_disjoint_subgraph_pack with a static +0.004 cycle-closing topological bonus, and IBM C1 used live b_king.target alongside historical G_hist.",
+        "ibm_v1_changes_out_of_12": {
+          "c2_placement_changed_vs_c1": 12,
+          "c3_placement_changed_vs_c1": 0,
+          "c3_circuit_changed_vs_c1": 1
+        },
+        "iqm_v1_changes_out_of_12": {
+          "c2_placement_changed_vs_c1": 12,
+          "c3_placement_changed_vs_c1": 0,
+          "c3_circuit_changed_vs_c1": 2
+        }
+      },
+      "revised_pre_execution_search_rules_v2": {
+        "C1_Keep_Original_Stale": "Compiles across Top-4(G_hist) connected subgraphs ranked purely by historical T0 calibration survival (2Q fidelity * readout fidelity * coherence factor, without static cycle bonus), using a historical T0 Target proxy on IBM (n_seeds=6 per subgraph) and historical T0 calibration observations on IQM; retains that exact T0 placement and circuit unchanged at live execution time.",
+        "C2_Update_Placement_Only": "Retains C1's exact synthesized local circuit (0 resynthesis) and evaluates up to 4,000 (IBM) or 3,000 (IQM) isomorphic physical subgraph embeddings on G_live via GraphMatcher, switching placement only if live predicted survival improves by > 1e-5.",
+        "C3_Recompile_Fresh_Same_QPU": "Initializes at C2's live-remapped candidate and runs fresh synthesis (n_seeds=6 per subgraph on IBM; multi-seed calibration-weighted synthesis on IQM) across Top-4(G_live) U {S_0, S_C2} (up to 6 candidate subgraphs) under live T_now calibration, replacing C2 only if live predicted survival improves by > 1e-5.",
+        "C4_Switch_QPU_Live": "Compiles fresh across Top-3(G_alt_live) pure-calibration subgraphs on the live alternate QPU (ibm_fez on IBM; garnet 20Q on IQM).",
+        "interpretive_boundary_disclosure": "Because C3 searches Top-4(G_live) U {S_0, S_C2} (up to 6 subgraphs) and warm-starts from C2's isomorphic search whereas C1 searched Top-4(G_hist) at T0 without a secondary isomorphic sweep, the contrast C3 vs C1 measures the combined operational refresh-and-expanded-search policy (fresh T_now calibration + C2 warm-start + Top-4 live resynthesis), not calibration freshness in isolation. The contrast C3 vs C2 directly isolates the incremental value of full resynthesis beyond placement-only refresh."
+      },
+      "verified_window_1_dev_v2_candidate_changes_and_compile_effort": {
+        "ibm_w1_dev_n12": {
+          "c2_placement_changed_vs_c1": "11/12 (1/12 unchanged)",
+          "c3_placement_changed_vs_c1": "11/12 (1/12 unchanged)",
+          "c3_full_circuit_changed_vs_c1": "11/12 (1/12 unchanged)",
+          "c3_changed_beyond_c2": "4/12 (8/12 unchanged relative to C2)",
+          "cpu_compilation_effort_seconds": {
+            "C1_initial_synthesis": {
+              "total_seconds_12_workloads": 46.754,
+              "mean_seconds_per_workload": 3.8962,
+              "median_seconds_per_workload": 3.9996
+            },
+            "C2_placement_remap": {
+              "total_seconds_12_workloads": 28.3437,
+              "mean_seconds_per_workload": 2.362,
+              "median_seconds_per_workload": 1.7591
+            },
+            "C3_fresh_recompile": {
+              "total_seconds_12_workloads": 65.4978,
+              "mean_seconds_per_workload": 5.4581,
+              "median_seconds_per_workload": 5.0378
+            },
+            "C4_switch_qpu_compile": {
+              "total_seconds_12_workloads": 34.3467,
+              "mean_seconds_per_workload": 2.8622,
+              "median_seconds_per_workload": 2.4849
+            }
+          }
+        },
+        "iqm_w1_dev_n12": {
+          "c2_placement_changed_vs_c1": "11/12 (1/12 unchanged)",
+          "c3_placement_changed_vs_c1": "11/12 (1/12 unchanged)",
+          "c3_full_circuit_changed_vs_c1": "11/12 (1/12 unchanged)",
+          "c3_changed_beyond_c2": "5/12 (7/12 unchanged relative to C2)",
+          "cpu_compilation_effort_seconds": {
+            "C1_initial_synthesis": {
+              "total_seconds_12_workloads": 23.2125,
+              "mean_seconds_per_workload": 1.9344,
+              "median_seconds_per_workload": 1.9038
+            },
+            "C2_placement_remap": {
+              "total_seconds_12_workloads": 2.5941,
+              "mean_seconds_per_workload": 0.2162,
+              "median_seconds_per_workload": 0.1336
+            },
+            "C3_fresh_recompile": {
+              "total_seconds_12_workloads": 32.8713,
+              "mean_seconds_per_workload": 2.7393,
+              "median_seconds_per_workload": 2.8297
+            },
+            "C4_switch_qpu_compile": {
+              "total_seconds_12_workloads": 16.7863,
+              "mean_seconds_per_workload": 1.3989,
+              "median_seconds_per_workload": 1.3614
+            }
+          }
+        }
+      }
+    }
+  ]
+}

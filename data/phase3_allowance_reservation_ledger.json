@@ -1,0 +1,659 @@
+{
+  "created_at_utc": "2026-11-09T16:27:53.872802+00:00",
+  "providers": {
+    "ibm": {
+      "unit": "seconds",
+      "total_ceiling": 379.0,
+      "active_max_budget": 284.0,
+      "committed_settled": 274.0,
+      "in_flight_reservations": {},
+      "settled_jobs": {
+        "Phase3_Stage3_0_IBM_Pilot": {
+          "provider_job_id": "dbov9rk4148s739tmah0",
+          "reserved_worst_case": 4.0,
+          "actual_cost": 4.0,
+          "settled_at_utc": "2026-11-09T18:09:46.564815+00:00"
+        },
+        "Phase3_Exp3_IBM_W1_Packed": {
+          "provider_job_id": "dbp19n5t7fqc7388k7u0",
+          "reserved_worst_case": 11.0,
+          "actual_cost": 11.0,
+          "settled_at_utc": "2026-11-09T19:21:07.202658+00:00"
+        },
+        "Phase3_Exp3_IBM_W1_Isolated": {
+          "provider_job_id": "dbp19ns4148s739tpsog",
+          "reserved_worst_case": 12.0,
+          "actual_cost": 12.0,
+          "settled_at_utc": "2026-11-09T19:21:11.200669+00:00"
+        },
+        "Phase3_Exp3_IBM_W2_Isolated": {
+          "provider_job_id": "dbp19os4148s739tpss0",
+          "reserved_worst_case": 15.0,
+          "actual_cost": 12.0,
+          "settled_at_utc": "2026-11-09T19:21:15.046300+00:00"
+        },
+        "Phase3_Exp3_IBM_W2_Packed": {
+          "provider_job_id": "dbp19p5t7fqc7388k85g",
+          "reserved_worst_case": 14.0,
+          "actual_cost": 11.0,
+          "settled_at_utc": "2026-11-09T19:21:18.835193+00:00"
+        },
+        "Phase3_Exp1A_IBM_A6_Prometheus_Autonomous_Selector": {
+          "provider_job_id": "dbp2bigou4as73csto30",
+          "reserved_worst_case": 6.0,
+          "actual_cost": 5.0,
+          "settled_at_utc": "2026-11-09T20:49:43.501193+00:00"
+        },
+        "Phase3_Exp1A_IBM_A1_SABRE_Isolated": {
+          "provider_job_id": "dbp2bjs4148s739trihg",
+          "reserved_worst_case": 10.0,
+          "actual_cost": 9.0,
+          "settled_at_utc": "2026-11-09T20:50:18.536073+00:00"
+        },
+        "Phase3_Exp1A_IBM_A4_Fixed_4Way_Prometheus": {
+          "provider_job_id": "dbp2bkoqtr0c738dll20",
+          "reserved_worst_case": 5.0,
+          "actual_cost": 4.0,
+          "settled_at_utc": "2026-11-09T20:50:22.559866+00:00"
+        },
+        "Phase3_Exp1A_IBM_A2_TKET_Isolated": {
+          "provider_job_id": "dbp2bl8qtr0c738dll4g",
+          "reserved_worst_case": 10.0,
+          "actual_cost": 9.0,
+          "settled_at_utc": "2026-11-09T20:50:25.509584+00:00"
+        },
+        "Phase3_Exp1A_IBM_A3_Prometheus_Isolated": {
+          "provider_job_id": "dbp2bm0qtr0c738dll5g",
+          "reserved_worst_case": 10.0,
+          "actual_cost": 9.0,
+          "settled_at_utc": "2026-11-09T20:50:28.374798+00:00"
+        },
+        "Phase3_Exp1A_IBM_A5_Best_Phase2_Fixed_4Way": {
+          "provider_job_id": "dbp2bmoqtr0c738dll70",
+          "reserved_worst_case": 5.0,
+          "actual_cost": 4.0,
+          "settled_at_utc": "2026-11-09T20:50:31.609533+00:00"
+        },
+        "Phase3_Exp1A_IBM_A7_AltQPU_Counterfactual_Fez": {
+          "provider_job_id": "dbp2bn8ou4as73csto9g",
+          "reserved_worst_case": 5.0,
+          "actual_cost": 4.0,
+          "settled_at_utc": "2026-11-09T20:50:34.823977+00:00"
+        },
+        "Phase3_Exp1B_IBM_A3_Prometheus_Isolated": {
+          "provider_job_id": "dbp3cpk4148s739tsqrg",
+          "reserved_worst_case": 15.0,
+          "actual_cost": 12.0,
+          "settled_at_utc": "2026-11-09T21:52:43.453280+00:00"
+        },
+        "Phase3_Exp1B_IBM_A6_Prometheus_Autonomous_Selector": {
+          "provider_job_id": "dbp3cqk4148s739tsqtg",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 5.0,
+          "settled_at_utc": "2026-11-09T21:52:58.353294+00:00"
+        },
+        "Phase3_Exp1B_IBM_A4_Fixed_4Way_Prometheus": {
+          "provider_job_id": "dbp3crlt7fqc7388n6ig",
+          "reserved_worst_case": 7.0,
+          "actual_cost": 5.0,
+          "settled_at_utc": "2026-11-09T21:53:02.580418+00:00"
+        },
+        "Phase3_Exp1B_IBM_A1_SABRE_Isolated": {
+          "provider_job_id": "dbp3cs0qtr0c738dmth0",
+          "reserved_worst_case": 15.0,
+          "actual_cost": 12.0,
+          "settled_at_utc": "2026-11-09T21:53:05.814581+00:00"
+        },
+        "Phase3_Exp1B_IBM_A5_Best_Phase2_Fixed_4Way": {
+          "provider_job_id": "dbp3csoou4as73csv07g",
+          "reserved_worst_case": 7.0,
+          "actual_cost": 5.0,
+          "settled_at_utc": "2026-11-09T21:53:09.152592+00:00"
+        },
+        "Phase3_Exp1B_IBM_A2_TKET_Isolated": {
+          "provider_job_id": "dbp3ct8ou4as73csv08g",
+          "reserved_worst_case": 15.0,
+          "actual_cost": 12.0,
+          "settled_at_utc": "2026-11-09T21:53:12.832728+00:00"
+        },
+        "Phase3_Exp1B_IBM_A7_AltQPU_Counterfactual_Fez": {
+          "provider_job_id": "dbp3cu0qtr0c738dmtj0",
+          "reserved_worst_case": 7.0,
+          "actual_cost": 5.0,
+          "settled_at_utc": "2026-11-09T21:53:15.621324+00:00"
+        },
+        "Phase3_Exp4_IBM_W1_Primary_Kingston_C1_C2_C3": {
+          "provider_job_id": "dbp7l344148s739u2t8g",
+          "reserved_worst_case": 15.0,
+          "actual_cost": 12.0,
+          "settled_at_utc": "2026-11-10T02:45:18.498662+00:00"
+        },
+        "Phase3_Exp4_IBM_W1_Alt_Fez_C4": {
+          "provider_job_id": "dbp7l45t7fqc7388t810",
+          "reserved_worst_case": 7.0,
+          "actual_cost": 5.0,
+          "settled_at_utc": "2026-11-10T02:45:22.452209+00:00"
+        },
+        "Phase3_Exp4_IBM_W2_Primary_Kingston_C1_C2_C3": {
+          "provider_job_id": "dbp8g6gqtr0c738dueug",
+          "reserved_worst_case": 9.0,
+          "actual_cost": 7.0,
+          "settled_at_utc": "2026-11-10T02:58:38.028288+00:00"
+        },
+        "Phase3_Exp4_IBM_W2_Alt_Fez_C4": {
+          "provider_job_id": "dbp8g7k4148s739u4gt0",
+          "reserved_worst_case": 5.0,
+          "actual_cost": 4.0,
+          "settled_at_utc": "2026-11-10T02:58:40.703170+00:00"
+        },
+        "Phase3_Exp4_IBM_W3_Primary_Kingston_C1_C2_C3": {
+          "provider_job_id": "dbp8g8gou4as73ct6g2g",
+          "reserved_worst_case": 9.0,
+          "actual_cost": 7.0,
+          "settled_at_utc": "2026-11-10T02:58:43.939792+00:00"
+        },
+        "Phase3_Exp4_IBM_W3_Alt_Fez_C4": {
+          "provider_job_id": "dbp8g9c4148s739u4h20",
+          "reserved_worst_case": 5.0,
+          "actual_cost": 4.0,
+          "settled_at_utc": "2026-11-10T02:58:46.788253+00:00"
+        },
+        "Phase3_Exp5_IBM_S1_Main_2048": {
+          "provider_job_id": "dbpaqok4148s739u9hf0",
+          "reserved_worst_case": 10.0,
+          "actual_cost": 9.0,
+          "settled_at_utc": "2026-11-10T05:51:48.767790+00:00"
+        },
+        "Phase3_Exp5_IBM_S1_Confirm_1024": {
+          "provider_job_id": "dbpb1ult7fqc738947vg",
+          "reserved_worst_case": 6.0,
+          "actual_cost": 5.0,
+          "settled_at_utc": "2026-11-10T06:00:29.351268+00:00"
+        },
+        "Phase3_Exp5_IBM_S2_Confirm_1024": {
+          "provider_job_id": "dbpb60gou4as73ctc3cg",
+          "reserved_worst_case": 6.0,
+          "actual_cost": 5.0,
+          "settled_at_utc": "2026-11-10T06:04:56.780104+00:00"
+        },
+        "Phase3_Exp5_IBM_S3_Confirm_1024": {
+          "provider_job_id": "dbpb82s4148s739uaesg",
+          "reserved_worst_case": 6.0,
+          "actual_cost": 5.0,
+          "settled_at_utc": "2026-11-10T06:05:16.466938+00:00"
+        },
+        "Phase3_Exp5_IBM_S2_Rung1_256": {
+          "provider_job_id": "dbpb87gou4as73ctc850",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T06:05:27.931200+00:00"
+        },
+        "Phase3_Exp5_IBM_S3_Rung1_256": {
+          "provider_job_id": "dbpb8ac4148s739uafcg",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T06:05:45.739537+00:00"
+        },
+        "Phase3_Exp5_IBM_S2_Rung2_512": {
+          "provider_job_id": "dbpb8es4148s739uafng",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T06:06:02.985701+00:00"
+        },
+        "Phase3_Exp5_IBM_S3_Rung2_512": {
+          "provider_job_id": "dbpb8j5t7fqc73894m1g",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T06:06:13.846459+00:00"
+        },
+        "Phase3_Exp5_IBM_S2_Rung3_1024": {
+          "provider_job_id": "dbpb8ltt7fqc73894mb0",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 4.0,
+          "settled_at_utc": "2026-11-10T06:06:31.523470+00:00"
+        },
+        "Phase3_Exp5_IBM_S3_Rung3_1024": {
+          "provider_job_id": "dbpb8qdt7fqc73894ml0",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 2.0,
+          "settled_at_utc": "2026-11-10T06:06:43.117933+00:00"
+        },
+        "Phase3_Exp5_IBM_S2_Rung4_2048": {
+          "provider_job_id": "dbpb8t5t7fqc73894ms0",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 4.0,
+          "settled_at_utc": "2026-11-10T06:07:06.613919+00:00"
+        },
+        "Phase3_Exp5_IBM_S3_Rung4_2048": {
+          "provider_job_id": "dbpb92oou4as73ctc9t0",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T06:07:17.037791+00:00"
+        },
+        "Phase3_Exp2_IBM_W1_SubWave_A_Arm2_Fixed4Way": {
+          "provider_job_id": "dbpfuvk4148s739ui3l0",
+          "reserved_worst_case": 3.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T11:33:46.189631+00:00"
+        },
+        "Phase3_Exp2_IBM_W1_SubWave_A_Arm1_Autonomous": {
+          "provider_job_id": "dbpfvelt7fqc7389c7o0",
+          "reserved_worst_case": 3.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T11:33:49.293552+00:00"
+        },
+        "Phase3_Exp2_IBM_W1_SubWave_B_Arm2_Fixed4Way": {
+          "provider_job_id": "dbpfvhoou4as73ctjqbg",
+          "reserved_worst_case": 3.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T11:33:54.354584+00:00"
+        },
+        "Phase3_Exp2_IBM_W1_SubWave_B_Arm1_Autonomous": {
+          "provider_job_id": "dbpfvloqtr0c738ebrl0",
+          "reserved_worst_case": 3.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T11:33:56.640949+00:00"
+        },
+        "Phase3_Exp2_IBM_W2_SubWave_A_Arm2_Fixed4Way": {
+          "provider_job_id": "dbpfvpdt7fqc7389c8c0",
+          "reserved_worst_case": 3.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T11:33:58.789968+00:00"
+        },
+        "Phase3_Exp2_IBM_W2_SubWave_A_Arm1_Autonomous": {
+          "provider_job_id": "dbpfvt44148s739ui54g",
+          "reserved_worst_case": 3.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T11:34:01.469783+00:00"
+        },
+        "Phase3_Exp2_IBM_W2_SubWave_B_Arm2_Fixed4Way": {
+          "provider_job_id": "dbpg00tt7fqc7389c8kg",
+          "reserved_worst_case": 3.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T11:34:03.675733+00:00"
+        },
+        "Phase3_Exp2_IBM_W2_SubWave_B_Arm1_Autonomous": {
+          "provider_job_id": "dbpg038ou4as73ctjr60",
+          "reserved_worst_case": 3.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T11:34:06.011475+00:00"
+        },
+        "Phase3_Exp2_IBM_W3_SubWave_A_Arm2_Fixed4Way": {
+          "provider_job_id": "dbpg0dlt7fqc7389c930",
+          "reserved_worst_case": 3.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T11:34:08.122836+00:00"
+        },
+        "Phase3_Exp2_IBM_W3_SubWave_A_Arm1_Autonomous": {
+          "provider_job_id": "dbpg0hlt7fqc7389c99g",
+          "reserved_worst_case": 3.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T11:34:10.245136+00:00"
+        },
+        "Phase3_Exp2_IBM_W3_SubWave_B_Arm2_Fixed4Way": {
+          "provider_job_id": "dbpg0lgqtr0c738ebsqg",
+          "reserved_worst_case": 3.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T11:34:12.302214+00:00"
+        },
+        "Phase3_Exp2_IBM_W3_SubWave_B_Arm1_Autonomous": {
+          "provider_job_id": "dbpg0p8ou4as73ctjs1g",
+          "reserved_worst_case": 3.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T11:34:14.290880+00:00"
+        }
+      }
+    },
+    "iqm": {
+      "unit": "credits",
+      "total_ceiling": 293.0,
+      "active_max_budget": 220.0,
+      "committed_settled": 267.0,
+      "in_flight_reservations": {},
+      "settled_jobs": {
+        "Phase3_Stage3_0_IQM_Pilot": {
+          "provider_job_id": "01a1c124-caab-777b-a398-113197810942",
+          "reserved_worst_case": 2.25,
+          "actual_cost": 6.0,
+          "settled_at_utc": "2026-11-09T16:29:49.011788+00:00"
+        },
+        "Phase3_Exp3_IQM_W1_Packed": {
+          "provider_job_id": "01a1c1a1-b75c-77f3-9bab-e4fb158b039f",
+          "reserved_worst_case": 11.25,
+          "actual_cost": 11.25,
+          "settled_at_utc": "2026-11-09T19:20:54.306797+00:00"
+        },
+        "Phase3_Exp3_IQM_W1_Isolated": {
+          "provider_job_id": "01a1c1a2-11f2-75bf-9fd2-5ee0d8a02cf9",
+          "reserved_worst_case": 9.0,
+          "actual_cost": 9.0,
+          "settled_at_utc": "2026-11-09T19:20:56.855485+00:00"
+        },
+        "Phase3_Exp3_IQM_W2_Isolated": {
+          "provider_job_id": "01a1c1a2-670b-74e3-ac70-aab43e0090b9",
+          "reserved_worst_case": 9.0,
+          "actual_cost": 9.0,
+          "settled_at_utc": "2026-11-09T19:20:59.408651+00:00"
+        },
+        "Phase3_Exp3_IQM_W2_Packed": {
+          "provider_job_id": "01a1c1a2-bed7-7754-b6da-22554ff6d355",
+          "reserved_worst_case": 9.0,
+          "actual_cost": 9.0,
+          "settled_at_utc": "2026-11-09T19:21:02.926946+00:00"
+        },
+        "Phase3_Exp1A_IQM_A0_Station_Warmup_1PUB": {
+          "provider_job_id": "01a1c1f9-e28c-738f-93e2-e35367d755c8",
+          "reserved_worst_case": 6.5,
+          "actual_cost": 2.25,
+          "settled_at_utc": "2026-11-09T20:22:26.709841+00:00"
+        },
+        "Phase3_Exp1A_IQM_A3_Prometheus_Isolated": {
+          "provider_job_id": "01a1c1fa-0477-7247-83db-949ecce3326a",
+          "reserved_worst_case": 9.0,
+          "actual_cost": 6.75,
+          "settled_at_utc": "2026-11-09T20:22:43.110131+00:00"
+        },
+        "Phase3_Exp1A_IQM_A1_SABRE_Isolated": {
+          "provider_job_id": "01a1c1fa-432f-7474-9088-47bce8443a15",
+          "reserved_worst_case": 9.0,
+          "actual_cost": 6.75,
+          "settled_at_utc": "2026-11-09T20:22:59.311128+00:00"
+        },
+        "Phase3_Exp1A_IQM_A4_Fixed_4Way_Prometheus": {
+          "provider_job_id": "01a1c1fa-8394-702a-8790-c16f84df3a68",
+          "reserved_worst_case": 3.5,
+          "actual_cost": 3.75,
+          "settled_at_utc": "2026-11-09T20:23:11.050237+00:00"
+        },
+        "Phase3_Exp1A_IQM_A5_Best_Phase2_Fixed_4Way": {
+          "provider_job_id": "01a1c1fa-b13a-74c5-8c25-674d7c0774a0",
+          "reserved_worst_case": 3.5,
+          "actual_cost": 3.75,
+          "settled_at_utc": "2026-11-09T20:23:24.480357+00:00"
+        },
+        "Phase3_Exp1A_IQM_A2_TKET_Isolated": {
+          "provider_job_id": "01a1c1fa-e6f3-75d5-871d-5dfefba972b6",
+          "reserved_worst_case": 9.0,
+          "actual_cost": 5.25,
+          "settled_at_utc": "2026-11-09T20:23:38.279681+00:00"
+        },
+        "Phase3_Exp1A_IQM_A6_Prometheus_Autonomous_Selector": {
+          "provider_job_id": "01a1c1fb-1b7a-73f6-8047-8c6d8e660762",
+          "reserved_worst_case": 5.0,
+          "actual_cost": 4.5,
+          "settled_at_utc": "2026-11-09T20:23:51.750985+00:00"
+        },
+        "Phase3_Exp1A_IQM_ColdWakeup_1": {
+          "provider_job_id": "01a1c1f7-41b3-76da-86ce-869e9311fc19",
+          "reserved_worst_case": 7.5,
+          "actual_cost": 7.5,
+          "settled_at_utc": "2026-11-09T20:20:32+00:00"
+        },
+        "Phase3_Exp1A_IQM_WarmPing_2": {
+          "provider_job_id": "01a1c1f7-8638-702d-b987-0b0a7a8264e3",
+          "reserved_worst_case": 2.25,
+          "actual_cost": 2.25,
+          "settled_at_utc": "2026-11-09T20:20:32+00:00"
+        },
+        "Phase3_Exp1A_IQM_WarmPing_3": {
+          "provider_job_id": "01a1c1f7-ae26-73ed-8243-3dcb131e9e80",
+          "reserved_worst_case": 2.25,
+          "actual_cost": 2.25,
+          "settled_at_utc": "2026-11-09T20:20:32+00:00"
+        },
+        "Phase3_Exp1B_IQM_A0_Station_Warmup_1PUB": {
+          "provider_job_id": "01a1c224-cea1-75ae-8ef9-aef08bc5925f",
+          "reserved_worst_case": 7.5,
+          "actual_cost": 3.75,
+          "settled_at_utc": "2026-11-09T21:10:31.800240+00:00"
+        },
+        "Phase3_Exp1B_IQM_A2_TKET_Isolated": {
+          "provider_job_id": "01a1c226-100a-7236-bd24-5b556884d154",
+          "reserved_worst_case": 12.0,
+          "actual_cost": 6.75,
+          "settled_at_utc": "2026-11-09T21:10:50.319697+00:00"
+        },
+        "Phase3_Exp1B_IQM_A6_Prometheus_Autonomous_Selector": {
+          "provider_job_id": "01a1c226-576a-7503-b4ac-4429067f194f",
+          "reserved_worst_case": 6.5,
+          "actual_cost": 4.5,
+          "settled_at_utc": "2026-11-09T21:11:05.791283+00:00"
+        },
+        "Phase3_Exp1B_IQM_A1_SABRE_Isolated": {
+          "provider_job_id": "01a1c226-92cb-75f1-b8d0-ca04ee587838",
+          "reserved_worst_case": 12.0,
+          "actual_cost": 9.75,
+          "settled_at_utc": "2026-11-09T21:12:44.960670+00:00"
+        },
+        "Phase3_Exp1B_IQM_A3_Prometheus_Isolated": {
+          "provider_job_id": "01a1c228-192a-7766-89ab-4029030d9910",
+          "reserved_worst_case": 12.0,
+          "actual_cost": 7.5,
+          "settled_at_utc": "2026-11-09T21:13:05.230761+00:00"
+        },
+        "Phase3_Exp1B_IQM_A5_Best_Phase2_Fixed_4Way": {
+          "provider_job_id": "01a1c228-66c3-754e-b870-54e2e95abe5f",
+          "reserved_worst_case": 5.0,
+          "actual_cost": 3.75,
+          "settled_at_utc": "2026-11-09T21:13:20.530572+00:00"
+        },
+        "Phase3_Exp1B_IQM_A4_Fixed_4Way_Prometheus": {
+          "provider_job_id": "01a1c228-a338-76f1-8f97-142d6e42aaa3",
+          "reserved_worst_case": 5.0,
+          "actual_cost": 5.25,
+          "settled_at_utc": "2026-11-09T21:14:42.109970+00:00"
+        },
+        "Phase3_Exp4_IQM_W1_Primary_Emerald_C1_C2_C3": {
+          "provider_job_id": "01a1c32e-d91b-703a-99bf-7b47889019c6",
+          "reserved_worst_case": 12.0,
+          "actual_cost": 10.5,
+          "settled_at_utc": "2026-11-10T02:00:10.794532+00:00"
+        },
+        "Phase3_Exp4_IQM_W1_Alt_Garnet_C4": {
+          "provider_job_id": "01a1c32f-33ad-74d5-bf61-8bd1d0bd8dda",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 2.25,
+          "settled_at_utc": "2026-11-10T02:45:13.897668+00:00"
+        },
+        "Phase3_Exp4_IQM_W2_Primary_Emerald_C1_C2_C3": {
+          "provider_job_id": "01a1c363-f3ae-777d-9057-be1a49bd973d",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 5.25,
+          "settled_at_utc": "2026-11-10T02:58:00.376170+00:00"
+        },
+        "Phase3_Exp4_IQM_W3_Primary_Emerald_C1_C2_C3": {
+          "provider_job_id": "01a1c364-03ce-75e0-9943-37004ef7e062",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 3.75,
+          "settled_at_utc": "2026-11-10T02:58:05.791699+00:00"
+        },
+        "Phase3_Exp4_IQM_W2_Alt_Garnet_C4": {
+          "provider_job_id": "01a1c363-dcb1-70a0-bb81-bece74494c55",
+          "reserved_worst_case": 6.0,
+          "actual_cost": 1.5,
+          "settled_at_utc": "2026-11-10T02:58:07.692072+00:00"
+        },
+        "Phase3_Exp4_IQM_W3_Alt_Garnet_C4": {
+          "provider_job_id": "01a1c363-e609-702f-9389-418328ddefb3",
+          "reserved_worst_case": 6.0,
+          "actual_cost": 1.5,
+          "settled_at_utc": "2026-11-10T02:58:09.594382+00:00"
+        },
+        "Phase3_Exp5_IQM_Aux_Station_Warmup_1PUB": {
+          "provider_job_id": "01a1c374-7d58-746c-97f3-98cbd7a37f70",
+          "reserved_worst_case": 7.5,
+          "actual_cost": 0.75,
+          "settled_at_utc": "2026-11-10T05:32:41.927793+00:00"
+        },
+        "Phase3_Exp5_IQM_S1_Main_2048": {
+          "provider_job_id": "01a1c3f1-c625-7581-a572-7845ea90e304",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 10.5,
+          "settled_at_utc": "2026-11-10T05:33:04.387470+00:00"
+        },
+        "Phase3_Exp5_IQM_S1_Confirm_1024": {
+          "provider_job_id": "01a1c3f2-1c9e-7175-8324-098eafb53ae8",
+          "reserved_worst_case": 5.5,
+          "actual_cost": 5.25,
+          "settled_at_utc": "2026-11-10T05:33:31.674210+00:00"
+        },
+        "Phase3_Exp5_IQM_S2_Confirm_1024": {
+          "provider_job_id": "01a1c3f2-8757-73ac-bac9-5653bbdafc54",
+          "reserved_worst_case": 5.5,
+          "actual_cost": 6.75,
+          "settled_at_utc": "2026-11-10T05:33:47.188756+00:00"
+        },
+        "Phase3_Exp5_IQM_S3_Confirm_1024": {
+          "provider_job_id": "01a1c3f2-cea4-763b-bcd3-14155f77bc6b",
+          "reserved_worst_case": 5.5,
+          "actual_cost": 6.0,
+          "settled_at_utc": "2026-11-10T05:34:08.987641+00:00"
+        },
+        "Phase3_Exp5_IQM_S2_Rung1_256": {
+          "provider_job_id": "01a1c3f3-191b-726f-8292-8c8d3a16c2c5",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T05:34:19.877082+00:00"
+        },
+        "Phase3_Exp5_IQM_S3_Rung1_256": {
+          "provider_job_id": "01a1c3f3-4e5d-7472-a85b-0e8ea6bc35d1",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T05:34:39.939579+00:00"
+        },
+        "Phase3_Exp5_IQM_S2_Rung2_512": {
+          "provider_job_id": "01a1c3f3-9170-718f-a152-cd373afaaa42",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 3.75,
+          "settled_at_utc": "2026-11-10T05:34:50.831507+00:00"
+        },
+        "Phase3_Exp5_IQM_S3_Rung2_512": {
+          "provider_job_id": "01a1c3f3-c34c-77a8-81f3-42b1d0477333",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 1.5,
+          "settled_at_utc": "2026-11-10T05:35:14.179347+00:00"
+        },
+        "Phase3_Exp5_IQM_S2_Rung3_1024": {
+          "provider_job_id": "01a1c3f4-1825-7439-ab33-1c913921cce1",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 3.75,
+          "settled_at_utc": "2026-11-10T05:35:25.379704+00:00"
+        },
+        "Phase3_Exp5_IQM_S3_Rung3_1024": {
+          "provider_job_id": "01a1c3f4-4bb5-7448-a667-b99be4d09893",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T05:35:50.686954+00:00"
+        },
+        "Phase3_Exp5_IQM_S2_Rung4_2048": {
+          "provider_job_id": "01a1c3f4-a500-7168-8d9b-84ba83cb30d2",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 6.0,
+          "settled_at_utc": "2026-11-10T05:36:05.929816+00:00"
+        },
+        "Phase3_Exp5_IQM_S3_Rung4_2048": {
+          "provider_job_id": "01a1c3f4-e5a2-77cd-b68c-4c1ca47d5f13",
+          "reserved_worst_case": 8.0,
+          "actual_cost": 4.5,
+          "settled_at_utc": "2026-11-10T05:36:28.906420+00:00"
+        },
+        "Phase3_Exp2_IQM_Aux_Station_Warmup_1PUB": {
+          "provider_job_id": "01a1c539-c3ed-70b1-8bbf-c9bc4c19464c",
+          "reserved_worst_case": 3.0,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T11:34:16.306330+00:00"
+        },
+        "Phase3_Exp2_IQM_W1_SubWave_A_Arm2_Fixed4Way": {
+          "provider_job_id": "01a1c539-e6bc-706a-a57c-f8e4758c2fb8",
+          "reserved_worst_case": 1.5,
+          "actual_cost": 1.5,
+          "settled_at_utc": "2026-11-10T11:34:18.197581+00:00"
+        },
+        "Phase3_Exp2_IQM_W1_SubWave_A_Arm1_Autonomous": {
+          "provider_job_id": "01a1c53c-d0c1-7201-b23b-fa5d77e2b77d",
+          "reserved_worst_case": 4.5,
+          "actual_cost": 3.75,
+          "settled_at_utc": "2026-11-10T11:34:35.756302+00:00"
+        },
+        "Phase3_Exp2_IQM_W1_SubWave_B_Arm2_Fixed4Way": {
+          "provider_job_id": "01a1c53d-170d-75ed-a369-9dc7fc6b6063",
+          "reserved_worst_case": 4.5,
+          "actual_cost": 3.75,
+          "settled_at_utc": "2026-11-10T11:36:55.065823+00:00"
+        },
+        "Phase3_Exp2_IQM_W1_SubWave_B_Arm1_Autonomous": {
+          "provider_job_id": "01a1c53f-381b-75e8-b285-0bfb2c12679b",
+          "reserved_worst_case": 4.5,
+          "actual_cost": 1.5,
+          "settled_at_utc": "2026-11-10T11:40:51.985677+00:00"
+        },
+        "Phase3_Exp2_IQM_W1_Job4_Arm1_SelectiveEscalation": {
+          "provider_job_id": "01a1c542-d212-7144-bbe0-ef916005fcb9",
+          "reserved_worst_case": 4.5,
+          "actual_cost": 3.75,
+          "settled_at_utc": "2026-11-10T11:41:17.104743+00:00"
+        },
+        "Phase3_Exp2_IQM_W2_SubWave_A_Arm2_Fixed4Way": {
+          "provider_job_id": "01a1c543-34a9-7573-823a-125b0e7655be",
+          "reserved_worst_case": 4.5,
+          "actual_cost": 3.0,
+          "settled_at_utc": "2026-11-10T11:41:27.355927+00:00"
+        },
+        "Phase3_Exp2_IQM_W2_SubWave_A_Arm1_Autonomous": {
+          "provider_job_id": "01a1c543-5c7c-71f8-ab2e-d717ed252327",
+          "reserved_worst_case": 4.5,
+          "actual_cost": 3.75,
+          "settled_at_utc": "2026-11-10T11:42:01.227831+00:00"
+        },
+        "Phase3_Exp2_IQM_W2_SubWave_B_Arm2_Fixed4Way": {
+          "provider_job_id": "01a1c543-e4e5-7367-b37f-9e5ac1c9c9e6",
+          "reserved_worst_case": 4.5,
+          "actual_cost": 0.75,
+          "settled_at_utc": "2026-11-10T11:42:13.856068+00:00"
+        },
+        "Phase3_Exp2_IQM_W2_SubWave_B_Arm1_Autonomous": {
+          "provider_job_id": "01a1c544-142e-72ad-8c9e-911eb5f8691d",
+          "reserved_worst_case": 4.5,
+          "actual_cost": 9.0,
+          "settled_at_utc": "2026-11-10T11:42:31.796355+00:00"
+        },
+        "Phase3_Exp2_IQM_W2_Job4_Arm1_SelectiveEscalation": {
+          "provider_job_id": "01a1c544-5833-7649-bbcb-33e340d17ce4",
+          "reserved_worst_case": 4.5,
+          "actual_cost": 2.25,
+          "settled_at_utc": "2026-11-10T11:42:46.459355+00:00"
+        },
+        "Phase3_Exp2_IQM_W3_SubWave_A_Arm2_Fixed4Way": {
+          "provider_job_id": "01a1c544-91c7-7715-8ae7-7d2d1fa7a228",
+          "reserved_worst_case": 4.5,
+          "actual_cost": 3.75,
+          "settled_at_utc": "2026-11-10T11:43:58.956216+00:00"
+        },
+        "Phase3_Exp2_IQM_W3_SubWave_A_Arm1_Autonomous": {
+          "provider_job_id": "01a1c545-ad0e-7681-b4a5-2c4bd37cb39e",
+          "reserved_worst_case": 4.5,
+          "actual_cost": 3.75,
+          "settled_at_utc": "2026-11-10T11:44:16.824528+00:00"
+        },
+        "Phase3_Exp2_IQM_W3_SubWave_B_Arm2_Fixed4Way": {
+          "provider_job_id": "01a1c545-f4e8-7464-ac4a-e48e852c9e71",
+          "reserved_worst_case": 4.5,
+          "actual_cost": 5.25,
+          "settled_at_utc": "2026-11-10T11:44:39.467524+00:00"
+        },
+        "Phase3_Exp2_IQM_W3_SubWave_B_Arm1_Autonomous": {
+          "provider_job_id": "01a1c546-4d8d-7425-b57f-ff64698496e0",
+          "reserved_worst_case": 4.5,
+          "actual_cost": 3.75,
+          "settled_at_utc": "2026-11-10T11:45:16.110647+00:00"
+        },
+        "Phase3_Exp2_IQM_W3_Job4_Arm1_SelectiveEscalation": {
+          "provider_job_id": "01a1c546-d98d-7777-89e2-cacafd2a6727",
+          "reserved_worst_case": 4.5,
+          "actual_cost": 1.5,
+          "settled_at_utc": "2026-11-10T11:45:23.215992+00:00"
+        }
+      }
+    }
+  }
+}

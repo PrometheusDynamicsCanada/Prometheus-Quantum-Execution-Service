@@ -1,0 +1,28 @@
+{
+  "original_private_ledger_sha256": "c8fa9126a5daa6304160e82e3b800db586e0a92ed327fb9cc7395803563ad5b0",
+  "schema_version": "phase3-locked-telemetry-refresh-policy-v1",
+  "locked_at_utc": "2026-11-10T02:47:19.377917+00:00",
+  "chronological_isolation_attestation": "Locked strictly AFTER Experiment 4 Window 1 Development (W_P3_Dev_069..080) completed at 2026-11-10T02:45:22.527999+00:00 and strictly BEFORE generating, compiling, or submitting either Blind Holdout window (Window 2: W_P3_ModHold_037..042; Window 3: W_P3_ModHold_043..048).",
+  "source_w1_dev_results_sha256": "c6bbdf945afd532d21c80c17a1ed71c8f87cc86bca28db33823c800da9164bb9",
+  "w1_dev_empirical_findings": {
+    "ibm_heron": "Across 1.8d-6.8d horizons on ibm_kingston, predicted drift gains C2-C1 were small (0.0000 to +0.0162, mean +0.0060). Keeping cached T0 placements (C1_Keep_Original_Stale: 11/12 accepted, mean F_B=0.9244, 0.00s live CPU cost) outperformed chasing sub-0.020 calibration fluctuations (C2: 10/12, F_B=0.9187; C3: 10/12, F_B=0.9166; C4 ibm_fez: 10/12, F_B=0.9162).",
+    "iqm_crystal": "Across 1.8d-6.8d horizons on emerald, predicted drift gains C2-C1 were 3.7x larger (up to +0.0521, mean +0.0223). Lightweight 0.22s placement remapping (C2: 7/12, mean F_B=0.8491, med=0.8933) recovered +0.0157 mean F_B over stale C1 (0.8334, med=0.8802), capturing 93% of full 2.96s recompilation C3 (0.8503, med=0.8716) at 7.3% of the live CPU time, while blind switching to garnet (C4: 5/12, F_B=0.7827, 2698.5s queue wait vs 18.2s on emerald) degraded both quality and turnaround."
+  },
+  "locked_triggered_refresh_decision_rule": {
+    "rule_id": "C_Triggered_Refresh_Policy_v1",
+    "step_1_switch_qpu_c4": {
+      "min_predicted_survival_gain_c4_over_best_primary": 0.01,
+      "max_allowed_alt_queue_excess_jobs": 2
+    },
+    "step_2_full_recompile_same_qpu_c3": {
+      "ibm_min_total_drift_gain_c3_over_c1": 0.02,
+      "iqm_min_total_drift_gain_c3_over_c1": 0.012,
+      "min_incremental_resynth_gain_c3_over_c2": 0.015
+    },
+    "step_3_update_placement_only_c2": {
+      "ibm_min_remap_gain_c2_over_c1": 0.02,
+      "iqm_min_remap_gain_c2_over_c1": 0.012
+    },
+    "step_4_default_keep_stale_c1": "Otherwise select C1_Keep_Original_Stale (0.00s live CPU compilation cost, preserving stable T0 placement)."
+  }
+}

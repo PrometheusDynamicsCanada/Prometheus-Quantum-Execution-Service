@@ -1,0 +1,3659 @@
+{
+  "campaign": "Prometheus_Execution_Service_Unseen_Queue_v1",
+  "seed": 20261106,
+  "core_workload_count": 48,
+  "extended_workload_count": 96,
+  "all_ideal_instances_pass": true,
+  "zero_uniform_instances_pass_either_criterion": true,
+  "workloads": [
+    {
+      "workload_id": "W_F1_dense_kn_05Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F1_dense_kn",
+      "family_label": "Dense All-to-All (K_n)",
+      "width_q": 5,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 10,
+      "logical_depth": 10,
+      "ideal_shannon_entropy_bits": 1.4011,
+      "fb_threshold": 0.85,
+      "fb_uniform_random": 0.441669,
+      "fb_margin_over_uniform": 0.408331,
+      "fb_normalized_excess_at_threshold": 0.7313,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.85,
+        "uniform_random_value": 0.441669,
+        "ideal_margin_over_target": 0.15,
+        "target_margin_over_uniform": 0.4083
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "beb73c700c37c0731647b855f4e23de8b6aa2eeff21e22e90e30e581325880a6"
+    },
+    {
+      "workload_id": "W_F1_dense_kn_05Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F1_dense_kn",
+      "family_label": "Dense All-to-All (K_n)",
+      "width_q": 5,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 20,
+      "logical_depth": 18,
+      "ideal_shannon_entropy_bits": 0.3347,
+      "fb_threshold": 0.85,
+      "fb_uniform_random": 0.297807,
+      "fb_margin_over_uniform": 0.552193,
+      "fb_normalized_excess_at_threshold": 0.7864,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.85,
+        "uniform_random_value": 0.297807,
+        "ideal_margin_over_target": 0.15,
+        "target_margin_over_uniform": 0.5522
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "37ab97e3521c6555334911cffb6fbc9ecfb563ec3d525be635f675f97dd23de0"
+    },
+    {
+      "workload_id": "W_F1_dense_kn_05Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F1_dense_kn",
+      "family_label": "Dense All-to-All (K_n)",
+      "width_q": 5,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 10,
+      "logical_depth": 11,
+      "ideal_shannon_entropy_bits": 1.5603,
+      "fb_threshold": 0.85,
+      "fb_uniform_random": 0.460616,
+      "fb_margin_over_uniform": 0.389384,
+      "fb_normalized_excess_at_threshold": 0.7219,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.85,
+        "uniform_random_value": 0.460616,
+        "ideal_margin_over_target": 0.15,
+        "target_margin_over_uniform": 0.3894
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "62a68701ab44be1e9284fd35bda2f9dc9ca9f24c61f8b713372737519d610b3d"
+    },
+    {
+      "workload_id": "W_F1_dense_kn_05Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F1_dense_kn",
+      "family_label": "Dense All-to-All (K_n)",
+      "width_q": 5,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 20,
+      "logical_depth": 19,
+      "ideal_shannon_entropy_bits": 0.4858,
+      "fb_threshold": 0.85,
+      "fb_uniform_random": 0.334018,
+      "fb_margin_over_uniform": 0.515982,
+      "fb_normalized_excess_at_threshold": 0.7748,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.85,
+        "uniform_random_value": 0.334018,
+        "ideal_margin_over_target": 0.15,
+        "target_margin_over_uniform": 0.516
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "15bf0b64ab2289aa948c9dd8a492761869db6e745844921c587da75568f91d22"
+    },
+    {
+      "workload_id": "W_F1_dense_kn_07Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F1_dense_kn",
+      "family_label": "Dense All-to-All (K_n)",
+      "width_q": 7,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 21,
+      "logical_depth": 15,
+      "ideal_shannon_entropy_bits": 2.753,
+      "fb_threshold": 0.78,
+      "fb_uniform_random": 0.443532,
+      "fb_margin_over_uniform": 0.336468,
+      "fb_normalized_excess_at_threshold": 0.6046,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.78,
+        "uniform_random_value": 0.443532,
+        "ideal_margin_over_target": 0.22,
+        "target_margin_over_uniform": 0.3365
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "0f06bc1e6040dd38b48ed15f129e4b8d25b26672ab887bcb4beff4f24e057cf4"
+    },
+    {
+      "workload_id": "W_F1_dense_kn_07Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F1_dense_kn",
+      "family_label": "Dense All-to-All (K_n)",
+      "width_q": 7,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 42,
+      "logical_depth": 27,
+      "ideal_shannon_entropy_bits": 0.8069,
+      "fb_threshold": 0.78,
+      "fb_uniform_random": 0.247941,
+      "fb_margin_over_uniform": 0.532059,
+      "fb_normalized_excess_at_threshold": 0.7075,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.78,
+        "uniform_random_value": 0.247941,
+        "ideal_margin_over_target": 0.22,
+        "target_margin_over_uniform": 0.5321
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "7b89a2e461fb8328aed0806f5a77e0088645bdac5a9d9b89ea67473ee1228d56"
+    },
+    {
+      "workload_id": "W_F1_dense_kn_07Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F1_dense_kn",
+      "family_label": "Dense All-to-All (K_n)",
+      "width_q": 7,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 21,
+      "logical_depth": 14,
+      "ideal_shannon_entropy_bits": 2.6795,
+      "fb_threshold": 0.78,
+      "fb_uniform_random": 0.43738,
+      "fb_margin_over_uniform": 0.34262,
+      "fb_normalized_excess_at_threshold": 0.609,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.78,
+        "uniform_random_value": 0.43738,
+        "ideal_margin_over_target": 0.22,
+        "target_margin_over_uniform": 0.3426
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "5a3db080a1ee2012b1da62a4f13f772a3d82adce279ca0befe4bf975919a6da4"
+    },
+    {
+      "workload_id": "W_F1_dense_kn_07Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F1_dense_kn",
+      "family_label": "Dense All-to-All (K_n)",
+      "width_q": 7,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 42,
+      "logical_depth": 27,
+      "ideal_shannon_entropy_bits": 0.7832,
+      "fb_threshold": 0.78,
+      "fb_uniform_random": 0.241288,
+      "fb_margin_over_uniform": 0.538712,
+      "fb_normalized_excess_at_threshold": 0.71,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.78,
+        "uniform_random_value": 0.241288,
+        "ideal_margin_over_target": 0.22,
+        "target_margin_over_uniform": 0.5387
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "ca87d6f8ebc43d809c6997b663da2be12198e100a13a34d783a25b0e74614d90"
+    },
+    {
+      "workload_id": "W_F1_dense_kn_09Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F1_dense_kn",
+      "family_label": "Dense All-to-All (K_n)",
+      "width_q": 9,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 36,
+      "logical_depth": 19,
+      "ideal_shannon_entropy_bits": 4.1504,
+      "fb_threshold": 0.7,
+      "fb_uniform_random": 0.446127,
+      "fb_margin_over_uniform": 0.253873,
+      "fb_normalized_excess_at_threshold": 0.4584,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.7,
+        "uniform_random_value": 0.446127,
+        "ideal_margin_over_target": 0.3,
+        "target_margin_over_uniform": 0.2539
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "4b9dfad4d1d0e3d3eefe2aefb7d1c9a304a7d156e4eb51481cfb7405d19d10c7"
+    },
+    {
+      "workload_id": "W_F1_dense_kn_09Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F1_dense_kn",
+      "family_label": "Dense All-to-All (K_n)",
+      "width_q": 9,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 72,
+      "logical_depth": 35,
+      "ideal_shannon_entropy_bits": 0.8509,
+      "fb_threshold": 0.7,
+      "fb_uniform_random": 0.170269,
+      "fb_margin_over_uniform": 0.529731,
+      "fb_normalized_excess_at_threshold": 0.6384,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.7,
+        "uniform_random_value": 0.170269,
+        "ideal_margin_over_target": 0.3,
+        "target_margin_over_uniform": 0.5297
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "24b2c823da10f296fc7718f5fb9087058b60964c0ce6c9b62b7a02884303869e"
+    },
+    {
+      "workload_id": "W_F1_dense_kn_09Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F1_dense_kn",
+      "family_label": "Dense All-to-All (K_n)",
+      "width_q": 9,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 36,
+      "logical_depth": 19,
+      "ideal_shannon_entropy_bits": 4.1626,
+      "fb_threshold": 0.7,
+      "fb_uniform_random": 0.447184,
+      "fb_margin_over_uniform": 0.252816,
+      "fb_normalized_excess_at_threshold": 0.4573,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.7,
+        "uniform_random_value": 0.447184,
+        "ideal_margin_over_target": 0.3,
+        "target_margin_over_uniform": 0.2528
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "11e4f6987e49c676a836bbb7d1b9df18637e762c683a3185dcaea1519e33607a"
+    },
+    {
+      "workload_id": "W_F1_dense_kn_09Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F1_dense_kn",
+      "family_label": "Dense All-to-All (K_n)",
+      "width_q": 9,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 72,
+      "logical_depth": 34,
+      "ideal_shannon_entropy_bits": 0.9422,
+      "fb_threshold": 0.7,
+      "fb_uniform_random": 0.176319,
+      "fb_margin_over_uniform": 0.523681,
+      "fb_normalized_excess_at_threshold": 0.6358,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.7,
+        "uniform_random_value": 0.176319,
+        "ideal_margin_over_target": 0.3,
+        "target_margin_over_uniform": 0.5237
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "2a0173b16fbbeaca6c12ff805a8cfd698bf13fd25e3f2decc1c7da6ff3054826"
+    },
+    {
+      "workload_id": "W_F1_dense_kn_11Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F1_dense_kn",
+      "family_label": "Dense All-to-All (K_n)",
+      "width_q": 11,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 55,
+      "logical_depth": 23,
+      "ideal_shannon_entropy_bits": 5.5094,
+      "fb_threshold": 0.6071,
+      "fb_uniform_random": 0.438677,
+      "fb_margin_over_uniform": 0.168423,
+      "fb_normalized_excess_at_threshold": 0.3,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.6071,
+        "uniform_random_value": 0.438677,
+        "ideal_margin_over_target": 0.3929,
+        "target_margin_over_uniform": 0.1684
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "cb2c961525b7091666ee08306c28db4a9e0d1473b4e9d1a0efd027ad9312ebf9"
+    },
+    {
+      "workload_id": "W_F1_dense_kn_11Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F1_dense_kn",
+      "family_label": "Dense All-to-All (K_n)",
+      "width_q": 11,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 110,
+      "logical_depth": 43,
+      "ideal_shannon_entropy_bits": 1.0419,
+      "fb_threshold": 0.6,
+      "fb_uniform_random": 0.123842,
+      "fb_margin_over_uniform": 0.476158,
+      "fb_normalized_excess_at_threshold": 0.5435,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.6,
+        "uniform_random_value": 0.123842,
+        "ideal_margin_over_target": 0.4,
+        "target_margin_over_uniform": 0.4762
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "9ef1152c0da428c161f7f0667ede29088f5421929c93186a19f242c923869575"
+    },
+    {
+      "workload_id": "W_F1_dense_kn_11Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F1_dense_kn",
+      "family_label": "Dense All-to-All (K_n)",
+      "width_q": 11,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 55,
+      "logical_depth": 23,
+      "ideal_shannon_entropy_bits": 5.6204,
+      "fb_threshold": 0.6129,
+      "fb_uniform_random": 0.446953,
+      "fb_margin_over_uniform": 0.165947,
+      "fb_normalized_excess_at_threshold": 0.3001,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.6129,
+        "uniform_random_value": 0.446953,
+        "ideal_margin_over_target": 0.3871,
+        "target_margin_over_uniform": 0.1659
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "ef70580f9beeaf6363fa910626b2b97747718995e3c1ba8d67b40e7265f9cabc"
+    },
+    {
+      "workload_id": "W_F1_dense_kn_11Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F1_dense_kn",
+      "family_label": "Dense All-to-All (K_n)",
+      "width_q": 11,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 110,
+      "logical_depth": 43,
+      "ideal_shannon_entropy_bits": 2.1634,
+      "fb_threshold": 0.6,
+      "fb_uniform_random": 0.207739,
+      "fb_margin_over_uniform": 0.392261,
+      "fb_normalized_excess_at_threshold": 0.4951,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.6,
+        "uniform_random_value": 0.207739,
+        "ideal_margin_over_target": 0.4,
+        "target_margin_over_uniform": 0.3923
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "05a3b33efee79b4fa59e95e8dbc5d30b4d78f456755d8022605f243485cf9114"
+    },
+    {
+      "workload_id": "W_F2_bipartite_05Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F2_bipartite",
+      "family_label": "Complete Bipartite (K_{n/2, n/2})",
+      "width_q": 5,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 6,
+      "logical_depth": 7,
+      "ideal_shannon_entropy_bits": 1.5319,
+      "fb_threshold": 0.88,
+      "fb_uniform_random": 0.479046,
+      "fb_margin_over_uniform": 0.400954,
+      "fb_normalized_excess_at_threshold": 0.7697,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.88,
+        "uniform_random_value": 0.479046,
+        "ideal_margin_over_target": 0.12,
+        "target_margin_over_uniform": 0.401
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "7620bbabc3dd872a762e84deb766c548fd336f10c0b5f75bee29026ecca948df"
+    },
+    {
+      "workload_id": "W_F2_bipartite_05Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F2_bipartite",
+      "family_label": "Complete Bipartite (K_{n/2, n/2})",
+      "width_q": 5,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 12,
+      "logical_depth": 10,
+      "ideal_shannon_entropy_bits": 0.9696,
+      "fb_threshold": 0.88,
+      "fb_uniform_random": 0.400402,
+      "fb_margin_over_uniform": 0.479598,
+      "fb_normalized_excess_at_threshold": 0.7999,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.88,
+        "uniform_random_value": 0.400402,
+        "ideal_margin_over_target": 0.12,
+        "target_margin_over_uniform": 0.4796
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "d8dcfac2f86d8897086f5af9fc9fc31752f813b629ac0fed9c42be743041500a"
+    },
+    {
+      "workload_id": "W_F2_bipartite_05Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F2_bipartite",
+      "family_label": "Complete Bipartite (K_{n/2, n/2})",
+      "width_q": 5,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 6,
+      "logical_depth": 7,
+      "ideal_shannon_entropy_bits": 1.3141,
+      "fb_threshold": 0.88,
+      "fb_uniform_random": 0.447873,
+      "fb_margin_over_uniform": 0.432127,
+      "fb_normalized_excess_at_threshold": 0.7827,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.88,
+        "uniform_random_value": 0.447873,
+        "ideal_margin_over_target": 0.12,
+        "target_margin_over_uniform": 0.4321
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "734dbeb6db0f03871112e17b23206e8b747ddcd88fe10ed8c8618902185d4862"
+    },
+    {
+      "workload_id": "W_F2_bipartite_05Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F2_bipartite",
+      "family_label": "Complete Bipartite (K_{n/2, n/2})",
+      "width_q": 5,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 12,
+      "logical_depth": 10,
+      "ideal_shannon_entropy_bits": 1.0832,
+      "fb_threshold": 0.88,
+      "fb_uniform_random": 0.413089,
+      "fb_margin_over_uniform": 0.466911,
+      "fb_normalized_excess_at_threshold": 0.7955,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.88,
+        "uniform_random_value": 0.413089,
+        "ideal_margin_over_target": 0.12,
+        "target_margin_over_uniform": 0.4669
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "9a3fcf3066fe064e75619c4300286559297f23442c28564811278ee27b8e86f8"
+    },
+    {
+      "workload_id": "W_F2_bipartite_07Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F2_bipartite",
+      "family_label": "Complete Bipartite (K_{n/2, n/2})",
+      "width_q": 7,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 12,
+      "logical_depth": 9,
+      "ideal_shannon_entropy_bits": 2.4445,
+      "fb_threshold": 0.82,
+      "fb_uniform_random": 0.385076,
+      "fb_margin_over_uniform": 0.434924,
+      "fb_normalized_excess_at_threshold": 0.7073,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.82,
+        "uniform_random_value": 0.385076,
+        "ideal_margin_over_target": 0.18,
+        "target_margin_over_uniform": 0.4349
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "7543218e72eaea132384783b224357f51e682c3749bcd9aaf3795325841fb5d2"
+    },
+    {
+      "workload_id": "W_F2_bipartite_07Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F2_bipartite",
+      "family_label": "Complete Bipartite (K_{n/2, n/2})",
+      "width_q": 7,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 24,
+      "logical_depth": 13,
+      "ideal_shannon_entropy_bits": 1.5847,
+      "fb_threshold": 0.82,
+      "fb_uniform_random": 0.322796,
+      "fb_margin_over_uniform": 0.497204,
+      "fb_normalized_excess_at_threshold": 0.7342,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.82,
+        "uniform_random_value": 0.322796,
+        "ideal_margin_over_target": 0.18,
+        "target_margin_over_uniform": 0.4972
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "c0709cc7f6bc1a672f7ca482f034727b6458a900d48791a68adeedc63d0d5300"
+    },
+    {
+      "workload_id": "W_F2_bipartite_07Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F2_bipartite",
+      "family_label": "Complete Bipartite (K_{n/2, n/2})",
+      "width_q": 7,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 12,
+      "logical_depth": 9,
+      "ideal_shannon_entropy_bits": 2.2386,
+      "fb_threshold": 0.82,
+      "fb_uniform_random": 0.359777,
+      "fb_margin_over_uniform": 0.460223,
+      "fb_normalized_excess_at_threshold": 0.7188,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.82,
+        "uniform_random_value": 0.359777,
+        "ideal_margin_over_target": 0.18,
+        "target_margin_over_uniform": 0.4602
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "29908d5888ad7b526f7346416c2b91621dba487a780b318e8d16e5b86bf1a610"
+    },
+    {
+      "workload_id": "W_F2_bipartite_07Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F2_bipartite",
+      "family_label": "Complete Bipartite (K_{n/2, n/2})",
+      "width_q": 7,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 24,
+      "logical_depth": 13,
+      "ideal_shannon_entropy_bits": 1.1751,
+      "fb_threshold": 0.82,
+      "fb_uniform_random": 0.267619,
+      "fb_margin_over_uniform": 0.552381,
+      "fb_normalized_excess_at_threshold": 0.7542,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.82,
+        "uniform_random_value": 0.267619,
+        "ideal_margin_over_target": 0.18,
+        "target_margin_over_uniform": 0.5524
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "171025446aeb9708e26ba4b6da60f741262edebe51d5837e70b9308949ad0b6b"
+    },
+    {
+      "workload_id": "W_F2_bipartite_09Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F2_bipartite",
+      "family_label": "Complete Bipartite (K_{n/2, n/2})",
+      "width_q": 9,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 20,
+      "logical_depth": 11,
+      "ideal_shannon_entropy_bits": 4.0474,
+      "fb_threshold": 0.75,
+      "fb_uniform_random": 0.345915,
+      "fb_margin_over_uniform": 0.404085,
+      "fb_normalized_excess_at_threshold": 0.6178,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.75,
+        "uniform_random_value": 0.345915,
+        "ideal_margin_over_target": 0.25,
+        "target_margin_over_uniform": 0.4041
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "3b9cbddd4ce66eb9d3cb0caae8453996866b4c41cc71f1d46aaa58b3ab50ced0"
+    },
+    {
+      "workload_id": "W_F2_bipartite_09Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F2_bipartite",
+      "family_label": "Complete Bipartite (K_{n/2, n/2})",
+      "width_q": 9,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 40,
+      "logical_depth": 16,
+      "ideal_shannon_entropy_bits": 1.4836,
+      "fb_threshold": 0.75,
+      "fb_uniform_random": 0.197381,
+      "fb_margin_over_uniform": 0.552619,
+      "fb_normalized_excess_at_threshold": 0.6885,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.75,
+        "uniform_random_value": 0.197381,
+        "ideal_margin_over_target": 0.25,
+        "target_margin_over_uniform": 0.5526
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "1f3483ee83e399239809dff6a6447a1291e4487aca602ab9dc89212559c29d6c"
+    },
+    {
+      "workload_id": "W_F2_bipartite_09Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F2_bipartite",
+      "family_label": "Complete Bipartite (K_{n/2, n/2})",
+      "width_q": 9,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 20,
+      "logical_depth": 11,
+      "ideal_shannon_entropy_bits": 4.137,
+      "fb_threshold": 0.75,
+      "fb_uniform_random": 0.358012,
+      "fb_margin_over_uniform": 0.391988,
+      "fb_normalized_excess_at_threshold": 0.6106,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.75,
+        "uniform_random_value": 0.358012,
+        "ideal_margin_over_target": 0.25,
+        "target_margin_over_uniform": 0.392
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "a87b843517836dd9fc02b6f5e31f1ad2a5d18807fa0af3d5dfb8944cacb7d892"
+    },
+    {
+      "workload_id": "W_F2_bipartite_09Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F2_bipartite",
+      "family_label": "Complete Bipartite (K_{n/2, n/2})",
+      "width_q": 9,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 40,
+      "logical_depth": 16,
+      "ideal_shannon_entropy_bits": 1.1364,
+      "fb_threshold": 0.75,
+      "fb_uniform_random": 0.17647,
+      "fb_margin_over_uniform": 0.57353,
+      "fb_normalized_excess_at_threshold": 0.6964,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.75,
+        "uniform_random_value": 0.17647,
+        "ideal_margin_over_target": 0.25,
+        "target_margin_over_uniform": 0.5735
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "4f72b89868fc5efaf18a5e3e81e61203f4c26e29fb04550afe1872ffe692ea8b"
+    },
+    {
+      "workload_id": "W_F2_bipartite_11Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F2_bipartite",
+      "family_label": "Complete Bipartite (K_{n/2, n/2})",
+      "width_q": 11,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 30,
+      "logical_depth": 13,
+      "ideal_shannon_entropy_bits": 5.5051,
+      "fb_threshold": 0.65,
+      "fb_uniform_random": 0.298032,
+      "fb_margin_over_uniform": 0.351968,
+      "fb_normalized_excess_at_threshold": 0.5014,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.65,
+        "uniform_random_value": 0.298032,
+        "ideal_margin_over_target": 0.35,
+        "target_margin_over_uniform": 0.352
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "bcec91244bba9a8522144f8c307196e80b2eb6a9e3390cde9da7a7d18e1903d4"
+    },
+    {
+      "workload_id": "W_F2_bipartite_11Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F2_bipartite",
+      "family_label": "Complete Bipartite (K_{n/2, n/2})",
+      "width_q": 11,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 60,
+      "logical_depth": 19,
+      "ideal_shannon_entropy_bits": 2.0016,
+      "fb_threshold": 0.65,
+      "fb_uniform_random": 0.169966,
+      "fb_margin_over_uniform": 0.480034,
+      "fb_normalized_excess_at_threshold": 0.5783,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.65,
+        "uniform_random_value": 0.169966,
+        "ideal_margin_over_target": 0.35,
+        "target_margin_over_uniform": 0.48
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "46daef90e8bf75115decd22830bd0ede68fa1413ab81919709cd635e5a9f9974"
+    },
+    {
+      "workload_id": "W_F2_bipartite_11Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F2_bipartite",
+      "family_label": "Complete Bipartite (K_{n/2, n/2})",
+      "width_q": 11,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 30,
+      "logical_depth": 13,
+      "ideal_shannon_entropy_bits": 5.677,
+      "fb_threshold": 0.65,
+      "fb_uniform_random": 0.313888,
+      "fb_margin_over_uniform": 0.336112,
+      "fb_normalized_excess_at_threshold": 0.4899,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.65,
+        "uniform_random_value": 0.313888,
+        "ideal_margin_over_target": 0.35,
+        "target_margin_over_uniform": 0.3361
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "c9f4d8e2ec80affa66745cd973a14996458ad50a73308e950c5d02cb5eebcc09"
+    },
+    {
+      "workload_id": "W_F2_bipartite_11Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F2_bipartite",
+      "family_label": "Complete Bipartite (K_{n/2, n/2})",
+      "width_q": 11,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 60,
+      "logical_depth": 19,
+      "ideal_shannon_entropy_bits": 1.3128,
+      "fb_threshold": 0.65,
+      "fb_uniform_random": 0.122945,
+      "fb_margin_over_uniform": 0.527055,
+      "fb_normalized_excess_at_threshold": 0.6009,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.65,
+        "uniform_random_value": 0.122945,
+        "ideal_margin_over_target": 0.35,
+        "target_margin_over_uniform": 0.5271
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "de78e0718590636af9aa1439c7e2a322454d96e8a2aa69b7592350c47a2dd87e"
+    },
+    {
+      "workload_id": "W_F3_qaoa_maxcut_05Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F3_qaoa_maxcut",
+      "family_label": "Near-3-Regular Bounded-Degree QAOA MaxCut",
+      "width_q": 5,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 7,
+      "logical_depth": 7,
+      "ideal_shannon_entropy_bits": 4.2955,
+      "fb_threshold": 0.9024,
+      "fb_uniform_random": 0.860538,
+      "fb_margin_over_uniform": 0.041862,
+      "fb_normalized_excess_at_threshold": 0.3002,
+      "observable_acceptance": {
+        "metric": "QAOA_MaxCut_Approx_Ratio",
+        "ideal_value": 0.766645,
+        "target_threshold": 0.675,
+        "uniform_random_value": 0.583333,
+        "ideal_margin_over_target": 0.0916,
+        "target_margin_over_uniform": 0.0917
+      },
+      "extra_metadata": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "num_edges": 7,
+        "c_max": 6.0,
+        "qaoa_params": [
+          0.29066,
+          -0.33622
+        ],
+        "ideal_approx_ratio": 0.766645,
+        "uniform_approx_ratio": 0.583333,
+        "ideal_near_opt_mass": 0.249916,
+        "uniform_near_opt_mass": 0.0625
+      },
+      "circuit_sha256": "ac86585289715eb61addc4ada98f62b2c7d249d3191ffefe36afe5694ab3d297"
+    },
+    {
+      "workload_id": "W_F3_qaoa_maxcut_05Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F3_qaoa_maxcut",
+      "family_label": "Near-3-Regular Bounded-Degree QAOA MaxCut",
+      "width_q": 5,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 14,
+      "logical_depth": 12,
+      "ideal_shannon_entropy_bits": 3.0841,
+      "fb_threshold": 0.82,
+      "fb_uniform_random": 0.694347,
+      "fb_margin_over_uniform": 0.125653,
+      "fb_normalized_excess_at_threshold": 0.4111,
+      "observable_acceptance": {
+        "metric": "QAOA_MaxCut_Approx_Ratio",
+        "ideal_value": 0.889375,
+        "target_threshold": 0.7364,
+        "uniform_random_value": 0.583333,
+        "ideal_margin_over_target": 0.153,
+        "target_margin_over_uniform": 0.1531
+      },
+      "extra_metadata": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "num_edges": 7,
+        "c_max": 6.0,
+        "qaoa_params": [
+          0.29529,
+          -0.51691,
+          0.4585,
+          -0.3563
+        ],
+        "ideal_approx_ratio": 0.889375,
+        "uniform_approx_ratio": 0.583333,
+        "ideal_near_opt_mass": 0.598677,
+        "uniform_near_opt_mass": 0.0625
+      },
+      "circuit_sha256": "809fb6bcc05a7a6bac6cace272babdd7a91407cda62160226a28246460bdd690"
+    },
+    {
+      "workload_id": "W_F3_qaoa_maxcut_05Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F3_qaoa_maxcut",
+      "family_label": "Near-3-Regular Bounded-Degree QAOA MaxCut",
+      "width_q": 5,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 7,
+      "logical_depth": 7,
+      "ideal_shannon_entropy_bits": 4.2955,
+      "fb_threshold": 0.9024,
+      "fb_uniform_random": 0.860538,
+      "fb_margin_over_uniform": 0.041862,
+      "fb_normalized_excess_at_threshold": 0.3002,
+      "observable_acceptance": {
+        "metric": "QAOA_MaxCut_Approx_Ratio",
+        "ideal_value": 0.766645,
+        "target_threshold": 0.675,
+        "uniform_random_value": 0.583333,
+        "ideal_margin_over_target": 0.0916,
+        "target_margin_over_uniform": 0.0917
+      },
+      "extra_metadata": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "num_edges": 7,
+        "c_max": 6.0,
+        "qaoa_params": [
+          0.29066,
+          -0.33622
+        ],
+        "ideal_approx_ratio": 0.766645,
+        "uniform_approx_ratio": 0.583333,
+        "ideal_near_opt_mass": 0.249916,
+        "uniform_near_opt_mass": 0.0625
+      },
+      "circuit_sha256": "99a9773d1dd8de71da21f79c7840669a581036f62bc5af3381265a1648ffea5e"
+    },
+    {
+      "workload_id": "W_F3_qaoa_maxcut_05Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F3_qaoa_maxcut",
+      "family_label": "Near-3-Regular Bounded-Degree QAOA MaxCut",
+      "width_q": 5,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 14,
+      "logical_depth": 13,
+      "ideal_shannon_entropy_bits": 3.0841,
+      "fb_threshold": 0.82,
+      "fb_uniform_random": 0.694347,
+      "fb_margin_over_uniform": 0.125653,
+      "fb_normalized_excess_at_threshold": 0.4111,
+      "observable_acceptance": {
+        "metric": "QAOA_MaxCut_Approx_Ratio",
+        "ideal_value": 0.889375,
+        "target_threshold": 0.7364,
+        "uniform_random_value": 0.583333,
+        "ideal_margin_over_target": 0.153,
+        "target_margin_over_uniform": 0.1531
+      },
+      "extra_metadata": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "num_edges": 7,
+        "c_max": 6.0,
+        "qaoa_params": [
+          0.29529,
+          -0.51691,
+          0.4585,
+          -0.3563
+        ],
+        "ideal_approx_ratio": 0.889375,
+        "uniform_approx_ratio": 0.583333,
+        "ideal_near_opt_mass": 0.598677,
+        "uniform_near_opt_mass": 0.0625
+      },
+      "circuit_sha256": "2833cc3ff14d4d93f71a2c5aad6e587954368ac0725a2d5ae76eb3d3a587d91f"
+    },
+    {
+      "workload_id": "W_F3_qaoa_maxcut_07Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F3_qaoa_maxcut",
+      "family_label": "Near-3-Regular Bounded-Degree QAOA MaxCut",
+      "width_q": 7,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 10,
+      "logical_depth": 9,
+      "ideal_shannon_entropy_bits": 5.8597,
+      "fb_threshold": 0.8588,
+      "fb_uniform_random": 0.798282,
+      "fb_margin_over_uniform": 0.060518,
+      "fb_normalized_excess_at_threshold": 0.3,
+      "observable_acceptance": {
+        "metric": "QAOA_MaxCut_Approx_Ratio",
+        "ideal_value": 0.756472,
+        "target_threshold": 0.656,
+        "uniform_random_value": 0.555556,
+        "ideal_margin_over_target": 0.1005,
+        "target_margin_over_uniform": 0.1004
+      },
+      "extra_metadata": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "num_edges": 10,
+        "c_max": 9.0,
+        "qaoa_params": [
+          0.30508,
+          -0.3716
+        ],
+        "ideal_approx_ratio": 0.756472,
+        "uniform_approx_ratio": 0.555556,
+        "ideal_near_opt_mass": 0.146242,
+        "uniform_near_opt_mass": 0.015625
+      },
+      "circuit_sha256": "25a27d504206018c1335f4eebbd1718b33af653c674c79df3ed04f3c637ebc3a"
+    },
+    {
+      "workload_id": "W_F3_qaoa_maxcut_07Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F3_qaoa_maxcut",
+      "family_label": "Near-3-Regular Bounded-Degree QAOA MaxCut",
+      "width_q": 7,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 20,
+      "logical_depth": 12,
+      "ideal_shannon_entropy_bits": 4.7068,
+      "fb_threshold": 0.8,
+      "fb_uniform_random": 0.625504,
+      "fb_margin_over_uniform": 0.174496,
+      "fb_normalized_excess_at_threshold": 0.4659,
+      "observable_acceptance": {
+        "metric": "QAOA_MaxCut_Approx_Ratio",
+        "ideal_value": 0.848761,
+        "target_threshold": 0.7022,
+        "uniform_random_value": 0.555556,
+        "ideal_margin_over_target": 0.1466,
+        "target_margin_over_uniform": 0.1466
+      },
+      "extra_metadata": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "num_edges": 10,
+        "c_max": 9.0,
+        "qaoa_params": [
+          0.24304,
+          -0.5331,
+          0.43651,
+          -0.31021
+        ],
+        "ideal_approx_ratio": 0.848761,
+        "uniform_approx_ratio": 0.555556,
+        "ideal_near_opt_mass": 0.335524,
+        "uniform_near_opt_mass": 0.015625
+      },
+      "circuit_sha256": "17638ab8c005053d552dee17c786d4a4bcc9a767db27c0acf001146773bd95c7"
+    },
+    {
+      "workload_id": "W_F3_qaoa_maxcut_07Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F3_qaoa_maxcut",
+      "family_label": "Near-3-Regular Bounded-Degree QAOA MaxCut",
+      "width_q": 7,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 10,
+      "logical_depth": 7,
+      "ideal_shannon_entropy_bits": 5.9374,
+      "fb_threshold": 0.8603,
+      "fb_uniform_random": 0.800468,
+      "fb_margin_over_uniform": 0.059832,
+      "fb_normalized_excess_at_threshold": 0.2999,
+      "observable_acceptance": {
+        "metric": "QAOA_MaxCut_Approx_Ratio",
+        "ideal_value": 0.833159,
+        "target_threshold": 0.7291,
+        "uniform_random_value": 0.625,
+        "ideal_margin_over_target": 0.1041,
+        "target_margin_over_uniform": 0.1041
+      },
+      "extra_metadata": {
+        "edges": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "num_edges": 10,
+        "c_max": 8.0,
+        "qaoa_params": [
+          0.29548,
+          -0.35237
+        ],
+        "ideal_approx_ratio": 0.833159,
+        "uniform_approx_ratio": 0.625,
+        "ideal_near_opt_mass": 0.191977,
+        "uniform_near_opt_mass": 0.03125
+      },
+      "circuit_sha256": "414bf0422e19b4e14d59024fb2731d5cf308cf4a717e5da21e19e225e59bea24"
+    },
+    {
+      "workload_id": "W_F3_qaoa_maxcut_07Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F3_qaoa_maxcut",
+      "family_label": "Near-3-Regular Bounded-Degree QAOA MaxCut",
+      "width_q": 7,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 20,
+      "logical_depth": 18,
+      "ideal_shannon_entropy_bits": 4.7638,
+      "fb_threshold": 0.8,
+      "fb_uniform_random": 0.633342,
+      "fb_margin_over_uniform": 0.166658,
+      "fb_normalized_excess_at_threshold": 0.4545,
+      "observable_acceptance": {
+        "metric": "QAOA_MaxCut_Approx_Ratio",
+        "ideal_value": 0.907779,
+        "target_threshold": 0.7664,
+        "uniform_random_value": 0.625,
+        "ideal_margin_over_target": 0.1414,
+        "target_margin_over_uniform": 0.1414
+      },
+      "extra_metadata": {
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "num_edges": 10,
+        "c_max": 8.0,
+        "qaoa_params": [
+          0.26659,
+          -0.44082,
+          0.50319,
+          -0.24084
+        ],
+        "ideal_approx_ratio": 0.907779,
+        "uniform_approx_ratio": 0.625,
+        "ideal_near_opt_mass": 0.468041,
+        "uniform_near_opt_mass": 0.03125
+      },
+      "circuit_sha256": "efcb51bf86a7ba9fc3ed96908ecb25af52f81a12b53c3f58a69945c54c9ccbfc"
+    },
+    {
+      "workload_id": "W_F3_qaoa_maxcut_09Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F3_qaoa_maxcut",
+      "family_label": "Near-3-Regular Bounded-Degree QAOA MaxCut",
+      "width_q": 9,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 13,
+      "logical_depth": 9,
+      "ideal_shannon_entropy_bits": 7.549,
+      "fb_threshold": 0.818,
+      "fb_uniform_random": 0.740029,
+      "fb_margin_over_uniform": 0.077971,
+      "fb_normalized_excess_at_threshold": 0.2999,
+      "observable_acceptance": {
+        "metric": "QAOA_MaxCut_Approx_Ratio",
+        "ideal_value": 0.79417,
+        "target_threshold": 0.6925,
+        "uniform_random_value": 0.590909,
+        "ideal_margin_over_target": 0.1017,
+        "target_margin_over_uniform": 0.1016
+      },
+      "extra_metadata": {
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "num_edges": 13,
+        "c_max": 11.0,
+        "qaoa_params": [
+          0.29781,
+          -0.36101
+        ],
+        "ideal_approx_ratio": 0.79417,
+        "uniform_approx_ratio": 0.590909,
+        "ideal_near_opt_mass": 0.310344,
+        "uniform_near_opt_mass": 0.039062
+      },
+      "circuit_sha256": "de6f9cac6d5023eda5ee5fe6b9e0a8b2d8511295aca3cb09b292b349fef3267a"
+    },
+    {
+      "workload_id": "W_F3_qaoa_maxcut_09Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F3_qaoa_maxcut",
+      "family_label": "Near-3-Regular Bounded-Degree QAOA MaxCut",
+      "width_q": 9,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 26,
+      "logical_depth": 14,
+      "ideal_shannon_entropy_bits": 6.0562,
+      "fb_threshold": 0.78,
+      "fb_uniform_random": 0.574295,
+      "fb_margin_over_uniform": 0.205705,
+      "fb_normalized_excess_at_threshold": 0.4832,
+      "observable_acceptance": {
+        "metric": "QAOA_MaxCut_Approx_Ratio",
+        "ideal_value": 0.830392,
+        "target_threshold": 0.686,
+        "uniform_random_value": 0.541667,
+        "ideal_margin_over_target": 0.1444,
+        "target_margin_over_uniform": 0.1443
+      },
+      "extra_metadata": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "num_edges": 13,
+        "c_max": 12.0,
+        "qaoa_params": [
+          0.2473,
+          -0.55561,
+          0.44085,
+          -0.32088
+        ],
+        "ideal_approx_ratio": 0.830392,
+        "uniform_approx_ratio": 0.541667,
+        "ideal_near_opt_mass": 0.386454,
+        "uniform_near_opt_mass": 0.011719
+      },
+      "circuit_sha256": "e3927572e6d18ed45dcb28f1c3f911a532d9161816578e3939d480a6218ccc90"
+    },
+    {
+      "workload_id": "W_F3_qaoa_maxcut_09Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F3_qaoa_maxcut",
+      "family_label": "Near-3-Regular Bounded-Degree QAOA MaxCut",
+      "width_q": 9,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 13,
+      "logical_depth": 9,
+      "ideal_shannon_entropy_bits": 7.4633,
+      "fb_threshold": 0.8188,
+      "fb_uniform_random": 0.741128,
+      "fb_margin_over_uniform": 0.077672,
+      "fb_normalized_excess_at_threshold": 0.3,
+      "observable_acceptance": {
+        "metric": "QAOA_MaxCut_Approx_Ratio",
+        "ideal_value": 0.740333,
+        "target_threshold": 0.641,
+        "uniform_random_value": 0.541667,
+        "ideal_margin_over_target": 0.0993,
+        "target_margin_over_uniform": 0.0993
+      },
+      "extra_metadata": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "num_edges": 13,
+        "c_max": 12.0,
+        "qaoa_params": [
+          0.30604,
+          -0.37658
+        ],
+        "ideal_approx_ratio": 0.740333,
+        "uniform_approx_ratio": 0.541667,
+        "ideal_near_opt_mass": 0.153904,
+        "uniform_near_opt_mass": 0.011719
+      },
+      "circuit_sha256": "6603192cba3cfe6148a1c6aeff4f655e6014900177b67fdde3b332e8c51ff4c9"
+    },
+    {
+      "workload_id": "W_F3_qaoa_maxcut_09Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F3_qaoa_maxcut",
+      "family_label": "Near-3-Regular Bounded-Degree QAOA MaxCut",
+      "width_q": 9,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 26,
+      "logical_depth": 15,
+      "ideal_shannon_entropy_bits": 6.0664,
+      "fb_threshold": 0.78,
+      "fb_uniform_random": 0.518078,
+      "fb_margin_over_uniform": 0.261922,
+      "fb_normalized_excess_at_threshold": 0.5435,
+      "observable_acceptance": {
+        "metric": "QAOA_MaxCut_Approx_Ratio",
+        "ideal_value": 0.895524,
+        "target_threshold": 0.7432,
+        "uniform_random_value": 0.590909,
+        "ideal_margin_over_target": 0.1523,
+        "target_margin_over_uniform": 0.1523
+      },
+      "extra_metadata": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "num_edges": 13,
+        "c_max": 11.0,
+        "qaoa_params": [
+          0.22975,
+          -0.51847,
+          0.42234,
+          -0.27061
+        ],
+        "ideal_approx_ratio": 0.895524,
+        "uniform_approx_ratio": 0.590909,
+        "ideal_near_opt_mass": 0.717998,
+        "uniform_near_opt_mass": 0.058594
+      },
+      "circuit_sha256": "0791699bf81064f5f3b048dd20e0ce6a91c388f73e8bb04dcc9b3b9306ffb468"
+    },
+    {
+      "workload_id": "W_F3_qaoa_maxcut_11Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F3_qaoa_maxcut",
+      "family_label": "Near-3-Regular Bounded-Degree QAOA MaxCut",
+      "width_q": 11,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 16,
+      "logical_depth": 10,
+      "ideal_shannon_entropy_bits": 9.0839,
+      "fb_threshold": 0.7794,
+      "fb_uniform_random": 0.684915,
+      "fb_margin_over_uniform": 0.094485,
+      "fb_normalized_excess_at_threshold": 0.2999,
+      "observable_acceptance": {
+        "metric": "QAOA_MaxCut_Approx_Ratio",
+        "ideal_value": 0.730688,
+        "target_threshold": 0.632,
+        "uniform_random_value": 0.533333,
+        "ideal_margin_over_target": 0.0987,
+        "target_margin_over_uniform": 0.0987
+      },
+      "extra_metadata": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "num_edges": 16,
+        "c_max": 15.0,
+        "qaoa_params": [
+          0.30612,
+          -0.37962
+        ],
+        "ideal_approx_ratio": 0.730688,
+        "uniform_approx_ratio": 0.533333,
+        "ideal_near_opt_mass": 0.084184,
+        "uniform_near_opt_mass": 0.00293
+      },
+      "circuit_sha256": "c095915ded66978b5fdde6bd47f0e0e5a15c45dbb6742b996a452ce35ae5a7df"
+    },
+    {
+      "workload_id": "W_F3_qaoa_maxcut_11Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F3_qaoa_maxcut",
+      "family_label": "Near-3-Regular Bounded-Degree QAOA MaxCut",
+      "width_q": 11,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 32,
+      "logical_depth": 14,
+      "ideal_shannon_entropy_bits": 7.6405,
+      "fb_threshold": 0.75,
+      "fb_uniform_random": 0.528539,
+      "fb_margin_over_uniform": 0.221461,
+      "fb_normalized_excess_at_threshold": 0.4697,
+      "observable_acceptance": {
+        "metric": "QAOA_MaxCut_Approx_Ratio",
+        "ideal_value": 0.805465,
+        "target_threshold": 0.6694,
+        "uniform_random_value": 0.533333,
+        "ideal_margin_over_target": 0.1361,
+        "target_margin_over_uniform": 0.1361
+      },
+      "extra_metadata": {
+        "edges": [
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            8,
+            10
+          ]
+        ],
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "num_edges": 16,
+        "c_max": 15.0,
+        "qaoa_params": [
+          0.24083,
+          -0.54943,
+          0.44494,
+          -0.30305
+        ],
+        "ideal_approx_ratio": 0.805465,
+        "uniform_approx_ratio": 0.533333,
+        "ideal_near_opt_mass": 0.250815,
+        "uniform_near_opt_mass": 0.00293
+      },
+      "circuit_sha256": "13b05c2b584368b0f204fca2432e244a5fe62fa11355fb084e190a61b530d4c1"
+    },
+    {
+      "workload_id": "W_F3_qaoa_maxcut_11Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F3_qaoa_maxcut",
+      "family_label": "Near-3-Regular Bounded-Degree QAOA MaxCut",
+      "width_q": 11,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 16,
+      "logical_depth": 9,
+      "ideal_shannon_entropy_bits": 9.076,
+      "fb_threshold": 0.7751,
+      "fb_uniform_random": 0.678665,
+      "fb_margin_over_uniform": 0.096435,
+      "fb_normalized_excess_at_threshold": 0.3001,
+      "observable_acceptance": {
+        "metric": "QAOA_MaxCut_Approx_Ratio",
+        "ideal_value": 0.843102,
+        "target_threshold": 0.7292,
+        "uniform_random_value": 0.615385,
+        "ideal_margin_over_target": 0.1139,
+        "target_margin_over_uniform": 0.1138
+      },
+      "extra_metadata": {
+        "edges": [
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            7,
+            9
+          ]
+        ],
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "num_edges": 16,
+        "c_max": 13.0,
+        "qaoa_params": [
+          0.30612,
+          -0.37962
+        ],
+        "ideal_approx_ratio": 0.843102,
+        "uniform_approx_ratio": 0.615385,
+        "ideal_near_opt_mass": 0.42341,
+        "uniform_near_opt_mass": 0.042969
+      },
+      "circuit_sha256": "56e4e25c0d2207a8d190bca10133df335b2a6685905e0eb279afce092703d96a"
+    },
+    {
+      "workload_id": "W_F3_qaoa_maxcut_11Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F3_qaoa_maxcut",
+      "family_label": "Near-3-Regular Bounded-Degree QAOA MaxCut",
+      "width_q": 11,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 32,
+      "logical_depth": 14,
+      "ideal_shannon_entropy_bits": 7.2234,
+      "fb_threshold": 0.75,
+      "fb_uniform_random": 0.499142,
+      "fb_margin_over_uniform": 0.250858,
+      "fb_normalized_excess_at_threshold": 0.5009,
+      "observable_acceptance": {
+        "metric": "QAOA_MaxCut_Approx_Ratio",
+        "ideal_value": 0.835017,
+        "target_threshold": 0.6842,
+        "uniform_random_value": 0.533333,
+        "ideal_margin_over_target": 0.1508,
+        "target_margin_over_uniform": 0.1509
+      },
+      "extra_metadata": {
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            10
+          ]
+        ],
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "num_edges": 16,
+        "c_max": 15.0,
+        "qaoa_params": [
+          0.23685,
+          -0.578,
+          0.42691,
+          -0.33259
+        ],
+        "ideal_approx_ratio": 0.835017,
+        "uniform_approx_ratio": 0.533333,
+        "ideal_near_opt_mass": 0.349346,
+        "uniform_near_opt_mass": 0.003906
+      },
+      "circuit_sha256": "ab6416f4e4c69bf8ec12ff58155613a71a7e45e4fa293088729fefcea5e2cfb3"
+    },
+    {
+      "workload_id": "W_F4_qft_phase_05Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F4_qft_phase",
+      "family_label": "Phase-Sensitive Quantum Fourier Transform",
+      "width_q": 5,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 10,
+      "logical_depth": 11,
+      "ideal_shannon_entropy_bits": 0.0,
+      "fb_threshold": 0.75,
+      "fb_uniform_random": 0.176777,
+      "fb_margin_over_uniform": 0.573223,
+      "fb_normalized_excess_at_threshold": 0.6963,
+      "observable_acceptance": {
+        "metric": "Top2_Fourier_Peak_Mass",
+        "ideal_value": 1.0,
+        "target_threshold": 0.5,
+        "uniform_random_value": 0.0625,
+        "ideal_margin_over_target": 0.5,
+        "target_margin_over_uniform": 0.4375
+      },
+      "extra_metadata": {
+        "planted_target_int": 20
+      },
+      "circuit_sha256": "5d65166f5a2bda9850a5e367413275f7cf26ff52b575eb9c76ee026bebf4eaaa"
+    },
+    {
+      "workload_id": "W_F4_qft_phase_05Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F4_qft_phase",
+      "family_label": "Phase-Sensitive Quantum Fourier Transform",
+      "width_q": 5,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 18,
+      "logical_depth": 23,
+      "ideal_shannon_entropy_bits": 0.5211,
+      "fb_threshold": 0.75,
+      "fb_uniform_random": 0.348694,
+      "fb_margin_over_uniform": 0.401306,
+      "fb_normalized_excess_at_threshold": 0.6162,
+      "observable_acceptance": {
+        "metric": "Top2_Fourier_Peak_Mass",
+        "ideal_value": 0.950758,
+        "target_threshold": 0.5,
+        "uniform_random_value": 0.0625,
+        "ideal_margin_over_target": 0.4508,
+        "target_margin_over_uniform": 0.4375
+      },
+      "extra_metadata": {
+        "planted_target_int": 9
+      },
+      "circuit_sha256": "a2350b89da692721153bd4f8eaa359ce0aac887dce296122e04266975a4bba41"
+    },
+    {
+      "workload_id": "W_F4_qft_phase_05Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F4_qft_phase",
+      "family_label": "Phase-Sensitive Quantum Fourier Transform",
+      "width_q": 5,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 10,
+      "logical_depth": 11,
+      "ideal_shannon_entropy_bits": 0.0,
+      "fb_threshold": 0.75,
+      "fb_uniform_random": 0.176777,
+      "fb_margin_over_uniform": 0.573223,
+      "fb_normalized_excess_at_threshold": 0.6963,
+      "observable_acceptance": {
+        "metric": "Top2_Fourier_Peak_Mass",
+        "ideal_value": 1.0,
+        "target_threshold": 0.5,
+        "uniform_random_value": 0.0625,
+        "ideal_margin_over_target": 0.5,
+        "target_margin_over_uniform": 0.4375
+      },
+      "extra_metadata": {
+        "planted_target_int": 23
+      },
+      "circuit_sha256": "8218c79de3507bc5d3dc53217af493adb9c6d054d6a1c36a1af829f08f9adbb3"
+    },
+    {
+      "workload_id": "W_F4_qft_phase_05Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F4_qft_phase",
+      "family_label": "Phase-Sensitive Quantum Fourier Transform",
+      "width_q": 5,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 18,
+      "logical_depth": 23,
+      "ideal_shannon_entropy_bits": 0.5211,
+      "fb_threshold": 0.75,
+      "fb_uniform_random": 0.348694,
+      "fb_margin_over_uniform": 0.401306,
+      "fb_normalized_excess_at_threshold": 0.6162,
+      "observable_acceptance": {
+        "metric": "Top2_Fourier_Peak_Mass",
+        "ideal_value": 0.950758,
+        "target_threshold": 0.5,
+        "uniform_random_value": 0.0625,
+        "ideal_margin_over_target": 0.4508,
+        "target_margin_over_uniform": 0.4375
+      },
+      "extra_metadata": {
+        "planted_target_int": 19
+      },
+      "circuit_sha256": "bd843c06486308aa13f16670158e35e498369e7a2f1290ca01cb1641be83c823"
+    },
+    {
+      "workload_id": "W_F4_qft_phase_07Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F4_qft_phase",
+      "family_label": "Phase-Sensitive Quantum Fourier Transform",
+      "width_q": 7,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 21,
+      "logical_depth": 15,
+      "ideal_shannon_entropy_bits": 0.0,
+      "fb_threshold": 0.72,
+      "fb_uniform_random": 0.088388,
+      "fb_margin_over_uniform": 0.631612,
+      "fb_normalized_excess_at_threshold": 0.6929,
+      "observable_acceptance": {
+        "metric": "Top2_Fourier_Peak_Mass",
+        "ideal_value": 1.0,
+        "target_threshold": 0.5,
+        "uniform_random_value": 0.015625,
+        "ideal_margin_over_target": 0.5,
+        "target_margin_over_uniform": 0.4844
+      },
+      "extra_metadata": {
+        "planted_target_int": 63
+      },
+      "circuit_sha256": "cedb1535c1fb77314f80676cc7af7c9016df6be3d1495ca778a6eb3515cc1d09"
+    },
+    {
+      "workload_id": "W_F4_qft_phase_07Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F4_qft_phase",
+      "family_label": "Phase-Sensitive Quantum Fourier Transform",
+      "width_q": 7,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 33,
+      "logical_depth": 33,
+      "ideal_shannon_entropy_bits": 0.793,
+      "fb_threshold": 0.72,
+      "fb_uniform_random": 0.250782,
+      "fb_margin_over_uniform": 0.469218,
+      "fb_normalized_excess_at_threshold": 0.6263,
+      "observable_acceptance": {
+        "metric": "Top2_Fourier_Peak_Mass",
+        "ideal_value": 0.923703,
+        "target_threshold": 0.5,
+        "uniform_random_value": 0.015625,
+        "ideal_margin_over_target": 0.4237,
+        "target_margin_over_uniform": 0.4844
+      },
+      "extra_metadata": {
+        "planted_target_int": 44
+      },
+      "circuit_sha256": "172f73d0f8cde6148b89c29f64667ca66947e4c5eb2036e667dc8b9bf6cfc679"
+    },
+    {
+      "workload_id": "W_F4_qft_phase_07Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F4_qft_phase",
+      "family_label": "Phase-Sensitive Quantum Fourier Transform",
+      "width_q": 7,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 21,
+      "logical_depth": 15,
+      "ideal_shannon_entropy_bits": 0.0,
+      "fb_threshold": 0.72,
+      "fb_uniform_random": 0.088388,
+      "fb_margin_over_uniform": 0.631612,
+      "fb_normalized_excess_at_threshold": 0.6929,
+      "observable_acceptance": {
+        "metric": "Top2_Fourier_Peak_Mass",
+        "ideal_value": 1.0,
+        "target_threshold": 0.5,
+        "uniform_random_value": 0.015625,
+        "ideal_margin_over_target": 0.5,
+        "target_margin_over_uniform": 0.4844
+      },
+      "extra_metadata": {
+        "planted_target_int": 36
+      },
+      "circuit_sha256": "7c1c0d2f58503876eb63705f532b37e8330ac189b2bb2eebf35adb8ef29bfd35"
+    },
+    {
+      "workload_id": "W_F4_qft_phase_07Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F4_qft_phase",
+      "family_label": "Phase-Sensitive Quantum Fourier Transform",
+      "width_q": 7,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 33,
+      "logical_depth": 33,
+      "ideal_shannon_entropy_bits": 0.793,
+      "fb_threshold": 0.72,
+      "fb_uniform_random": 0.250782,
+      "fb_margin_over_uniform": 0.469218,
+      "fb_normalized_excess_at_threshold": 0.6263,
+      "observable_acceptance": {
+        "metric": "Top2_Fourier_Peak_Mass",
+        "ideal_value": 0.923703,
+        "target_threshold": 0.5,
+        "uniform_random_value": 0.015625,
+        "ideal_margin_over_target": 0.4237,
+        "target_margin_over_uniform": 0.4844
+      },
+      "extra_metadata": {
+        "planted_target_int": 18
+      },
+      "circuit_sha256": "9a1f4e1a8231a9baaae81b915086bc4054429fa12e996a22a15b45eb264cc00e"
+    },
+    {
+      "workload_id": "W_F4_qft_phase_09Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F4_qft_phase",
+      "family_label": "Phase-Sensitive Quantum Fourier Transform",
+      "width_q": 9,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 36,
+      "logical_depth": 19,
+      "ideal_shannon_entropy_bits": 0.0,
+      "fb_threshold": 0.7,
+      "fb_uniform_random": 0.044194,
+      "fb_margin_over_uniform": 0.655806,
+      "fb_normalized_excess_at_threshold": 0.6861,
+      "observable_acceptance": {
+        "metric": "Top2_Fourier_Peak_Mass",
+        "ideal_value": 1.0,
+        "target_threshold": 0.5,
+        "uniform_random_value": 0.003906,
+        "ideal_margin_over_target": 0.5,
+        "target_margin_over_uniform": 0.4961
+      },
+      "extra_metadata": {
+        "planted_target_int": 185
+      },
+      "circuit_sha256": "a8bf2a2344deaa431c6fa6377c56a047b726cd936e6b736bb253a690a5b387a2"
+    },
+    {
+      "workload_id": "W_F4_qft_phase_09Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F4_qft_phase",
+      "family_label": "Phase-Sensitive Quantum Fourier Transform",
+      "width_q": 9,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 52,
+      "logical_depth": 43,
+      "ideal_shannon_entropy_bits": 1.0656,
+      "fb_threshold": 0.7,
+      "fb_uniform_random": 0.180221,
+      "fb_margin_over_uniform": 0.519779,
+      "fb_normalized_excess_at_threshold": 0.634,
+      "observable_acceptance": {
+        "metric": "Top2_Fourier_Peak_Mass",
+        "ideal_value": 0.897417,
+        "target_threshold": 0.5,
+        "uniform_random_value": 0.003906,
+        "ideal_margin_over_target": 0.3974,
+        "target_margin_over_uniform": 0.4961
+      },
+      "extra_metadata": {
+        "planted_target_int": 214
+      },
+      "circuit_sha256": "4532b93e1d0a6db2ff1e2cc95e65dce522f9cf34fefd467bdc4ffe5bca0f7bea"
+    },
+    {
+      "workload_id": "W_F4_qft_phase_09Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F4_qft_phase",
+      "family_label": "Phase-Sensitive Quantum Fourier Transform",
+      "width_q": 9,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 36,
+      "logical_depth": 19,
+      "ideal_shannon_entropy_bits": 0.0,
+      "fb_threshold": 0.7,
+      "fb_uniform_random": 0.044194,
+      "fb_margin_over_uniform": 0.655806,
+      "fb_normalized_excess_at_threshold": 0.6861,
+      "observable_acceptance": {
+        "metric": "Top2_Fourier_Peak_Mass",
+        "ideal_value": 1.0,
+        "target_threshold": 0.5,
+        "uniform_random_value": 0.003906,
+        "ideal_margin_over_target": 0.5,
+        "target_margin_over_uniform": 0.4961
+      },
+      "extra_metadata": {
+        "planted_target_int": 226
+      },
+      "circuit_sha256": "bf1467a2a3716138f0d24c7744ef49585175a1214c92e15d56c5278cc84e0553"
+    },
+    {
+      "workload_id": "W_F4_qft_phase_09Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F4_qft_phase",
+      "family_label": "Phase-Sensitive Quantum Fourier Transform",
+      "width_q": 9,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 52,
+      "logical_depth": 43,
+      "ideal_shannon_entropy_bits": 1.0656,
+      "fb_threshold": 0.7,
+      "fb_uniform_random": 0.180221,
+      "fb_margin_over_uniform": 0.519779,
+      "fb_normalized_excess_at_threshold": 0.634,
+      "observable_acceptance": {
+        "metric": "Top2_Fourier_Peak_Mass",
+        "ideal_value": 0.897417,
+        "target_threshold": 0.5,
+        "uniform_random_value": 0.003906,
+        "ideal_margin_over_target": 0.3974,
+        "target_margin_over_uniform": 0.4961
+      },
+      "extra_metadata": {
+        "planted_target_int": 110
+      },
+      "circuit_sha256": "6c1e1d6d14d9aa2be77f4267f35564338e6ae94d7f77c29a19b06bc377020795"
+    },
+    {
+      "workload_id": "W_F4_qft_phase_11Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F4_qft_phase",
+      "family_label": "Phase-Sensitive Quantum Fourier Transform",
+      "width_q": 11,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 55,
+      "logical_depth": 23,
+      "ideal_shannon_entropy_bits": 0.0,
+      "fb_threshold": 0.68,
+      "fb_uniform_random": 0.022097,
+      "fb_margin_over_uniform": 0.657903,
+      "fb_normalized_excess_at_threshold": 0.6728,
+      "observable_acceptance": {
+        "metric": "Top2_Fourier_Peak_Mass",
+        "ideal_value": 1.0,
+        "target_threshold": 0.5,
+        "uniform_random_value": 0.000977,
+        "ideal_margin_over_target": 0.5,
+        "target_margin_over_uniform": 0.499
+      },
+      "extra_metadata": {
+        "planted_target_int": 667
+      },
+      "circuit_sha256": "b44969394d708b0c1d803cbd29e14b53fd993742dcd3dbc7f4950b27323448b3"
+    },
+    {
+      "workload_id": "W_F4_qft_phase_11Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F4_qft_phase",
+      "family_label": "Phase-Sensitive Quantum Fourier Transform",
+      "width_q": 11,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 75,
+      "logical_depth": 53,
+      "ideal_shannon_entropy_bits": 1.3384,
+      "fb_threshold": 0.68,
+      "fb_uniform_random": 0.129437,
+      "fb_margin_over_uniform": 0.550563,
+      "fb_normalized_excess_at_threshold": 0.6324,
+      "observable_acceptance": {
+        "metric": "Top2_Fourier_Peak_Mass",
+        "ideal_value": 0.87188,
+        "target_threshold": 0.5,
+        "uniform_random_value": 0.000977,
+        "ideal_margin_over_target": 0.3719,
+        "target_margin_over_uniform": 0.499
+      },
+      "extra_metadata": {
+        "planted_target_int": 1306
+      },
+      "circuit_sha256": "5687b21d117ec741f52e90dc66edcb38942966b5d227bf52e4978c8aaa8af614"
+    },
+    {
+      "workload_id": "W_F4_qft_phase_11Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F4_qft_phase",
+      "family_label": "Phase-Sensitive Quantum Fourier Transform",
+      "width_q": 11,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 55,
+      "logical_depth": 23,
+      "ideal_shannon_entropy_bits": 0.0,
+      "fb_threshold": 0.68,
+      "fb_uniform_random": 0.022097,
+      "fb_margin_over_uniform": 0.657903,
+      "fb_normalized_excess_at_threshold": 0.6728,
+      "observable_acceptance": {
+        "metric": "Top2_Fourier_Peak_Mass",
+        "ideal_value": 1.0,
+        "target_threshold": 0.5,
+        "uniform_random_value": 0.000977,
+        "ideal_margin_over_target": 0.5,
+        "target_margin_over_uniform": 0.499
+      },
+      "extra_metadata": {
+        "planted_target_int": 687
+      },
+      "circuit_sha256": "31d30dada31d977618fe296d2f345c219384ed242cb47b3323df8b41884e99d4"
+    },
+    {
+      "workload_id": "W_F4_qft_phase_11Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F4_qft_phase",
+      "family_label": "Phase-Sensitive Quantum Fourier Transform",
+      "width_q": 11,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 75,
+      "logical_depth": 53,
+      "ideal_shannon_entropy_bits": 1.3384,
+      "fb_threshold": 0.68,
+      "fb_uniform_random": 0.129437,
+      "fb_margin_over_uniform": 0.550563,
+      "fb_normalized_excess_at_threshold": 0.6324,
+      "observable_acceptance": {
+        "metric": "Top2_Fourier_Peak_Mass",
+        "ideal_value": 0.87188,
+        "target_threshold": 0.5,
+        "uniform_random_value": 0.000977,
+        "ideal_margin_over_target": 0.3719,
+        "target_margin_over_uniform": 0.499
+      },
+      "extra_metadata": {
+        "planted_target_int": 986
+      },
+      "circuit_sha256": "05e0029e7e6db5a0c5c9bceb8d2725259f0ee5120a67776522175c77ebb1254f"
+    },
+    {
+      "workload_id": "W_F5_trotter_ising_05Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F5_trotter_ising",
+      "family_label": "1D/Ring Transverse-Field Ising Trotter",
+      "width_q": 5,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 8,
+      "logical_depth": 7,
+      "ideal_shannon_entropy_bits": 1.823,
+      "fb_threshold": 0.75,
+      "fb_uniform_random": 0.498763,
+      "fb_margin_over_uniform": 0.251237,
+      "fb_normalized_excess_at_threshold": 0.5012,
+      "observable_acceptance": {
+        "metric": "Site_Magnetization_MAE",
+        "ideal_value": 0.0,
+        "target_threshold": 0.08,
+        "uniform_random_value": 0.86049,
+        "ideal_margin_over_target": 0.08,
+        "target_margin_over_uniform": 0.7805
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "27879156cb8ca1658ca031e0bedc2a520aba3e03471e7c50c565fdd48bd7f8e2"
+    },
+    {
+      "workload_id": "W_F5_trotter_ising_05Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F5_trotter_ising",
+      "family_label": "1D/Ring Transverse-Field Ising Trotter",
+      "width_q": 5,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 20,
+      "logical_depth": 15,
+      "ideal_shannon_entropy_bits": 2.8936,
+      "fb_threshold": 0.7688,
+      "fb_uniform_random": 0.669747,
+      "fb_margin_over_uniform": 0.099053,
+      "fb_normalized_excess_at_threshold": 0.2999,
+      "observable_acceptance": {
+        "metric": "Site_Magnetization_MAE",
+        "ideal_value": 0.0,
+        "target_threshold": 0.08,
+        "uniform_random_value": 0.712474,
+        "ideal_margin_over_target": 0.08,
+        "target_margin_over_uniform": 0.6325
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "a9464fa92daf58b8f249f63a3b50d6e030e6cd87f86457bbb444eb1e3897b824"
+    },
+    {
+      "workload_id": "W_F5_trotter_ising_05Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F5_trotter_ising",
+      "family_label": "1D/Ring Transverse-Field Ising Trotter",
+      "width_q": 5,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 8,
+      "logical_depth": 7,
+      "ideal_shannon_entropy_bits": 1.823,
+      "fb_threshold": 0.75,
+      "fb_uniform_random": 0.498763,
+      "fb_margin_over_uniform": 0.251237,
+      "fb_normalized_excess_at_threshold": 0.5012,
+      "observable_acceptance": {
+        "metric": "Site_Magnetization_MAE",
+        "ideal_value": 0.0,
+        "target_threshold": 0.08,
+        "uniform_random_value": 0.86049,
+        "ideal_margin_over_target": 0.08,
+        "target_margin_over_uniform": 0.7805
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "27879156cb8ca1658ca031e0bedc2a520aba3e03471e7c50c565fdd48bd7f8e2"
+    },
+    {
+      "workload_id": "W_F5_trotter_ising_05Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F5_trotter_ising",
+      "family_label": "1D/Ring Transverse-Field Ising Trotter",
+      "width_q": 5,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 20,
+      "logical_depth": 15,
+      "ideal_shannon_entropy_bits": 2.8936,
+      "fb_threshold": 0.7688,
+      "fb_uniform_random": 0.669747,
+      "fb_margin_over_uniform": 0.099053,
+      "fb_normalized_excess_at_threshold": 0.2999,
+      "observable_acceptance": {
+        "metric": "Site_Magnetization_MAE",
+        "ideal_value": 0.0,
+        "target_threshold": 0.08,
+        "uniform_random_value": 0.712474,
+        "ideal_margin_over_target": 0.08,
+        "target_margin_over_uniform": 0.6325
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "a9464fa92daf58b8f249f63a3b50d6e030e6cd87f86457bbb444eb1e3897b824"
+    },
+    {
+      "workload_id": "W_F5_trotter_ising_07Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F5_trotter_ising",
+      "family_label": "1D/Ring Transverse-Field Ising Trotter",
+      "width_q": 7,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 12,
+      "logical_depth": 7,
+      "ideal_shannon_entropy_bits": 2.5221,
+      "fb_threshold": 0.7,
+      "fb_uniform_random": 0.374963,
+      "fb_margin_over_uniform": 0.325037,
+      "fb_normalized_excess_at_threshold": 0.52,
+      "observable_acceptance": {
+        "metric": "Site_Magnetization_MAE",
+        "ideal_value": 0.0,
+        "target_threshold": 0.08,
+        "uniform_random_value": 0.862793,
+        "ideal_margin_over_target": 0.08,
+        "target_margin_over_uniform": 0.7828
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "2b9745a2b777209e04083187d76e1c78fe138f1b6a173c87046d6fd15c3f3bf4"
+    },
+    {
+      "workload_id": "W_F5_trotter_ising_07Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F5_trotter_ising",
+      "family_label": "1D/Ring Transverse-Field Ising Trotter",
+      "width_q": 7,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 28,
+      "logical_depth": 15,
+      "ideal_shannon_entropy_bits": 3.8781,
+      "fb_threshold": 0.7,
+      "fb_uniform_random": 0.55409,
+      "fb_margin_over_uniform": 0.14591,
+      "fb_normalized_excess_at_threshold": 0.3272,
+      "observable_acceptance": {
+        "metric": "Site_Magnetization_MAE",
+        "ideal_value": 0.0,
+        "target_threshold": 0.08,
+        "uniform_random_value": 0.730945,
+        "ideal_margin_over_target": 0.08,
+        "target_margin_over_uniform": 0.6509
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "8284e78b115dd7e13d46319ad857c81df426604109406ba9476f10ea57df102f"
+    },
+    {
+      "workload_id": "W_F5_trotter_ising_07Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F5_trotter_ising",
+      "family_label": "1D/Ring Transverse-Field Ising Trotter",
+      "width_q": 7,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 12,
+      "logical_depth": 7,
+      "ideal_shannon_entropy_bits": 2.5221,
+      "fb_threshold": 0.7,
+      "fb_uniform_random": 0.374963,
+      "fb_margin_over_uniform": 0.325037,
+      "fb_normalized_excess_at_threshold": 0.52,
+      "observable_acceptance": {
+        "metric": "Site_Magnetization_MAE",
+        "ideal_value": 0.0,
+        "target_threshold": 0.08,
+        "uniform_random_value": 0.862793,
+        "ideal_margin_over_target": 0.08,
+        "target_margin_over_uniform": 0.7828
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "2b9745a2b777209e04083187d76e1c78fe138f1b6a173c87046d6fd15c3f3bf4"
+    },
+    {
+      "workload_id": "W_F5_trotter_ising_07Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F5_trotter_ising",
+      "family_label": "1D/Ring Transverse-Field Ising Trotter",
+      "width_q": 7,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 28,
+      "logical_depth": 15,
+      "ideal_shannon_entropy_bits": 3.8781,
+      "fb_threshold": 0.7,
+      "fb_uniform_random": 0.55409,
+      "fb_margin_over_uniform": 0.14591,
+      "fb_normalized_excess_at_threshold": 0.3272,
+      "observable_acceptance": {
+        "metric": "Site_Magnetization_MAE",
+        "ideal_value": 0.0,
+        "target_threshold": 0.08,
+        "uniform_random_value": 0.730945,
+        "ideal_margin_over_target": 0.08,
+        "target_margin_over_uniform": 0.6509
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "8284e78b115dd7e13d46319ad857c81df426604109406ba9476f10ea57df102f"
+    },
+    {
+      "workload_id": "W_F5_trotter_ising_09Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F5_trotter_ising",
+      "family_label": "1D/Ring Transverse-Field Ising Trotter",
+      "width_q": 9,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 16,
+      "logical_depth": 7,
+      "ideal_shannon_entropy_bits": 3.2211,
+      "fb_threshold": 0.65,
+      "fb_uniform_random": 0.281892,
+      "fb_margin_over_uniform": 0.368108,
+      "fb_normalized_excess_at_threshold": 0.5126,
+      "observable_acceptance": {
+        "metric": "Site_Magnetization_MAE",
+        "ideal_value": 0.0,
+        "target_threshold": 0.08,
+        "uniform_random_value": 0.864072,
+        "ideal_margin_over_target": 0.08,
+        "target_margin_over_uniform": 0.7841
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "d26194ec210f0bda5361751d35d8433c1934fce4f65d67b42da14f628e98dac3"
+    },
+    {
+      "workload_id": "W_F5_trotter_ising_09Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F5_trotter_ising",
+      "family_label": "1D/Ring Transverse-Field Ising Trotter",
+      "width_q": 9,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 36,
+      "logical_depth": 14,
+      "ideal_shannon_entropy_bits": 4.8627,
+      "fb_threshold": 0.65,
+      "fb_uniform_random": 0.458399,
+      "fb_margin_over_uniform": 0.191601,
+      "fb_normalized_excess_at_threshold": 0.3538,
+      "observable_acceptance": {
+        "metric": "Site_Magnetization_MAE",
+        "ideal_value": 0.0,
+        "target_threshold": 0.08,
+        "uniform_random_value": 0.741207,
+        "ideal_margin_over_target": 0.08,
+        "target_margin_over_uniform": 0.6612
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "d8a36941cf08b6360c503da7891d20f43d723c2f26895d11c4676da293e28693"
+    },
+    {
+      "workload_id": "W_F5_trotter_ising_09Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F5_trotter_ising",
+      "family_label": "1D/Ring Transverse-Field Ising Trotter",
+      "width_q": 9,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 16,
+      "logical_depth": 7,
+      "ideal_shannon_entropy_bits": 3.2211,
+      "fb_threshold": 0.65,
+      "fb_uniform_random": 0.281892,
+      "fb_margin_over_uniform": 0.368108,
+      "fb_normalized_excess_at_threshold": 0.5126,
+      "observable_acceptance": {
+        "metric": "Site_Magnetization_MAE",
+        "ideal_value": 0.0,
+        "target_threshold": 0.08,
+        "uniform_random_value": 0.864072,
+        "ideal_margin_over_target": 0.08,
+        "target_margin_over_uniform": 0.7841
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "d26194ec210f0bda5361751d35d8433c1934fce4f65d67b42da14f628e98dac3"
+    },
+    {
+      "workload_id": "W_F5_trotter_ising_09Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F5_trotter_ising",
+      "family_label": "1D/Ring Transverse-Field Ising Trotter",
+      "width_q": 9,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 36,
+      "logical_depth": 14,
+      "ideal_shannon_entropy_bits": 4.8627,
+      "fb_threshold": 0.65,
+      "fb_uniform_random": 0.458399,
+      "fb_margin_over_uniform": 0.191601,
+      "fb_normalized_excess_at_threshold": 0.3538,
+      "observable_acceptance": {
+        "metric": "Site_Magnetization_MAE",
+        "ideal_value": 0.0,
+        "target_threshold": 0.08,
+        "uniform_random_value": 0.741207,
+        "ideal_margin_over_target": 0.08,
+        "target_margin_over_uniform": 0.6612
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "d8a36941cf08b6360c503da7891d20f43d723c2f26895d11c4676da293e28693"
+    },
+    {
+      "workload_id": "W_F5_trotter_ising_11Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F5_trotter_ising",
+      "family_label": "1D/Ring Transverse-Field Ising Trotter",
+      "width_q": 11,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 20,
+      "logical_depth": 7,
+      "ideal_shannon_entropy_bits": 3.9202,
+      "fb_threshold": 0.6,
+      "fb_uniform_random": 0.211923,
+      "fb_margin_over_uniform": 0.388077,
+      "fb_normalized_excess_at_threshold": 0.4924,
+      "observable_acceptance": {
+        "metric": "Site_Magnetization_MAE",
+        "ideal_value": 0.0,
+        "target_threshold": 0.08,
+        "uniform_random_value": 0.864886,
+        "ideal_margin_over_target": 0.08,
+        "target_margin_over_uniform": 0.7849
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "846c41f1ce21e5c55fa9dbecaf3d58f17b652a32cabc13ac0635ed1c2ade031b"
+    },
+    {
+      "workload_id": "W_F5_trotter_ising_11Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F5_trotter_ising",
+      "family_label": "1D/Ring Transverse-Field Ising Trotter",
+      "width_q": 11,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 44,
+      "logical_depth": 14,
+      "ideal_shannon_entropy_bits": 5.8472,
+      "fb_threshold": 0.6,
+      "fb_uniform_random": 0.379234,
+      "fb_margin_over_uniform": 0.220766,
+      "fb_normalized_excess_at_threshold": 0.3556,
+      "observable_acceptance": {
+        "metric": "Site_Magnetization_MAE",
+        "ideal_value": 0.0,
+        "target_threshold": 0.08,
+        "uniform_random_value": 0.747737,
+        "ideal_margin_over_target": 0.08,
+        "target_margin_over_uniform": 0.6677
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "870aee8cd2a4ff36fa7d06bd22374d0955311e49171a954a79fa1ab68217c58b"
+    },
+    {
+      "workload_id": "W_F5_trotter_ising_11Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F5_trotter_ising",
+      "family_label": "1D/Ring Transverse-Field Ising Trotter",
+      "width_q": 11,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 20,
+      "logical_depth": 7,
+      "ideal_shannon_entropy_bits": 3.9202,
+      "fb_threshold": 0.6,
+      "fb_uniform_random": 0.211923,
+      "fb_margin_over_uniform": 0.388077,
+      "fb_normalized_excess_at_threshold": 0.4924,
+      "observable_acceptance": {
+        "metric": "Site_Magnetization_MAE",
+        "ideal_value": 0.0,
+        "target_threshold": 0.08,
+        "uniform_random_value": 0.864886,
+        "ideal_margin_over_target": 0.08,
+        "target_margin_over_uniform": 0.7849
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "846c41f1ce21e5c55fa9dbecaf3d58f17b652a32cabc13ac0635ed1c2ade031b"
+    },
+    {
+      "workload_id": "W_F5_trotter_ising_11Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F5_trotter_ising",
+      "family_label": "1D/Ring Transverse-Field Ising Trotter",
+      "width_q": 11,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 44,
+      "logical_depth": 14,
+      "ideal_shannon_entropy_bits": 5.8472,
+      "fb_threshold": 0.6,
+      "fb_uniform_random": 0.379234,
+      "fb_margin_over_uniform": 0.220766,
+      "fb_normalized_excess_at_threshold": 0.3556,
+      "observable_acceptance": {
+        "metric": "Site_Magnetization_MAE",
+        "ideal_value": 0.0,
+        "target_threshold": 0.08,
+        "uniform_random_value": 0.747737,
+        "ideal_margin_over_target": 0.08,
+        "target_margin_over_uniform": 0.6677
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "870aee8cd2a4ff36fa7d06bd22374d0955311e49171a954a79fa1ab68217c58b"
+    },
+    {
+      "workload_id": "W_F6_sparse_ctrl_05Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F6_sparse_ctrl",
+      "family_label": "Sparse Nearest-Neighbor Control",
+      "width_q": 5,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 4,
+      "logical_depth": 5,
+      "ideal_shannon_entropy_bits": 2.3073,
+      "fb_threshold": 0.9,
+      "fb_uniform_random": 0.556065,
+      "fb_margin_over_uniform": 0.343935,
+      "fb_normalized_excess_at_threshold": 0.7747,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.9,
+        "uniform_random_value": 0.556065,
+        "ideal_margin_over_target": 0.1,
+        "target_margin_over_uniform": 0.3439
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "28fe2ca173a696c161bef4a831be40ca1aa56ad6958f1b84da2be6f170356c25"
+    },
+    {
+      "workload_id": "W_F6_sparse_ctrl_05Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F6_sparse_ctrl",
+      "family_label": "Sparse Nearest-Neighbor Control",
+      "width_q": 5,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 8,
+      "logical_depth": 11,
+      "ideal_shannon_entropy_bits": 1.3504,
+      "fb_threshold": 0.9,
+      "fb_uniform_random": 0.427884,
+      "fb_margin_over_uniform": 0.472116,
+      "fb_normalized_excess_at_threshold": 0.8252,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.9,
+        "uniform_random_value": 0.427884,
+        "ideal_margin_over_target": 0.1,
+        "target_margin_over_uniform": 0.4721
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "c87b3ee8e362a97497107040a667ea547192f736f35a26a54d4634042db6536a"
+    },
+    {
+      "workload_id": "W_F6_sparse_ctrl_05Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F6_sparse_ctrl",
+      "family_label": "Sparse Nearest-Neighbor Control",
+      "width_q": 5,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 4,
+      "logical_depth": 5,
+      "ideal_shannon_entropy_bits": 2.0598,
+      "fb_threshold": 0.9,
+      "fb_uniform_random": 0.521462,
+      "fb_margin_over_uniform": 0.378538,
+      "fb_normalized_excess_at_threshold": 0.791,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.9,
+        "uniform_random_value": 0.521462,
+        "ideal_margin_over_target": 0.1,
+        "target_margin_over_uniform": 0.3785
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "14b418cc7d6b62f8a6087efe476c2375da83143bc6fffb1d8c3007f1b868c648"
+    },
+    {
+      "workload_id": "W_F6_sparse_ctrl_05Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F6_sparse_ctrl",
+      "family_label": "Sparse Nearest-Neighbor Control",
+      "width_q": 5,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 8,
+      "logical_depth": 11,
+      "ideal_shannon_entropy_bits": 0.967,
+      "fb_threshold": 0.9,
+      "fb_uniform_random": 0.38727,
+      "fb_margin_over_uniform": 0.51273,
+      "fb_normalized_excess_at_threshold": 0.8368,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.9,
+        "uniform_random_value": 0.38727,
+        "ideal_margin_over_target": 0.1,
+        "target_margin_over_uniform": 0.5127
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "35fde7d85e2ad6071fbb518980b40959b975a2937f50cafb34be4812ab918486"
+    },
+    {
+      "workload_id": "W_F6_sparse_ctrl_07Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F6_sparse_ctrl",
+      "family_label": "Sparse Nearest-Neighbor Control",
+      "width_q": 7,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 6,
+      "logical_depth": 7,
+      "ideal_shannon_entropy_bits": 3.75,
+      "fb_threshold": 0.9,
+      "fb_uniform_random": 0.502278,
+      "fb_margin_over_uniform": 0.397722,
+      "fb_normalized_excess_at_threshold": 0.7991,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.9,
+        "uniform_random_value": 0.502278,
+        "ideal_margin_over_target": 0.1,
+        "target_margin_over_uniform": 0.3977
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "48a18082e2a88b27ae5f46eb04b2ed0a198fd6c08573abcb49016887737738ce"
+    },
+    {
+      "workload_id": "W_F6_sparse_ctrl_07Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F6_sparse_ctrl",
+      "family_label": "Sparse Nearest-Neighbor Control",
+      "width_q": 7,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 12,
+      "logical_depth": 15,
+      "ideal_shannon_entropy_bits": 2.2793,
+      "fb_threshold": 0.9,
+      "fb_uniform_random": 0.353069,
+      "fb_margin_over_uniform": 0.546931,
+      "fb_normalized_excess_at_threshold": 0.8454,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.9,
+        "uniform_random_value": 0.353069,
+        "ideal_margin_over_target": 0.1,
+        "target_margin_over_uniform": 0.5469
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "08aa7025bf9ae93ba3c79f66e4d332373a810390a5887648fc3d67b3108c4df9"
+    },
+    {
+      "workload_id": "W_F6_sparse_ctrl_07Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F6_sparse_ctrl",
+      "family_label": "Sparse Nearest-Neighbor Control",
+      "width_q": 7,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 6,
+      "logical_depth": 7,
+      "ideal_shannon_entropy_bits": 3.4541,
+      "fb_threshold": 0.9,
+      "fb_uniform_random": 0.472114,
+      "fb_margin_over_uniform": 0.427886,
+      "fb_normalized_excess_at_threshold": 0.8106,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.9,
+        "uniform_random_value": 0.472114,
+        "ideal_margin_over_target": 0.1,
+        "target_margin_over_uniform": 0.4279
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "48091bb63c1db29c1b2a09f809bcf8b6c2223d14db3e84420a4168995bceeb04"
+    },
+    {
+      "workload_id": "W_F6_sparse_ctrl_07Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F6_sparse_ctrl",
+      "family_label": "Sparse Nearest-Neighbor Control",
+      "width_q": 7,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 12,
+      "logical_depth": 15,
+      "ideal_shannon_entropy_bits": 2.8875,
+      "fb_threshold": 0.9,
+      "fb_uniform_random": 0.433932,
+      "fb_margin_over_uniform": 0.466068,
+      "fb_normalized_excess_at_threshold": 0.8233,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.9,
+        "uniform_random_value": 0.433932,
+        "ideal_margin_over_target": 0.1,
+        "target_margin_over_uniform": 0.4661
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "db0f771438e5e5c18d2cb9c18a0bf3a90112106b08ba71bc45e19ea844929339"
+    },
+    {
+      "workload_id": "W_F6_sparse_ctrl_09Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F6_sparse_ctrl",
+      "family_label": "Sparse Nearest-Neighbor Control",
+      "width_q": 9,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 8,
+      "logical_depth": 9,
+      "ideal_shannon_entropy_bits": 4.7325,
+      "fb_threshold": 0.9,
+      "fb_uniform_random": 0.406565,
+      "fb_margin_over_uniform": 0.493435,
+      "fb_normalized_excess_at_threshold": 0.8315,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.9,
+        "uniform_random_value": 0.406565,
+        "ideal_margin_over_target": 0.1,
+        "target_margin_over_uniform": 0.4934
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "b7614f10ec70f76e6771032d55f3694aac4d2511339f64236d5248d03cf0aae7"
+    },
+    {
+      "workload_id": "W_F6_sparse_ctrl_09Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F6_sparse_ctrl",
+      "family_label": "Sparse Nearest-Neighbor Control",
+      "width_q": 9,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 16,
+      "logical_depth": 19,
+      "ideal_shannon_entropy_bits": 4.213,
+      "fb_threshold": 0.9,
+      "fb_uniform_random": 0.365077,
+      "fb_margin_over_uniform": 0.534923,
+      "fb_normalized_excess_at_threshold": 0.8425,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.9,
+        "uniform_random_value": 0.365077,
+        "ideal_margin_over_target": 0.1,
+        "target_margin_over_uniform": 0.5349
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "5bed40488e642991c647dd7903cb333348a1804fc94708424f0798cdb746af4d"
+    },
+    {
+      "workload_id": "W_F6_sparse_ctrl_09Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F6_sparse_ctrl",
+      "family_label": "Sparse Nearest-Neighbor Control",
+      "width_q": 9,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 8,
+      "logical_depth": 9,
+      "ideal_shannon_entropy_bits": 3.5722,
+      "fb_threshold": 0.9,
+      "fb_uniform_random": 0.29228,
+      "fb_margin_over_uniform": 0.60772,
+      "fb_normalized_excess_at_threshold": 0.8587,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.9,
+        "uniform_random_value": 0.29228,
+        "ideal_margin_over_target": 0.1,
+        "target_margin_over_uniform": 0.6077
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "2f6ec21adaa99dabd40d1b7c2b3acda20b99e14bf96d15d2e95d3e79f04ef846"
+    },
+    {
+      "workload_id": "W_F6_sparse_ctrl_09Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F6_sparse_ctrl",
+      "family_label": "Sparse Nearest-Neighbor Control",
+      "width_q": 9,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 16,
+      "logical_depth": 19,
+      "ideal_shannon_entropy_bits": 3.2306,
+      "fb_threshold": 0.9,
+      "fb_uniform_random": 0.284856,
+      "fb_margin_over_uniform": 0.615144,
+      "fb_normalized_excess_at_threshold": 0.8602,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.9,
+        "uniform_random_value": 0.284856,
+        "ideal_margin_over_target": 0.1,
+        "target_margin_over_uniform": 0.6151
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "38dce0883ebe2d8ac5276e2b3c87af9ec365bf9c52603021aac2c2e962cf8ccd"
+    },
+    {
+      "workload_id": "W_F6_sparse_ctrl_11Q_A_Short",
+      "cohort": "Core_48",
+      "family_id": "F6_sparse_ctrl",
+      "family_label": "Sparse Nearest-Neighbor Control",
+      "width_q": 11,
+      "instance_code": "A",
+      "duration_tier": "Short",
+      "logical_2q_gates": 10,
+      "logical_depth": 11,
+      "ideal_shannon_entropy_bits": 5.3139,
+      "fb_threshold": 0.9,
+      "fb_uniform_random": 0.293773,
+      "fb_margin_over_uniform": 0.606227,
+      "fb_normalized_excess_at_threshold": 0.8584,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.9,
+        "uniform_random_value": 0.293773,
+        "ideal_margin_over_target": 0.1,
+        "target_margin_over_uniform": 0.6062
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "23dab676942e687af47d116d4c7d3d936d2badbdbcca8a1110433bd57147745a"
+    },
+    {
+      "workload_id": "W_F6_sparse_ctrl_11Q_B_Long",
+      "cohort": "Core_48",
+      "family_id": "F6_sparse_ctrl",
+      "family_label": "Sparse Nearest-Neighbor Control",
+      "width_q": 11,
+      "instance_code": "B",
+      "duration_tier": "Long",
+      "logical_2q_gates": 20,
+      "logical_depth": 23,
+      "ideal_shannon_entropy_bits": 4.5979,
+      "fb_threshold": 0.9,
+      "fb_uniform_random": 0.269795,
+      "fb_margin_over_uniform": 0.630205,
+      "fb_normalized_excess_at_threshold": 0.8631,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.9,
+        "uniform_random_value": 0.269795,
+        "ideal_margin_over_target": 0.1,
+        "target_margin_over_uniform": 0.6302
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "4456148fe57b7fe917528477fe754469f4131be27b162b576ecbc32ae0633afb"
+    },
+    {
+      "workload_id": "W_F6_sparse_ctrl_11Q_C_Short",
+      "cohort": "Extended_96",
+      "family_id": "F6_sparse_ctrl",
+      "family_label": "Sparse Nearest-Neighbor Control",
+      "width_q": 11,
+      "instance_code": "C",
+      "duration_tier": "Short",
+      "logical_2q_gates": 10,
+      "logical_depth": 11,
+      "ideal_shannon_entropy_bits": 4.8596,
+      "fb_threshold": 0.9,
+      "fb_uniform_random": 0.257224,
+      "fb_margin_over_uniform": 0.642776,
+      "fb_normalized_excess_at_threshold": 0.8654,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.9,
+        "uniform_random_value": 0.257224,
+        "ideal_margin_over_target": 0.1,
+        "target_margin_over_uniform": 0.6428
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "754506e60c18a44610a26bf8c853f1f1bc9b7f2ae356674b582f013dd629a985"
+    },
+    {
+      "workload_id": "W_F6_sparse_ctrl_11Q_D_Long",
+      "cohort": "Extended_96",
+      "family_id": "F6_sparse_ctrl",
+      "family_label": "Sparse Nearest-Neighbor Control",
+      "width_q": 11,
+      "instance_code": "D",
+      "duration_tier": "Long",
+      "logical_2q_gates": 20,
+      "logical_depth": 23,
+      "ideal_shannon_entropy_bits": 5.7377,
+      "fb_threshold": 0.9,
+      "fb_uniform_random": 0.325703,
+      "fb_margin_over_uniform": 0.574297,
+      "fb_normalized_excess_at_threshold": 0.8517,
+      "observable_acceptance": {
+        "metric": "Diagnostic_Bhattacharyya_F_B",
+        "ideal_value": 1.0,
+        "target_threshold": 0.9,
+        "uniform_random_value": 0.325703,
+        "ideal_margin_over_target": 0.1,
+        "target_margin_over_uniform": 0.5743
+      },
+      "extra_metadata": {},
+      "circuit_sha256": "dade56d74f1afd42778f9e53e0afb4237f1190ebbe1a924683b6ed484c4d6d45"
+    }
+  ],
+  "manifest_sha256": "e81b51ea82d21d1a18a68c99ac07232a77b4df20be9aae5b267bf1f73db1ef4a"
+}

@@ -1,0 +1,27 @@
+{
+  "manifests/unseen_workload_queue_48_core_96_ext.json": {
+    "file_sha256": "8d7ba79f7249b52f269f3f09092a73855a697561f510953a2fa40f538e10771b",
+    "size_bytes": 111422,
+    "internal_canonical_payload_sha256": "e81b51ea82d21d1a18a68c99ac07232a77b4df20be9aae5b267bf1f73db1ef4a"
+  },
+  "manifests/quantum_os_reliability_suite_results.json": {
+    "file_sha256": "477d51dc8ad84c878035f69fbfc2112dd3935effc4038b2a0d66ba221c9d2190",
+    "size_bytes": 3682
+  },
+  "manifests/readonly_provider_readiness_check.json": {
+    "file_sha256": "88490892765a96f4d36acb2532eb69387c8de0e900ac6474c56fcdba1fbf774f",
+    "size_bytes": 796
+  },
+  "prometheus_execution_service.py": {
+    "file_sha256": "cd1917dce8bb323161272a3f341b998b6d61a15c2fe4ade9dfed30493b705a61",
+    "size_bytes": 31787
+  },
+  "test_quantum_os_reliability.py": {
+    "file_sha256": "052d77c55688e8340a26c429890d47c80115541626eb61a3d120871090127035",
+    "size_bytes": 28674
+  },
+  "generate_and_audit_unseen_queue.py": {
+    "file_sha256": "24b1bd443ba2e85af000997e3d311ab79f07b770b2eccb309c1ad2e06ad9e769",
+    "size_bytes": 20913
+  }
+}

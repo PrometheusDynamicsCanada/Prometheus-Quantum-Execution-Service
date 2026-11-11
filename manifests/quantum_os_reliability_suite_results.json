@@ -1,0 +1,114 @@
+{
+  "suite": "Prometheus_Quantum_OS_Offline_Reliability_Suite_v3",
+  "verification_boundary": "offline_mock_provider_and_sqlite_wal_only_zero_live_qpu_jobs",
+  "total_tests": 8,
+  "passed_tests": 8,
+  "all_pass": true,
+  "results": [
+    {
+      "test": "T1_Real_OS_Process_Kill_And_Manager_WAL_Recovery",
+      "scope": "offline_mock_provider",
+      "status": "PASS",
+      "killed_process_nonzero_exit": true,
+      "total_provider_submit_calls": 1,
+      "recovered_job_id": "remote_job_001_ibm_kingston"
+    },
+    {
+      "test": "T2_Bit_Exact_Demultiplexing_5Q_7Q_9Q_11Q",
+      "scope": "offline_bitmatrix_verifier",
+      "status": "PASS",
+      "physical_composite_shots": 4096,
+      "packed_workloads_per_pub": 4,
+      "component_workload_shot_evaluations": 16384
+    },
+    {
+      "test": "T3_Concurrent_16Thread_Atomic_Budget_Enforcement",
+      "scope": "offline_sqlite_wal_concurrency",
+      "status": "PASS",
+      "concurrent_threads": 16,
+      "succeeded_8cr_reservations": 4,
+      "rejected_8cr_reservations": 12,
+      "final_reserved_credits": 36.5,
+      "policy_cap_credits": 36.5
+    },
+    {
+      "test": "T4_Strict_FIFO_P5_Geometric_Fallback_And_Isolated_MultiPUB_Batching",
+      "scope": "offline_emerald_32node_subgraph_and_54node_full_graph",
+      "status": "PASS",
+      "fifo_order_preserved": true,
+      "emerald_32node_subgraph_occupancies": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        1
+      ],
+      "emerald_54node_full_graph_occupancies": [
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "isolated_baseline_batch": {
+        "num_batch_jobs": 1,
+        "num_pubs": 12,
+        "workloads_per_pub": 1
+      }
+    },
+    {
+      "test": "T5_PreDispatch_Cancellation_And_Unconditional_48Workload_Accounting",
+      "scope": "offline_accounting_verifier",
+      "status": "PASS",
+      "active_repacked": 6,
+      "unconditional_accounting_verified": {
+        "policy_id": "P1",
+        "account_id": "IQM_Stage1_P1",
+        "total_submitted_workloads": 48,
+        "accepted_workloads": 26,
+        "unconditional_queue_yield_fraction": 0.541667,
+        "charged_hardware_cost": 36.0,
+        "reserved_pending_cost": 0.0,
+        "effective_committed_cost": 36.0,
+        "budget_ceiling": 36.5,
+        "accepted_per_unit_charged_cost": 0.722222,
+        "conditional_mean_fb_executed": 0.85,
+        "unconditional_mean_fb_all_submitted": 0.566667,
+        "workload_status_breakdown": {
+          "TRUNCATED_AT_BUDGET_CEILING": 16,
+          "COMPLETED": 32
+        }
+      }
+    },
+    {
+      "test": "T6_Manager_Adapter_503_Failover_To_Secondary_QPU",
+      "scope": "offline_mock_provider",
+      "status": "PASS",
+      "failed_backend": "ibm_marrakesh",
+      "selected_backend": "ibm_kingston",
+      "logged_failover_events": 1
+    },
+    {
+      "test": "T7_Priority_Scheduling_With_Anti_Starvation_Aging",
+      "scope": "offline_scheduler_verifier",
+      "status": "PASS",
+      "dispatch_order": [
+        "Low_Old",
+        "High_New",
+        "Norm_Mid"
+      ]
+    },
+    {
+      "test": "T8_Ambiguous_Timeout_SUBMISSION_UNKNOWN_Delayed_Visibility_And_Quarantine",
+      "scope": "offline_mock_provider",
+      "status": "PASS",
+      "delayed_visibility_empty_lookups": 3,
+      "delayed_visibility_resolved_on_lookup": 4,
+      "delayed_visibility_recovered_job_id": "remote_job_001_ibm_fez",
+      "total_provider_submit_calls": 1,
+      "unresolved_timeout_status": "SUBMISSION_UNKNOWN",
+      "unresolved_timeout_reservation_retained": true
+    }
+  ]
+}

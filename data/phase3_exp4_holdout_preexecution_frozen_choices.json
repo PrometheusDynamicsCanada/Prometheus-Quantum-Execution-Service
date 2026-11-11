@@ -1,0 +1,137 @@
+{
+  "original_private_ledger_sha256": "6f12782938ce2147398b4faaa9f680af11718e620b9c0a0be9b85b8f22fe22cb",
+  "schema_version": "phase3-exp4-holdout-preexecution-frozen-choices-v1",
+  "locked_refresh_policy_sha256": "c8fa9126a5daa6304160e82e3b800db586e0a92ed327fb9cc7395803563ad5b0",
+  "locked_refresh_policy_timestamp_utc": "2026-11-10T02:47:19.377917+00:00",
+  "frozen_before_holdout_execution_at_utc": "2026-11-10T02:56:05.857196+00:00",
+  "live_queues_at_freeze": {
+    "ibm_kingston": 0,
+    "ibm_fez": 1,
+    "iqm_emerald": 0,
+    "iqm_garnet": 0
+  },
+  "ibm_prospective_choices": {
+    "W_P3_ModHold_037": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 0.2546
+    },
+    "W_P3_ModHold_038": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 0.5186
+    },
+    "W_P3_ModHold_039": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 6.7642
+    },
+    "W_P3_ModHold_040": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 0.2265
+    },
+    "W_P3_ModHold_041": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 1.6763
+    },
+    "W_P3_ModHold_042": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 1.0772
+    },
+    "W_P3_ModHold_043": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 0.2443
+    },
+    "W_P3_ModHold_044": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 0.9216
+    },
+    "W_P3_ModHold_045": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 3.5108
+    },
+    "W_P3_ModHold_046": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 0.5147
+    },
+    "W_P3_ModHold_047": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 2.5755
+    },
+    "W_P3_ModHold_048": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 3.3864
+    }
+  },
+  "iqm_prospective_choices": {
+    "W_P3_ModHold_037": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 0.0513
+    },
+    "W_P3_ModHold_038": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 0.0348
+    },
+    "W_P3_ModHold_039": {
+      "chosen_arm": "C2_Update_Placement_Only",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 4.0219
+    },
+    "W_P3_ModHold_040": {
+      "chosen_arm": "C3_Recompile_Fresh_Same_QPU",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 2.365
+    },
+    "W_P3_ModHold_041": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 0.3133
+    },
+    "W_P3_ModHold_042": {
+      "chosen_arm": "C2_Update_Placement_Only",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 3.7551
+    },
+    "W_P3_ModHold_043": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 0.0469
+    },
+    "W_P3_ModHold_044": {
+      "chosen_arm": "C2_Update_Placement_Only",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 3.4421
+    },
+    "W_P3_ModHold_045": {
+      "chosen_arm": "C2_Update_Placement_Only",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 4.1386
+    },
+    "W_P3_ModHold_046": {
+      "chosen_arm": "C3_Recompile_Fresh_Same_QPU",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 2.2872
+    },
+    "W_P3_ModHold_047": {
+      "chosen_arm": "C2_Update_Placement_Only",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 3.4487
+    },
+    "W_P3_ModHold_048": {
+      "chosen_arm": "C1_Keep_Original_Stale",
+      "decision_reason": "REDACTED_PROPRIETARY_SCHEDULER_RULE_PER_PUBLIC_DISCLOSURE",
+      "operational_policy_cpu_seconds": 0.0869
+    }
+  }
+}

@@ -1,0 +1,3014 @@
+{
+  "schema_version": "prometheus_phase3_submission_manifest_v3.1",
+  "generated_at_utc": "2026-11-09T15:59:38.214146+00:00",
+  "summary_totals": {
+    "total_disjoint_workloads": 212,
+    "cohort_counts": {
+      "Cohort_Dev_80": 80,
+      "Cohort_Module_Holdout_60": 60,
+      "Cohort_Customer_Queue_Holdout_72": 72
+    },
+    "expected_operational_totals": {
+      "jobs_total": 94,
+      "jobs_ibm": 47,
+      "jobs_iqm": 47,
+      "pubs_total": 1296,
+      "pubs_ibm": 650,
+      "pubs_iqm": 646,
+      "shots_total": 1033216,
+      "shots_ibm": 659456,
+      "shots_iqm": 373760,
+      "ibm_spend_s": 240.0,
+      "iqm_spend_cr": 180.0
+    },
+    "no_early_stop_worst_case_maximum_envelope": {
+      "jobs_total": 110,
+      "jobs_ibm": 55,
+      "jobs_iqm": 55,
+      "pubs_total": 1524,
+      "pubs_ibm": 764,
+      "pubs_iqm": 760,
+      "shots_total": 1257472,
+      "shots_ibm": 788480,
+      "shots_iqm": 468992,
+      "ibm_max_active_spend_s": 284.0,
+      "iqm_max_active_spend_cr": 220.0,
+      "ibm_25pct_contingency_reserve_s": 95.0,
+      "iqm_25pct_contingency_reserve_cr": 73.0,
+      "ibm_total_campaign_ceiling_s": 379.0,
+      "iqm_total_campaign_ceiling_cr": 293.0,
+      "ibm_available_pool_s": 1530.0,
+      "iqm_available_balance_cr": 418.25,
+      "in_flight_reservation_guard_enforced": true
+    }
+  },
+  "modules_schedule": {
+    "Stage_3_0_Measured_Cost_Pilot": {
+      "cohort": "Cohort_Dev_80 (W_P3_Dev_001..008, 8 workloads)",
+      "ibm": {
+        "jobs_expected": 1,
+        "jobs_max": 1,
+        "pubs_expected": 8,
+        "pubs_max": 8,
+        "shots_expected": 8192,
+        "shots_max": 8192,
+        "spend_s_expected": 4.0,
+        "spend_s_max": 4.0
+      },
+      "iqm": {
+        "jobs_expected": 1,
+        "jobs_max": 1,
+        "pubs_expected": 8,
+        "pubs_max": 8,
+        "shots_expected": 4096,
+        "shots_max": 4096,
+        "spend_cr_expected": 2.25,
+        "spend_cr_max": 2.25
+      }
+    },
+    "Experiment_3_Packing_Density_Calibration": {
+      "cohort": "Cohort_Dev_80 (W_P3_Dev_009..044, 36 workloads in SC_1..SC_5 across 2 windows)",
+      "ibm": {
+        "jobs_expected": 4,
+        "jobs_max": 4,
+        "pubs_per_window_packed": 33,
+        "pubs_per_window_isolated_controls": 36,
+        "pubs_expected": 138,
+        "pubs_max": 138,
+        "shots_expected": 141312,
+        "shots_max": 141312,
+        "spend_s_expected": 46.0,
+        "spend_s_max": 46.0
+      },
+      "iqm": {
+        "jobs_expected": 4,
+        "jobs_max": 4,
+        "pubs_per_window_packed": 31,
+        "pubs_per_window_isolated_controls": 36,
+        "pubs_expected": 134,
+        "pubs_max": 134,
+        "shots_expected": 68608,
+        "shots_max": 68608,
+        "spend_cr_expected": 31.5,
+        "spend_cr_max": 31.5
+      }
+    },
+    "Experiment_1_Prospective_Policy_Selector": {
+      "cohort": "Part A Dev: W_P3_Dev_045..068 (24 workloads = 6 groups); Part B Blind Holdout: W_P3_ModHold_001..036 (36 workloads = 9 groups)",
+      "pub_derivation_per_provider": {
+        "part_a_dev_24_workloads": {
+          "A1_SABRE_1x": 24,
+          "A2_TKET_1x": 24,
+          "A3_Prometheus_1x": 24,
+          "A4_Fixed_4Way": 6,
+          "A5_Best_Phase2_Fixed_4Way": 6,
+          "A6_Selector_min_all_4way": 6,
+          "A6_Selector_expected_mixed": 12,
+          "A6_Selector_max_all_1way_fallback": 24,
+          "total_pubs_min": 90,
+          "total_pubs_expected": 96,
+          "total_pubs_max": 108
+        },
+        "part_b_holdout_36_workloads": {
+          "A1_SABRE_1x": 36,
+          "A2_TKET_1x": 36,
+          "A3_Prometheus_1x": 36,
+          "A4_Fixed_4Way": 9,
+          "A5_Best_Phase2_Fixed_4Way": 9,
+          "A6_Selector_min_all_4way": 9,
+          "A6_Selector_expected_mixed": 18,
+          "A6_Selector_max_all_1way_fallback": 36,
+          "total_pubs_min": 135,
+          "total_pubs_expected": 144,
+          "total_pubs_max": 162
+        },
+        "combined_per_provider_min": 225,
+        "combined_per_provider_expected": 240,
+        "combined_per_provider_max": 270
+      },
+      "ibm": {
+        "jobs_expected": 14,
+        "jobs_max": 14,
+        "pubs_min": 225,
+        "pubs_expected": 240,
+        "pubs_max": 270,
+        "shots_expected": 245760,
+        "shots_max": 276480,
+        "spend_s_expected": 84.0,
+        "spend_s_max": 94.0
+      },
+      "iqm": {
+        "jobs_expected": 14,
+        "jobs_max": 14,
+        "pubs_min": 225,
+        "pubs_expected": 240,
+        "pubs_max": 270,
+        "shots_expected": 122880,
+        "shots_max": 138240,
+        "spend_cr_expected": 57.0,
+        "spend_cr_max": 63.75
+      }
+    },
+    "Experiment_4_Stale_Decisions_And_Refresh_Policy": {
+      "cohort": "Part A Dev (Window 1): W_P3_Dev_069..080 (12 workloads); Part B Holdout (Windows 2 & 3): W_P3_ModHold_037..048 (12 workloads)",
+      "ibm": {
+        "jobs_expected": 6,
+        "jobs_max": 6,
+        "pubs_expected": 96,
+        "pubs_max": 96,
+        "shots_expected": 98304,
+        "shots_max": 98304,
+        "spend_s_expected": 34.0,
+        "spend_s_max": 34.0
+      },
+      "iqm": {
+        "jobs_expected": 6,
+        "jobs_max": 6,
+        "pubs_expected": 96,
+        "pubs_max": 96,
+        "shots_expected": 49152,
+        "shots_max": 49152,
+        "spend_cr_expected": 27.0,
+        "spend_cr_max": 27.0
+      }
+    },
+    "Experiment_5_Sequentially_Valid_Live_Stopping": {
+      "cohort": "Cohort_Module_Holdout_60 (W_P3_ModHold_049..060, 12 application workloads)",
+      "no_early_stop_derivation_per_provider": {
+        "S1_Fixed_2048_plus_Confirm_1024": {
+          "pubs": 24,
+          "shots": 36864
+        },
+        "S2_Adaptive_1x_4Rungs_plus_Confirm": {
+          "pubs": 60,
+          "shots": 58368
+        },
+        "S3_Adaptive_4x_4Rungs_plus_Confirm": {
+          "pubs": 60,
+          "shots": 58368
+        },
+        "worst_case_total_per_provider": {
+          "pubs": 144,
+          "shots": 153600
+        },
+        "expected_early_stop_per_provider": {
+          "pubs": 96,
+          "shots": 92160
+        }
+      },
+      "ibm": {
+        "jobs_expected": 10,
+        "jobs_max": 12,
+        "pubs_expected": 96,
+        "pubs_max": 144,
+        "shots_expected": 92160,
+        "shots_max": 153600,
+        "spend_s_expected": 38.0,
+        "spend_s_max": 58.0
+      },
+      "iqm": {
+        "jobs_expected": 10,
+        "jobs_max": 12,
+        "pubs_expected": 96,
+        "pubs_max": 144,
+        "shots_expected": 92160,
+        "shots_max": 153600,
+        "spend_cr_expected": 36.0,
+        "spend_cr_max": 57.0
+      }
+    },
+    "Experiment_2_Dynamic_Customer_Queue_Service": {
+      "cohort": "Cohort_Customer_Queue_Holdout_72 (W_P3_CustHold_001..072, 12 requests/window x 3 windows x 2 providers)",
+      "dynamic_window_design": "Each operating window streams 12 requests in 2 arrival sub-waves (6 requests/wave). The Fixed Baseline submits 2 batch jobs/window (6 jobs/provider). The autonomous Prometheus Service submits 2 primary sub-wave jobs + up to 1 dynamic alternate-QPU switch job + up to 1 shot-escalation/confirmation/retry job = up to 4 dynamic jobs/window (12 jobs/provider), budgeting up to 6 jobs and 36 PUBs per window (18 jobs and 108 PUBs per provider).",
+      "ibm": {
+        "jobs_expected": 12,
+        "jobs_max": 18,
+        "pubs_expected": 72,
+        "pubs_max": 108,
+        "shots_expected": 73728,
+        "shots_max": 110592,
+        "spend_s_expected": 34.0,
+        "spend_s_max": 48.0
+      },
+      "iqm": {
+        "jobs_expected": 12,
+        "jobs_max": 18,
+        "pubs_expected": 72,
+        "pubs_max": 108,
+        "shots_expected": 36864,
+        "shots_max": 55296,
+        "spend_cr_expected": 26.25,
+        "spend_cr_max": 38.5
+      }
+    }
+  },
+  "experiment3_window1_pub_memberships": {
+    "IBM": {
+      "packed_job_pubs": 33,
+      "isolated_control_job_pubs": 36,
+      "total_window_pubs": 69,
+      "packed_pubs_detail": [
+        {
+          "pub_id": "E3_IBM_W1_SC_1_k8_1",
+          "k": 8,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_009",
+            "W_P3_Dev_010",
+            "W_P3_Dev_011",
+            "W_P3_Dev_012",
+            "W_P3_Dev_013",
+            "W_P3_Dev_014",
+            "W_P3_Dev_015",
+            "W_P3_Dev_016"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_1_k4_1",
+          "k": 4,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_009",
+            "W_P3_Dev_010",
+            "W_P3_Dev_011",
+            "W_P3_Dev_012"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_1_k4_2",
+          "k": 4,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_013",
+            "W_P3_Dev_014",
+            "W_P3_Dev_015",
+            "W_P3_Dev_016"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_1_k2_1",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_009",
+            "W_P3_Dev_010"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_1_k2_2",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_011",
+            "W_P3_Dev_012"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_1_k2_3",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_013",
+            "W_P3_Dev_014"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_1_k2_4",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_015",
+            "W_P3_Dev_016"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_2_k8_1",
+          "k": 8,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_017",
+            "W_P3_Dev_018",
+            "W_P3_Dev_019",
+            "W_P3_Dev_020",
+            "W_P3_Dev_021",
+            "W_P3_Dev_022",
+            "W_P3_Dev_023",
+            "W_P3_Dev_024"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_2_k4_1",
+          "k": 4,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_017",
+            "W_P3_Dev_018",
+            "W_P3_Dev_019",
+            "W_P3_Dev_020"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_2_k4_2",
+          "k": 4,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_021",
+            "W_P3_Dev_022",
+            "W_P3_Dev_023",
+            "W_P3_Dev_024"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_2_k2_1",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_017",
+            "W_P3_Dev_018"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_2_k2_2",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_019",
+            "W_P3_Dev_020"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_2_k2_3",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_021",
+            "W_P3_Dev_022"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_2_k2_4",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_023",
+            "W_P3_Dev_024"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_3_k8_1",
+          "k": 8,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_025",
+            "W_P3_Dev_026",
+            "W_P3_Dev_027",
+            "W_P3_Dev_028",
+            "W_P3_Dev_029",
+            "W_P3_Dev_030",
+            "W_P3_Dev_031",
+            "W_P3_Dev_032"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_3_k4_1",
+          "k": 4,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_025",
+            "W_P3_Dev_026",
+            "W_P3_Dev_027",
+            "W_P3_Dev_028"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_3_k4_2",
+          "k": 4,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_029",
+            "W_P3_Dev_030",
+            "W_P3_Dev_031",
+            "W_P3_Dev_032"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_3_k2_1",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_025",
+            "W_P3_Dev_026"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_3_k2_2",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_027",
+            "W_P3_Dev_028"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_3_k2_3",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_029",
+            "W_P3_Dev_030"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_3_k2_4",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_031",
+            "W_P3_Dev_032"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_4_k6_1",
+          "k": 6,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_033",
+            "W_P3_Dev_034",
+            "W_P3_Dev_035",
+            "W_P3_Dev_036",
+            "W_P3_Dev_037",
+            "W_P3_Dev_038"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_4_k2_1",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_033",
+            "W_P3_Dev_034"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_4_k2_2",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_035",
+            "W_P3_Dev_036"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_4_k2_3",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_037",
+            "W_P3_Dev_038"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_5_k6_1",
+          "k": 6,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_039",
+            "W_P3_Dev_040",
+            "W_P3_Dev_041",
+            "W_P3_Dev_042",
+            "W_P3_Dev_043",
+            "W_P3_Dev_044"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_5_k2_1",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_039",
+            "W_P3_Dev_040"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_5_k2_2",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_041",
+            "W_P3_Dev_042"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_5_k2_3",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_043",
+            "W_P3_Dev_044"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_1_k4_dG1",
+          "k": 4,
+          "d_G": 1,
+          "workloads": [
+            "W_P3_Dev_009",
+            "W_P3_Dev_010",
+            "W_P3_Dev_011",
+            "W_P3_Dev_012"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_1_k4_dG3",
+          "k": 4,
+          "d_G": 3,
+          "workloads": [
+            "W_P3_Dev_009",
+            "W_P3_Dev_010",
+            "W_P3_Dev_011",
+            "W_P3_Dev_012"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_2_k4_dG1",
+          "k": 4,
+          "d_G": 1,
+          "workloads": [
+            "W_P3_Dev_017",
+            "W_P3_Dev_018",
+            "W_P3_Dev_019",
+            "W_P3_Dev_020"
+          ]
+        },
+        {
+          "pub_id": "E3_IBM_W1_SC_2_k4_dG3",
+          "k": 4,
+          "d_G": 3,
+          "workloads": [
+            "W_P3_Dev_017",
+            "W_P3_Dev_018",
+            "W_P3_Dev_019",
+            "W_P3_Dev_020"
+          ]
+        }
+      ],
+      "isolated_pubs_count": 36
+    },
+    "IQM": {
+      "packed_job_pubs": 31,
+      "isolated_control_job_pubs": 36,
+      "total_window_pubs": 67,
+      "packed_pubs_detail": [
+        {
+          "pub_id": "E3_IQM_W1_SC_1_k4_1",
+          "k": 4,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_009",
+            "W_P3_Dev_010",
+            "W_P3_Dev_011",
+            "W_P3_Dev_012"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_1_k4_2",
+          "k": 4,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_013",
+            "W_P3_Dev_014",
+            "W_P3_Dev_015",
+            "W_P3_Dev_016"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_1_k2_1",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_009",
+            "W_P3_Dev_010"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_1_k2_2",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_011",
+            "W_P3_Dev_012"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_1_k2_3",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_013",
+            "W_P3_Dev_014"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_1_k2_4",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_015",
+            "W_P3_Dev_016"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_2_k4_1",
+          "k": 4,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_017",
+            "W_P3_Dev_018",
+            "W_P3_Dev_019",
+            "W_P3_Dev_020"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_2_k4_2",
+          "k": 4,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_021",
+            "W_P3_Dev_022",
+            "W_P3_Dev_023",
+            "W_P3_Dev_024"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_2_k2_1",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_017",
+            "W_P3_Dev_018"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_2_k2_2",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_019",
+            "W_P3_Dev_020"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_2_k2_3",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_021",
+            "W_P3_Dev_022"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_2_k2_4",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_023",
+            "W_P3_Dev_024"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_3_k4_1",
+          "k": 4,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_025",
+            "W_P3_Dev_026",
+            "W_P3_Dev_027",
+            "W_P3_Dev_028"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_3_k4_2",
+          "k": 4,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_029",
+            "W_P3_Dev_030",
+            "W_P3_Dev_031",
+            "W_P3_Dev_032"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_3_k2_1",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_025",
+            "W_P3_Dev_026"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_3_k2_2",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_027",
+            "W_P3_Dev_028"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_3_k2_3",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_029",
+            "W_P3_Dev_030"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_3_k2_4",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_031",
+            "W_P3_Dev_032"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_4_k6_1",
+          "k": 6,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_033",
+            "W_P3_Dev_034",
+            "W_P3_Dev_035",
+            "W_P3_Dev_036",
+            "W_P3_Dev_037",
+            "W_P3_Dev_038"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_4_k3_1",
+          "k": 3,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_033",
+            "W_P3_Dev_034",
+            "W_P3_Dev_035"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_4_k3_2",
+          "k": 3,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_036",
+            "W_P3_Dev_037",
+            "W_P3_Dev_038"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_4_k2_1",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_033",
+            "W_P3_Dev_034"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_4_k2_2",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_035",
+            "W_P3_Dev_036"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_4_k2_3",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_037",
+            "W_P3_Dev_038"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_5_k6_1",
+          "k": 6,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_039",
+            "W_P3_Dev_040",
+            "W_P3_Dev_041",
+            "W_P3_Dev_042",
+            "W_P3_Dev_043",
+            "W_P3_Dev_044"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_5_k3_1",
+          "k": 3,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_039",
+            "W_P3_Dev_040",
+            "W_P3_Dev_041"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_5_k3_2",
+          "k": 3,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_042",
+            "W_P3_Dev_043",
+            "W_P3_Dev_044"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_5_k2_1",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_039",
+            "W_P3_Dev_040"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_5_k2_2",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_041",
+            "W_P3_Dev_042"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_5_k2_3",
+          "k": 2,
+          "d_G": 2,
+          "workloads": [
+            "W_P3_Dev_043",
+            "W_P3_Dev_044"
+          ]
+        },
+        {
+          "pub_id": "E3_IQM_W1_SC_1_k4_dG1",
+          "k": 4,
+          "d_G": 1,
+          "workloads": [
+            "W_P3_Dev_009",
+            "W_P3_Dev_010",
+            "W_P3_Dev_011",
+            "W_P3_Dev_012"
+          ]
+        }
+      ],
+      "isolated_pubs_count": 36
+    }
+  },
+  "experiment5_classical_bitstring_coverage_verification": {
+    "S2_1x_Isolated_HigherIsBetter_NearThreshold_FB_and_MaxCut": {
+      "estimator_name": "Whole-Shot Bootstrap-SE Normal-Approximation Bound on Empirical Plug-In Distribution",
+      "num_qubits_n": 7,
+      "num_bitstring_states": 128,
+      "bootstrap_resamples_B": 2000,
+      "num_simulated_4rung_trajectories": 500,
+      "replicas_per_shot_m": 1,
+      "within_shot_copula_correlation_rho": 0.0,
+      "near_threshold_null_parameters": {
+        "true_fb": 0.818,
+        "threshold_fb": 0.82,
+        "fb_uniform_baseline": 0.533882
+      },
+      "per_rung_alpha_spending": 0.0125,
+      "critical_multiplier_z": 2.2414,
+      "false_halts_by_rung": {
+        "rung_1_256": 0,
+        "rung_2_512": 0,
+        "rung_3_1024": 1,
+        "rung_4_2048": 0
+      },
+      "empirical_stage1_fwer": 0.002,
+      "nominal_fwer_bound": 0.05,
+      "passes_strict_0_05_bound": true
+    },
+    "S3_4x_Replica_Correlated_HigherIsBetter_NearThreshold_FB_and_MaxCut": {
+      "estimator_name": "Whole-Shot Bootstrap-SE Normal-Approximation Bound on Empirical Plug-In Distribution",
+      "num_qubits_n": 7,
+      "num_bitstring_states": 128,
+      "bootstrap_resamples_B": 2000,
+      "num_simulated_4rung_trajectories": 500,
+      "replicas_per_shot_m": 4,
+      "within_shot_copula_correlation_rho": 0.025,
+      "near_threshold_null_parameters": {
+        "true_fb": 0.818,
+        "threshold_fb": 0.82,
+        "fb_uniform_baseline": 0.533882
+      },
+      "per_rung_alpha_spending": 0.0125,
+      "critical_multiplier_z": 2.2414,
+      "false_halts_by_rung": {
+        "rung_1_256": 0,
+        "rung_2_512": 0,
+        "rung_3_1024": 2,
+        "rung_4_2048": 2
+      },
+      "empirical_stage1_fwer": 0.008,
+      "nominal_fwer_bound": 0.05,
+      "passes_strict_0_05_bound": true
+    },
+    "S2_1x_Isolated_LowerIsBetter_NearThreshold_Trotter_MAE": {
+      "estimator_name": "Whole-Shot Bootstrap-SE Normal-Approximation Bound on Empirical Plug-In Distribution",
+      "num_qubits_n": 7,
+      "num_bitstring_states": 128,
+      "bootstrap_resamples_B": 2000,
+      "num_simulated_4rung_trajectories": 500,
+      "replicas_per_shot_m": 1,
+      "within_shot_copula_correlation_rho": 0.0,
+      "near_threshold_null_parameters": {
+        "true_mae": 0.082,
+        "threshold_mae": 0.08,
+        "fb_uniform_baseline": 0.533882
+      },
+      "per_rung_alpha_spending": 0.0125,
+      "critical_multiplier_z": 2.2414,
+      "false_halts_by_rung": {
+        "rung_1_256": 0,
+        "rung_2_512": 0,
+        "rung_3_1024": 0,
+        "rung_4_2048": 5
+      },
+      "empirical_stage1_fwer": 0.01,
+      "nominal_fwer_bound": 0.05,
+      "passes_strict_0_05_bound": true
+    },
+    "S3_4x_Replica_Correlated_LowerIsBetter_NearThreshold_Trotter_MAE": {
+      "estimator_name": "Whole-Shot Bootstrap-SE Normal-Approximation Bound on Empirical Plug-In Distribution",
+      "num_qubits_n": 7,
+      "num_bitstring_states": 128,
+      "bootstrap_resamples_B": 2000,
+      "num_simulated_4rung_trajectories": 500,
+      "replicas_per_shot_m": 4,
+      "within_shot_copula_correlation_rho": 0.025,
+      "near_threshold_null_parameters": {
+        "true_mae": 0.082,
+        "threshold_mae": 0.08,
+        "fb_uniform_baseline": 0.533882
+      },
+      "per_rung_alpha_spending": 0.0125,
+      "critical_multiplier_z": 2.2414,
+      "false_halts_by_rung": {
+        "rung_1_256": 2,
+        "rung_2_512": 3,
+        "rung_3_1024": 2,
+        "rung_4_2048": 3
+      },
+      "empirical_stage1_fwer": 0.02,
+      "nominal_fwer_bound": 0.05,
+      "passes_strict_0_05_bound": true
+    },
+    "S2_1x_Isolated_ExactBoundary_FB_08200": {
+      "estimator_name": "Whole-Shot Bootstrap-SE Normal-Approximation Bound on Empirical Plug-In Distribution",
+      "num_qubits_n": 7,
+      "num_bitstring_states": 128,
+      "bootstrap_resamples_B": 2000,
+      "num_simulated_4rung_trajectories": 500,
+      "replicas_per_shot_m": 1,
+      "within_shot_copula_correlation_rho": 0.0,
+      "near_threshold_null_parameters": {
+        "true_fb": 0.82,
+        "threshold_fb": 0.82,
+        "fb_uniform_baseline": 0.533882
+      },
+      "per_rung_alpha_spending": 0.0125,
+      "critical_multiplier_z": 2.2414,
+      "false_halts_by_rung": {
+        "rung_1_256": 0,
+        "rung_2_512": 0,
+        "rung_3_1024": 0,
+        "rung_4_2048": 4
+      },
+      "empirical_stage1_fwer": 0.008,
+      "nominal_fwer_bound": 0.05,
+      "passes_strict_0_05_bound": true
+    },
+    "S3_4x_Replica_Correlated_ExactBoundary_FB_08200": {
+      "estimator_name": "Whole-Shot Bootstrap-SE Normal-Approximation Bound on Empirical Plug-In Distribution",
+      "num_qubits_n": 7,
+      "num_bitstring_states": 128,
+      "bootstrap_resamples_B": 2000,
+      "num_simulated_4rung_trajectories": 500,
+      "replicas_per_shot_m": 4,
+      "within_shot_copula_correlation_rho": 0.025,
+      "near_threshold_null_parameters": {
+        "true_fb": 0.82,
+        "threshold_fb": 0.82,
+        "fb_uniform_baseline": 0.533882
+      },
+      "per_rung_alpha_spending": 0.0125,
+      "critical_multiplier_z": 2.2414,
+      "false_halts_by_rung": {
+        "rung_1_256": 1,
+        "rung_2_512": 1,
+        "rung_3_1024": 1,
+        "rung_4_2048": 3
+      },
+      "empirical_stage1_fwer": 0.012,
+      "nominal_fwer_bound": 0.05,
+      "passes_strict_0_05_bound": true
+    }
+  },
+  "workloads": {
+    "W_P3_Dev_001": {
+      "workload_id": "W_P3_Dev_001",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Stage_3_0_Cost_Pilot",
+      "width_qubits": 4,
+      "duration_class": "Short",
+      "density_class": "Sparse"
+    },
+    "W_P3_Dev_002": {
+      "workload_id": "W_P3_Dev_002",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Stage_3_0_Cost_Pilot",
+      "width_qubits": 5,
+      "duration_class": "Long",
+      "density_class": "Sparse"
+    },
+    "W_P3_Dev_003": {
+      "workload_id": "W_P3_Dev_003",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Stage_3_0_Cost_Pilot",
+      "width_qubits": 6,
+      "duration_class": "Short",
+      "density_class": "Sparse"
+    },
+    "W_P3_Dev_004": {
+      "workload_id": "W_P3_Dev_004",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Stage_3_0_Cost_Pilot",
+      "width_qubits": 7,
+      "duration_class": "Long",
+      "density_class": "Sparse"
+    },
+    "W_P3_Dev_005": {
+      "workload_id": "W_P3_Dev_005",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Stage_3_0_Cost_Pilot",
+      "width_qubits": 8,
+      "duration_class": "Short",
+      "density_class": "Dense"
+    },
+    "W_P3_Dev_006": {
+      "workload_id": "W_P3_Dev_006",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Stage_3_0_Cost_Pilot",
+      "width_qubits": 9,
+      "duration_class": "Long",
+      "density_class": "Dense"
+    },
+    "W_P3_Dev_007": {
+      "workload_id": "W_P3_Dev_007",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Stage_3_0_Cost_Pilot",
+      "width_qubits": 10,
+      "duration_class": "Short",
+      "density_class": "Dense"
+    },
+    "W_P3_Dev_008": {
+      "workload_id": "W_P3_Dev_008",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Stage_3_0_Cost_Pilot",
+      "width_qubits": 11,
+      "duration_class": "Long",
+      "density_class": "Dense"
+    },
+    "W_P3_Dev_009": {
+      "workload_id": "W_P3_Dev_009",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_1",
+      "width_qubits": 4,
+      "duration_regime": "Matched_Short",
+      "density_regime": "Sparse"
+    },
+    "W_P3_Dev_010": {
+      "workload_id": "W_P3_Dev_010",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_1",
+      "width_qubits": 4,
+      "duration_regime": "Matched_Short",
+      "density_regime": "Sparse"
+    },
+    "W_P3_Dev_011": {
+      "workload_id": "W_P3_Dev_011",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_1",
+      "width_qubits": 4,
+      "duration_regime": "Matched_Short",
+      "density_regime": "Sparse"
+    },
+    "W_P3_Dev_012": {
+      "workload_id": "W_P3_Dev_012",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_1",
+      "width_qubits": 4,
+      "duration_regime": "Matched_Short",
+      "density_regime": "Sparse"
+    },
+    "W_P3_Dev_013": {
+      "workload_id": "W_P3_Dev_013",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_1",
+      "width_qubits": 5,
+      "duration_regime": "Matched_Short",
+      "density_regime": "Sparse"
+    },
+    "W_P3_Dev_014": {
+      "workload_id": "W_P3_Dev_014",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_1",
+      "width_qubits": 5,
+      "duration_regime": "Matched_Short",
+      "density_regime": "Sparse"
+    },
+    "W_P3_Dev_015": {
+      "workload_id": "W_P3_Dev_015",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_1",
+      "width_qubits": 5,
+      "duration_regime": "Matched_Short",
+      "density_regime": "Sparse"
+    },
+    "W_P3_Dev_016": {
+      "workload_id": "W_P3_Dev_016",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_1",
+      "width_qubits": 5,
+      "duration_regime": "Matched_Short",
+      "density_regime": "Sparse"
+    },
+    "W_P3_Dev_017": {
+      "workload_id": "W_P3_Dev_017",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_2",
+      "width_qubits": 6,
+      "duration_regime": "Matched_Short",
+      "density_regime": "Dense"
+    },
+    "W_P3_Dev_018": {
+      "workload_id": "W_P3_Dev_018",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_2",
+      "width_qubits": 6,
+      "duration_regime": "Matched_Short",
+      "density_regime": "Dense"
+    },
+    "W_P3_Dev_019": {
+      "workload_id": "W_P3_Dev_019",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_2",
+      "width_qubits": 6,
+      "duration_regime": "Matched_Short",
+      "density_regime": "Dense"
+    },
+    "W_P3_Dev_020": {
+      "workload_id": "W_P3_Dev_020",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_2",
+      "width_qubits": 6,
+      "duration_regime": "Matched_Short",
+      "density_regime": "Dense"
+    },
+    "W_P3_Dev_021": {
+      "workload_id": "W_P3_Dev_021",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_2",
+      "width_qubits": 7,
+      "duration_regime": "Matched_Short",
+      "density_regime": "Dense"
+    },
+    "W_P3_Dev_022": {
+      "workload_id": "W_P3_Dev_022",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_2",
+      "width_qubits": 7,
+      "duration_regime": "Matched_Short",
+      "density_regime": "Dense"
+    },
+    "W_P3_Dev_023": {
+      "workload_id": "W_P3_Dev_023",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_2",
+      "width_qubits": 7,
+      "duration_regime": "Matched_Short",
+      "density_regime": "Dense"
+    },
+    "W_P3_Dev_024": {
+      "workload_id": "W_P3_Dev_024",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_2",
+      "width_qubits": 7,
+      "duration_regime": "Matched_Short",
+      "density_regime": "Dense"
+    },
+    "W_P3_Dev_025": {
+      "workload_id": "W_P3_Dev_025",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_3",
+      "width_qubits": 5,
+      "duration_regime": "Severe_Mixed_Short_Long",
+      "density_regime": "Mixed"
+    },
+    "W_P3_Dev_026": {
+      "workload_id": "W_P3_Dev_026",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_3",
+      "width_qubits": 5,
+      "duration_regime": "Severe_Mixed_Short_Long",
+      "density_regime": "Mixed"
+    },
+    "W_P3_Dev_027": {
+      "workload_id": "W_P3_Dev_027",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_3",
+      "width_qubits": 5,
+      "duration_regime": "Severe_Mixed_Short_Long",
+      "density_regime": "Mixed"
+    },
+    "W_P3_Dev_028": {
+      "workload_id": "W_P3_Dev_028",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_3",
+      "width_qubits": 5,
+      "duration_regime": "Severe_Mixed_Short_Long",
+      "density_regime": "Mixed"
+    },
+    "W_P3_Dev_029": {
+      "workload_id": "W_P3_Dev_029",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_3",
+      "width_qubits": 7,
+      "duration_regime": "Severe_Mixed_Short_Long",
+      "density_regime": "Mixed"
+    },
+    "W_P3_Dev_030": {
+      "workload_id": "W_P3_Dev_030",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_3",
+      "width_qubits": 7,
+      "duration_regime": "Severe_Mixed_Short_Long",
+      "density_regime": "Mixed"
+    },
+    "W_P3_Dev_031": {
+      "workload_id": "W_P3_Dev_031",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_3",
+      "width_qubits": 7,
+      "duration_regime": "Severe_Mixed_Short_Long",
+      "density_regime": "Mixed"
+    },
+    "W_P3_Dev_032": {
+      "workload_id": "W_P3_Dev_032",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_3",
+      "width_qubits": 7,
+      "duration_regime": "Severe_Mixed_Short_Long",
+      "density_regime": "Mixed"
+    },
+    "W_P3_Dev_033": {
+      "workload_id": "W_P3_Dev_033",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_4",
+      "width_qubits": 6,
+      "duration_regime": "Moderate_Mismatch_Even",
+      "density_regime": "Sparse"
+    },
+    "W_P3_Dev_034": {
+      "workload_id": "W_P3_Dev_034",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_4",
+      "width_qubits": 6,
+      "duration_regime": "Moderate_Mismatch_Even",
+      "density_regime": "Sparse"
+    },
+    "W_P3_Dev_035": {
+      "workload_id": "W_P3_Dev_035",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_4",
+      "width_qubits": 6,
+      "duration_regime": "Moderate_Mismatch_Even",
+      "density_regime": "Sparse"
+    },
+    "W_P3_Dev_036": {
+      "workload_id": "W_P3_Dev_036",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_4",
+      "width_qubits": 8,
+      "duration_regime": "Moderate_Mismatch_Even",
+      "density_regime": "Sparse"
+    },
+    "W_P3_Dev_037": {
+      "workload_id": "W_P3_Dev_037",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_4",
+      "width_qubits": 8,
+      "duration_regime": "Moderate_Mismatch_Even",
+      "density_regime": "Sparse"
+    },
+    "W_P3_Dev_038": {
+      "workload_id": "W_P3_Dev_038",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_4",
+      "width_qubits": 8,
+      "duration_regime": "Moderate_Mismatch_Even",
+      "density_regime": "Sparse"
+    },
+    "W_P3_Dev_039": {
+      "workload_id": "W_P3_Dev_039",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_5",
+      "width_qubits": 7,
+      "duration_regime": "Matched_Odd_HighWidth",
+      "density_regime": "Dense"
+    },
+    "W_P3_Dev_040": {
+      "workload_id": "W_P3_Dev_040",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_5",
+      "width_qubits": 7,
+      "duration_regime": "Matched_Odd_HighWidth",
+      "density_regime": "Dense"
+    },
+    "W_P3_Dev_041": {
+      "workload_id": "W_P3_Dev_041",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_5",
+      "width_qubits": 7,
+      "duration_regime": "Matched_Odd_HighWidth",
+      "density_regime": "Dense"
+    },
+    "W_P3_Dev_042": {
+      "workload_id": "W_P3_Dev_042",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_5",
+      "width_qubits": 9,
+      "duration_regime": "Matched_Odd_HighWidth",
+      "density_regime": "Dense"
+    },
+    "W_P3_Dev_043": {
+      "workload_id": "W_P3_Dev_043",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_5",
+      "width_qubits": 9,
+      "duration_regime": "Matched_Odd_HighWidth",
+      "density_regime": "Dense"
+    },
+    "W_P3_Dev_044": {
+      "workload_id": "W_P3_Dev_044",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_3_Packing_Calibration",
+      "super_cluster_id": "SC_5",
+      "width_qubits": 9,
+      "duration_regime": "Matched_Odd_HighWidth",
+      "density_regime": "Dense"
+    },
+    "W_P3_Dev_045": {
+      "workload_id": "W_P3_Dev_045",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_01",
+      "width_qubits": 5
+    },
+    "W_P3_Dev_046": {
+      "workload_id": "W_P3_Dev_046",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_01",
+      "width_qubits": 7
+    },
+    "W_P3_Dev_047": {
+      "workload_id": "W_P3_Dev_047",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_01",
+      "width_qubits": 7
+    },
+    "W_P3_Dev_048": {
+      "workload_id": "W_P3_Dev_048",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_01",
+      "width_qubits": 9
+    },
+    "W_P3_Dev_049": {
+      "workload_id": "W_P3_Dev_049",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_02",
+      "width_qubits": 5
+    },
+    "W_P3_Dev_050": {
+      "workload_id": "W_P3_Dev_050",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_02",
+      "width_qubits": 7
+    },
+    "W_P3_Dev_051": {
+      "workload_id": "W_P3_Dev_051",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_02",
+      "width_qubits": 7
+    },
+    "W_P3_Dev_052": {
+      "workload_id": "W_P3_Dev_052",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_02",
+      "width_qubits": 9
+    },
+    "W_P3_Dev_053": {
+      "workload_id": "W_P3_Dev_053",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_03",
+      "width_qubits": 5
+    },
+    "W_P3_Dev_054": {
+      "workload_id": "W_P3_Dev_054",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_03",
+      "width_qubits": 7
+    },
+    "W_P3_Dev_055": {
+      "workload_id": "W_P3_Dev_055",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_03",
+      "width_qubits": 7
+    },
+    "W_P3_Dev_056": {
+      "workload_id": "W_P3_Dev_056",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_03",
+      "width_qubits": 9
+    },
+    "W_P3_Dev_057": {
+      "workload_id": "W_P3_Dev_057",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_04",
+      "width_qubits": 5
+    },
+    "W_P3_Dev_058": {
+      "workload_id": "W_P3_Dev_058",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_04",
+      "width_qubits": 7
+    },
+    "W_P3_Dev_059": {
+      "workload_id": "W_P3_Dev_059",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_04",
+      "width_qubits": 7
+    },
+    "W_P3_Dev_060": {
+      "workload_id": "W_P3_Dev_060",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_04",
+      "width_qubits": 9
+    },
+    "W_P3_Dev_061": {
+      "workload_id": "W_P3_Dev_061",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_05",
+      "width_qubits": 5
+    },
+    "W_P3_Dev_062": {
+      "workload_id": "W_P3_Dev_062",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_05",
+      "width_qubits": 7
+    },
+    "W_P3_Dev_063": {
+      "workload_id": "W_P3_Dev_063",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_05",
+      "width_qubits": 7
+    },
+    "W_P3_Dev_064": {
+      "workload_id": "W_P3_Dev_064",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_05",
+      "width_qubits": 9
+    },
+    "W_P3_Dev_065": {
+      "workload_id": "W_P3_Dev_065",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_06",
+      "width_qubits": 5
+    },
+    "W_P3_Dev_066": {
+      "workload_id": "W_P3_Dev_066",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_06",
+      "width_qubits": 7
+    },
+    "W_P3_Dev_067": {
+      "workload_id": "W_P3_Dev_067",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_06",
+      "width_qubits": 7
+    },
+    "W_P3_Dev_068": {
+      "workload_id": "W_P3_Dev_068",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_1_Part_A_Selector_Dev",
+      "arrival_group_id": "G_Dev_06",
+      "width_qubits": 9
+    },
+    "W_P3_Dev_069": {
+      "workload_id": "W_P3_Dev_069",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_4_Part_A_Refresh_Dev_W1",
+      "width_qubits": 5
+    },
+    "W_P3_Dev_070": {
+      "workload_id": "W_P3_Dev_070",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_4_Part_A_Refresh_Dev_W1",
+      "width_qubits": 7
+    },
+    "W_P3_Dev_071": {
+      "workload_id": "W_P3_Dev_071",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_4_Part_A_Refresh_Dev_W1",
+      "width_qubits": 9
+    },
+    "W_P3_Dev_072": {
+      "workload_id": "W_P3_Dev_072",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_4_Part_A_Refresh_Dev_W1",
+      "width_qubits": 5
+    },
+    "W_P3_Dev_073": {
+      "workload_id": "W_P3_Dev_073",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_4_Part_A_Refresh_Dev_W1",
+      "width_qubits": 7
+    },
+    "W_P3_Dev_074": {
+      "workload_id": "W_P3_Dev_074",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_4_Part_A_Refresh_Dev_W1",
+      "width_qubits": 9
+    },
+    "W_P3_Dev_075": {
+      "workload_id": "W_P3_Dev_075",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_4_Part_A_Refresh_Dev_W1",
+      "width_qubits": 5
+    },
+    "W_P3_Dev_076": {
+      "workload_id": "W_P3_Dev_076",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_4_Part_A_Refresh_Dev_W1",
+      "width_qubits": 7
+    },
+    "W_P3_Dev_077": {
+      "workload_id": "W_P3_Dev_077",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_4_Part_A_Refresh_Dev_W1",
+      "width_qubits": 9
+    },
+    "W_P3_Dev_078": {
+      "workload_id": "W_P3_Dev_078",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_4_Part_A_Refresh_Dev_W1",
+      "width_qubits": 5
+    },
+    "W_P3_Dev_079": {
+      "workload_id": "W_P3_Dev_079",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_4_Part_A_Refresh_Dev_W1",
+      "width_qubits": 7
+    },
+    "W_P3_Dev_080": {
+      "workload_id": "W_P3_Dev_080",
+      "cohort": "Cohort_Dev_80",
+      "assigned_module": "Experiment_4_Part_A_Refresh_Dev_W1",
+      "width_qubits": 9
+    },
+    "W_P3_ModHold_001": {
+      "workload_id": "W_P3_ModHold_001",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_01",
+      "width_qubits": 5
+    },
+    "W_P3_ModHold_002": {
+      "workload_id": "W_P3_ModHold_002",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_01",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_003": {
+      "workload_id": "W_P3_ModHold_003",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_01",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_004": {
+      "workload_id": "W_P3_ModHold_004",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_01",
+      "width_qubits": 9
+    },
+    "W_P3_ModHold_005": {
+      "workload_id": "W_P3_ModHold_005",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_02",
+      "width_qubits": 5
+    },
+    "W_P3_ModHold_006": {
+      "workload_id": "W_P3_ModHold_006",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_02",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_007": {
+      "workload_id": "W_P3_ModHold_007",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_02",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_008": {
+      "workload_id": "W_P3_ModHold_008",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_02",
+      "width_qubits": 9
+    },
+    "W_P3_ModHold_009": {
+      "workload_id": "W_P3_ModHold_009",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_03",
+      "width_qubits": 5
+    },
+    "W_P3_ModHold_010": {
+      "workload_id": "W_P3_ModHold_010",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_03",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_011": {
+      "workload_id": "W_P3_ModHold_011",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_03",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_012": {
+      "workload_id": "W_P3_ModHold_012",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_03",
+      "width_qubits": 9
+    },
+    "W_P3_ModHold_013": {
+      "workload_id": "W_P3_ModHold_013",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_04",
+      "width_qubits": 5
+    },
+    "W_P3_ModHold_014": {
+      "workload_id": "W_P3_ModHold_014",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_04",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_015": {
+      "workload_id": "W_P3_ModHold_015",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_04",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_016": {
+      "workload_id": "W_P3_ModHold_016",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_04",
+      "width_qubits": 9
+    },
+    "W_P3_ModHold_017": {
+      "workload_id": "W_P3_ModHold_017",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_05",
+      "width_qubits": 5
+    },
+    "W_P3_ModHold_018": {
+      "workload_id": "W_P3_ModHold_018",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_05",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_019": {
+      "workload_id": "W_P3_ModHold_019",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_05",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_020": {
+      "workload_id": "W_P3_ModHold_020",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_05",
+      "width_qubits": 9
+    },
+    "W_P3_ModHold_021": {
+      "workload_id": "W_P3_ModHold_021",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_06",
+      "width_qubits": 5
+    },
+    "W_P3_ModHold_022": {
+      "workload_id": "W_P3_ModHold_022",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_06",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_023": {
+      "workload_id": "W_P3_ModHold_023",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_06",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_024": {
+      "workload_id": "W_P3_ModHold_024",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_06",
+      "width_qubits": 9
+    },
+    "W_P3_ModHold_025": {
+      "workload_id": "W_P3_ModHold_025",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_07",
+      "width_qubits": 5
+    },
+    "W_P3_ModHold_026": {
+      "workload_id": "W_P3_ModHold_026",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_07",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_027": {
+      "workload_id": "W_P3_ModHold_027",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_07",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_028": {
+      "workload_id": "W_P3_ModHold_028",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_07",
+      "width_qubits": 9
+    },
+    "W_P3_ModHold_029": {
+      "workload_id": "W_P3_ModHold_029",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_08",
+      "width_qubits": 5
+    },
+    "W_P3_ModHold_030": {
+      "workload_id": "W_P3_ModHold_030",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_08",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_031": {
+      "workload_id": "W_P3_ModHold_031",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_08",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_032": {
+      "workload_id": "W_P3_ModHold_032",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_08",
+      "width_qubits": 9
+    },
+    "W_P3_ModHold_033": {
+      "workload_id": "W_P3_ModHold_033",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_09",
+      "width_qubits": 5
+    },
+    "W_P3_ModHold_034": {
+      "workload_id": "W_P3_ModHold_034",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_09",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_035": {
+      "workload_id": "W_P3_ModHold_035",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_09",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_036": {
+      "workload_id": "W_P3_ModHold_036",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_1_Part_B_Selector_Blind_Holdout",
+      "arrival_group_id": "G_Hold_09",
+      "width_qubits": 9
+    },
+    "W_P3_ModHold_037": {
+      "workload_id": "W_P3_ModHold_037",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_4_Part_B_Refresh_Holdout_Window_2",
+      "width_qubits": 5
+    },
+    "W_P3_ModHold_038": {
+      "workload_id": "W_P3_ModHold_038",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_4_Part_B_Refresh_Holdout_Window_2",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_039": {
+      "workload_id": "W_P3_ModHold_039",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_4_Part_B_Refresh_Holdout_Window_2",
+      "width_qubits": 9
+    },
+    "W_P3_ModHold_040": {
+      "workload_id": "W_P3_ModHold_040",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_4_Part_B_Refresh_Holdout_Window_2",
+      "width_qubits": 5
+    },
+    "W_P3_ModHold_041": {
+      "workload_id": "W_P3_ModHold_041",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_4_Part_B_Refresh_Holdout_Window_2",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_042": {
+      "workload_id": "W_P3_ModHold_042",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_4_Part_B_Refresh_Holdout_Window_2",
+      "width_qubits": 9
+    },
+    "W_P3_ModHold_043": {
+      "workload_id": "W_P3_ModHold_043",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_4_Part_B_Refresh_Holdout_Window_3",
+      "width_qubits": 5
+    },
+    "W_P3_ModHold_044": {
+      "workload_id": "W_P3_ModHold_044",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_4_Part_B_Refresh_Holdout_Window_3",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_045": {
+      "workload_id": "W_P3_ModHold_045",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_4_Part_B_Refresh_Holdout_Window_3",
+      "width_qubits": 9
+    },
+    "W_P3_ModHold_046": {
+      "workload_id": "W_P3_ModHold_046",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_4_Part_B_Refresh_Holdout_Window_3",
+      "width_qubits": 5
+    },
+    "W_P3_ModHold_047": {
+      "workload_id": "W_P3_ModHold_047",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_4_Part_B_Refresh_Holdout_Window_3",
+      "width_qubits": 7
+    },
+    "W_P3_ModHold_048": {
+      "workload_id": "W_P3_ModHold_048",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_4_Part_B_Refresh_Holdout_Window_3",
+      "width_qubits": 9
+    },
+    "W_P3_ModHold_049": {
+      "workload_id": "W_P3_ModHold_049",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_5_Live_Stopping_Evaluation",
+      "application_family": "QAOA_MaxCut",
+      "width_qubits": 5,
+      "fb_threshold": 0.85,
+      "observable_metric": "MaxCut_Approx_Ratio",
+      "observable_direction": "HIGHER_IS_BETTER",
+      "observable_threshold": 0.72
+    },
+    "W_P3_ModHold_050": {
+      "workload_id": "W_P3_ModHold_050",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_5_Live_Stopping_Evaluation",
+      "application_family": "QFT_Phase",
+      "width_qubits": 5,
+      "fb_threshold": 0.85,
+      "observable_metric": "Top2_Peak_Mass",
+      "observable_direction": "HIGHER_IS_BETTER",
+      "observable_threshold": 0.65
+    },
+    "W_P3_ModHold_051": {
+      "workload_id": "W_P3_ModHold_051",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_5_Live_Stopping_Evaluation",
+      "application_family": "Trotter_Ising",
+      "width_qubits": 5,
+      "fb_threshold": 0.85,
+      "observable_metric": "Magnetization_MAE",
+      "observable_direction": "LOWER_IS_BETTER",
+      "observable_threshold": 0.08
+    },
+    "W_P3_ModHold_052": {
+      "workload_id": "W_P3_ModHold_052",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_5_Live_Stopping_Evaluation",
+      "application_family": "VQE_Heisenberg",
+      "width_qubits": 5,
+      "fb_threshold": 0.85,
+      "observable_metric": "Energy_Abs_Error_MAE",
+      "observable_direction": "LOWER_IS_BETTER",
+      "observable_threshold": 0.09
+    },
+    "W_P3_ModHold_053": {
+      "workload_id": "W_P3_ModHold_053",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_5_Live_Stopping_Evaluation",
+      "application_family": "QAOA_MaxCut",
+      "width_qubits": 7,
+      "fb_threshold": 0.82,
+      "observable_metric": "MaxCut_Approx_Ratio",
+      "observable_direction": "HIGHER_IS_BETTER",
+      "observable_threshold": 0.72
+    },
+    "W_P3_ModHold_054": {
+      "workload_id": "W_P3_ModHold_054",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_5_Live_Stopping_Evaluation",
+      "application_family": "QFT_Phase",
+      "width_qubits": 7,
+      "fb_threshold": 0.82,
+      "observable_metric": "Top2_Peak_Mass",
+      "observable_direction": "HIGHER_IS_BETTER",
+      "observable_threshold": 0.65
+    },
+    "W_P3_ModHold_055": {
+      "workload_id": "W_P3_ModHold_055",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_5_Live_Stopping_Evaluation",
+      "application_family": "Trotter_Ising",
+      "width_qubits": 7,
+      "fb_threshold": 0.82,
+      "observable_metric": "Magnetization_MAE",
+      "observable_direction": "LOWER_IS_BETTER",
+      "observable_threshold": 0.08
+    },
+    "W_P3_ModHold_056": {
+      "workload_id": "W_P3_ModHold_056",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_5_Live_Stopping_Evaluation",
+      "application_family": "VQE_Heisenberg",
+      "width_qubits": 7,
+      "fb_threshold": 0.82,
+      "observable_metric": "Energy_Abs_Error_MAE",
+      "observable_direction": "LOWER_IS_BETTER",
+      "observable_threshold": 0.09
+    },
+    "W_P3_ModHold_057": {
+      "workload_id": "W_P3_ModHold_057",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_5_Live_Stopping_Evaluation",
+      "application_family": "QAOA_MaxCut",
+      "width_qubits": 9,
+      "fb_threshold": 0.78,
+      "observable_metric": "MaxCut_Approx_Ratio",
+      "observable_direction": "HIGHER_IS_BETTER",
+      "observable_threshold": 0.72
+    },
+    "W_P3_ModHold_058": {
+      "workload_id": "W_P3_ModHold_058",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_5_Live_Stopping_Evaluation",
+      "application_family": "QFT_Phase",
+      "width_qubits": 9,
+      "fb_threshold": 0.78,
+      "observable_metric": "Top2_Peak_Mass",
+      "observable_direction": "HIGHER_IS_BETTER",
+      "observable_threshold": 0.65
+    },
+    "W_P3_ModHold_059": {
+      "workload_id": "W_P3_ModHold_059",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_5_Live_Stopping_Evaluation",
+      "application_family": "Trotter_Ising",
+      "width_qubits": 9,
+      "fb_threshold": 0.78,
+      "observable_metric": "Magnetization_MAE",
+      "observable_direction": "LOWER_IS_BETTER",
+      "observable_threshold": 0.08
+    },
+    "W_P3_ModHold_060": {
+      "workload_id": "W_P3_ModHold_060",
+      "cohort": "Cohort_Module_Holdout_60",
+      "assigned_module": "Experiment_5_Live_Stopping_Evaluation",
+      "application_family": "VQE_Heisenberg",
+      "width_qubits": 9,
+      "fb_threshold": 0.78,
+      "observable_metric": "Energy_Abs_Error_MAE",
+      "observable_direction": "LOWER_IS_BETTER",
+      "observable_threshold": 0.09
+    },
+    "W_P3_CustHold_001": {
+      "workload_id": "W_P3_CustHold_001",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_1",
+      "provider": "IBM",
+      "window_index": 1,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 1,
+      "width_qubits": 4,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_002": {
+      "workload_id": "W_P3_CustHold_002",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_1",
+      "provider": "IBM",
+      "window_index": 1,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 2,
+      "width_qubits": 5,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_003": {
+      "workload_id": "W_P3_CustHold_003",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_1",
+      "provider": "IBM",
+      "window_index": 1,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 3,
+      "width_qubits": 6,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_004": {
+      "workload_id": "W_P3_CustHold_004",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_1",
+      "provider": "IBM",
+      "window_index": 1,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 4,
+      "width_qubits": 7,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_005": {
+      "workload_id": "W_P3_CustHold_005",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_1",
+      "provider": "IBM",
+      "window_index": 1,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 5,
+      "width_qubits": 8,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_006": {
+      "workload_id": "W_P3_CustHold_006",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_1",
+      "provider": "IBM",
+      "window_index": 1,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 6,
+      "width_qubits": 9,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_007": {
+      "workload_id": "W_P3_CustHold_007",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_1",
+      "provider": "IBM",
+      "window_index": 1,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 7,
+      "width_qubits": 4,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_008": {
+      "workload_id": "W_P3_CustHold_008",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_1",
+      "provider": "IBM",
+      "window_index": 1,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 8,
+      "width_qubits": 5,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_009": {
+      "workload_id": "W_P3_CustHold_009",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_1",
+      "provider": "IBM",
+      "window_index": 1,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 9,
+      "width_qubits": 6,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_010": {
+      "workload_id": "W_P3_CustHold_010",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_1",
+      "provider": "IBM",
+      "window_index": 1,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 10,
+      "width_qubits": 7,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_011": {
+      "workload_id": "W_P3_CustHold_011",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_1",
+      "provider": "IBM",
+      "window_index": 1,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 11,
+      "width_qubits": 8,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_012": {
+      "workload_id": "W_P3_CustHold_012",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_1",
+      "provider": "IBM",
+      "window_index": 1,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 12,
+      "width_qubits": 9,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_013": {
+      "workload_id": "W_P3_CustHold_013",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_2",
+      "provider": "IBM",
+      "window_index": 2,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 1,
+      "width_qubits": 4,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_014": {
+      "workload_id": "W_P3_CustHold_014",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_2",
+      "provider": "IBM",
+      "window_index": 2,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 2,
+      "width_qubits": 5,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_015": {
+      "workload_id": "W_P3_CustHold_015",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_2",
+      "provider": "IBM",
+      "window_index": 2,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 3,
+      "width_qubits": 6,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_016": {
+      "workload_id": "W_P3_CustHold_016",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_2",
+      "provider": "IBM",
+      "window_index": 2,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 4,
+      "width_qubits": 7,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_017": {
+      "workload_id": "W_P3_CustHold_017",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_2",
+      "provider": "IBM",
+      "window_index": 2,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 5,
+      "width_qubits": 8,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_018": {
+      "workload_id": "W_P3_CustHold_018",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_2",
+      "provider": "IBM",
+      "window_index": 2,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 6,
+      "width_qubits": 9,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_019": {
+      "workload_id": "W_P3_CustHold_019",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_2",
+      "provider": "IBM",
+      "window_index": 2,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 7,
+      "width_qubits": 4,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_020": {
+      "workload_id": "W_P3_CustHold_020",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_2",
+      "provider": "IBM",
+      "window_index": 2,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 8,
+      "width_qubits": 5,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_021": {
+      "workload_id": "W_P3_CustHold_021",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_2",
+      "provider": "IBM",
+      "window_index": 2,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 9,
+      "width_qubits": 6,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_022": {
+      "workload_id": "W_P3_CustHold_022",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_2",
+      "provider": "IBM",
+      "window_index": 2,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 10,
+      "width_qubits": 7,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_023": {
+      "workload_id": "W_P3_CustHold_023",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_2",
+      "provider": "IBM",
+      "window_index": 2,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 11,
+      "width_qubits": 8,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_024": {
+      "workload_id": "W_P3_CustHold_024",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_2",
+      "provider": "IBM",
+      "window_index": 2,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 12,
+      "width_qubits": 9,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_025": {
+      "workload_id": "W_P3_CustHold_025",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_3",
+      "provider": "IBM",
+      "window_index": 3,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 1,
+      "width_qubits": 4,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_026": {
+      "workload_id": "W_P3_CustHold_026",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_3",
+      "provider": "IBM",
+      "window_index": 3,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 2,
+      "width_qubits": 5,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_027": {
+      "workload_id": "W_P3_CustHold_027",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_3",
+      "provider": "IBM",
+      "window_index": 3,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 3,
+      "width_qubits": 6,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_028": {
+      "workload_id": "W_P3_CustHold_028",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_3",
+      "provider": "IBM",
+      "window_index": 3,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 4,
+      "width_qubits": 7,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_029": {
+      "workload_id": "W_P3_CustHold_029",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_3",
+      "provider": "IBM",
+      "window_index": 3,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 5,
+      "width_qubits": 8,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_030": {
+      "workload_id": "W_P3_CustHold_030",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_3",
+      "provider": "IBM",
+      "window_index": 3,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 6,
+      "width_qubits": 9,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_031": {
+      "workload_id": "W_P3_CustHold_031",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_3",
+      "provider": "IBM",
+      "window_index": 3,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 7,
+      "width_qubits": 4,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_032": {
+      "workload_id": "W_P3_CustHold_032",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_3",
+      "provider": "IBM",
+      "window_index": 3,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 8,
+      "width_qubits": 5,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_033": {
+      "workload_id": "W_P3_CustHold_033",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_3",
+      "provider": "IBM",
+      "window_index": 3,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 9,
+      "width_qubits": 6,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_034": {
+      "workload_id": "W_P3_CustHold_034",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_3",
+      "provider": "IBM",
+      "window_index": 3,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 10,
+      "width_qubits": 7,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_035": {
+      "workload_id": "W_P3_CustHold_035",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_3",
+      "provider": "IBM",
+      "window_index": 3,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 11,
+      "width_qubits": 8,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_036": {
+      "workload_id": "W_P3_CustHold_036",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IBM_Window_3",
+      "provider": "IBM",
+      "window_index": 3,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 12,
+      "width_qubits": 9,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_037": {
+      "workload_id": "W_P3_CustHold_037",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_1",
+      "provider": "IQM",
+      "window_index": 1,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 1,
+      "width_qubits": 4,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_038": {
+      "workload_id": "W_P3_CustHold_038",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_1",
+      "provider": "IQM",
+      "window_index": 1,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 2,
+      "width_qubits": 5,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_039": {
+      "workload_id": "W_P3_CustHold_039",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_1",
+      "provider": "IQM",
+      "window_index": 1,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 3,
+      "width_qubits": 6,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_040": {
+      "workload_id": "W_P3_CustHold_040",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_1",
+      "provider": "IQM",
+      "window_index": 1,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 4,
+      "width_qubits": 7,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_041": {
+      "workload_id": "W_P3_CustHold_041",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_1",
+      "provider": "IQM",
+      "window_index": 1,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 5,
+      "width_qubits": 8,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_042": {
+      "workload_id": "W_P3_CustHold_042",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_1",
+      "provider": "IQM",
+      "window_index": 1,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 6,
+      "width_qubits": 9,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_043": {
+      "workload_id": "W_P3_CustHold_043",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_1",
+      "provider": "IQM",
+      "window_index": 1,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 7,
+      "width_qubits": 4,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_044": {
+      "workload_id": "W_P3_CustHold_044",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_1",
+      "provider": "IQM",
+      "window_index": 1,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 8,
+      "width_qubits": 5,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_045": {
+      "workload_id": "W_P3_CustHold_045",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_1",
+      "provider": "IQM",
+      "window_index": 1,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 9,
+      "width_qubits": 6,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_046": {
+      "workload_id": "W_P3_CustHold_046",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_1",
+      "provider": "IQM",
+      "window_index": 1,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 10,
+      "width_qubits": 7,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_047": {
+      "workload_id": "W_P3_CustHold_047",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_1",
+      "provider": "IQM",
+      "window_index": 1,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 11,
+      "width_qubits": 8,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_048": {
+      "workload_id": "W_P3_CustHold_048",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_1",
+      "provider": "IQM",
+      "window_index": 1,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 12,
+      "width_qubits": 9,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_049": {
+      "workload_id": "W_P3_CustHold_049",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_2",
+      "provider": "IQM",
+      "window_index": 2,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 1,
+      "width_qubits": 4,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_050": {
+      "workload_id": "W_P3_CustHold_050",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_2",
+      "provider": "IQM",
+      "window_index": 2,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 2,
+      "width_qubits": 5,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_051": {
+      "workload_id": "W_P3_CustHold_051",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_2",
+      "provider": "IQM",
+      "window_index": 2,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 3,
+      "width_qubits": 6,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_052": {
+      "workload_id": "W_P3_CustHold_052",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_2",
+      "provider": "IQM",
+      "window_index": 2,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 4,
+      "width_qubits": 7,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_053": {
+      "workload_id": "W_P3_CustHold_053",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_2",
+      "provider": "IQM",
+      "window_index": 2,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 5,
+      "width_qubits": 8,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_054": {
+      "workload_id": "W_P3_CustHold_054",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_2",
+      "provider": "IQM",
+      "window_index": 2,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 6,
+      "width_qubits": 9,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_055": {
+      "workload_id": "W_P3_CustHold_055",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_2",
+      "provider": "IQM",
+      "window_index": 2,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 7,
+      "width_qubits": 4,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_056": {
+      "workload_id": "W_P3_CustHold_056",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_2",
+      "provider": "IQM",
+      "window_index": 2,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 8,
+      "width_qubits": 5,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_057": {
+      "workload_id": "W_P3_CustHold_057",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_2",
+      "provider": "IQM",
+      "window_index": 2,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 9,
+      "width_qubits": 6,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_058": {
+      "workload_id": "W_P3_CustHold_058",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_2",
+      "provider": "IQM",
+      "window_index": 2,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 10,
+      "width_qubits": 7,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_059": {
+      "workload_id": "W_P3_CustHold_059",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_2",
+      "provider": "IQM",
+      "window_index": 2,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 11,
+      "width_qubits": 8,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_060": {
+      "workload_id": "W_P3_CustHold_060",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_2",
+      "provider": "IQM",
+      "window_index": 2,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 12,
+      "width_qubits": 9,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_061": {
+      "workload_id": "W_P3_CustHold_061",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_3",
+      "provider": "IQM",
+      "window_index": 3,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 1,
+      "width_qubits": 4,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_062": {
+      "workload_id": "W_P3_CustHold_062",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_3",
+      "provider": "IQM",
+      "window_index": 3,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 2,
+      "width_qubits": 5,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_063": {
+      "workload_id": "W_P3_CustHold_063",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_3",
+      "provider": "IQM",
+      "window_index": 3,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 3,
+      "width_qubits": 6,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_064": {
+      "workload_id": "W_P3_CustHold_064",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_3",
+      "provider": "IQM",
+      "window_index": 3,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 4,
+      "width_qubits": 7,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_065": {
+      "workload_id": "W_P3_CustHold_065",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_3",
+      "provider": "IQM",
+      "window_index": 3,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 5,
+      "width_qubits": 8,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_066": {
+      "workload_id": "W_P3_CustHold_066",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_3",
+      "provider": "IQM",
+      "window_index": 3,
+      "sub_wave": "SubWave_A",
+      "request_index_in_window": 6,
+      "width_qubits": 9,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_067": {
+      "workload_id": "W_P3_CustHold_067",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_3",
+      "provider": "IQM",
+      "window_index": 3,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 7,
+      "width_qubits": 4,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_068": {
+      "workload_id": "W_P3_CustHold_068",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_3",
+      "provider": "IQM",
+      "window_index": 3,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 8,
+      "width_qubits": 5,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_069": {
+      "workload_id": "W_P3_CustHold_069",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_3",
+      "provider": "IQM",
+      "window_index": 3,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 9,
+      "width_qubits": 6,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_070": {
+      "workload_id": "W_P3_CustHold_070",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_3",
+      "provider": "IQM",
+      "window_index": 3,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 10,
+      "width_qubits": 7,
+      "priority": "Standard",
+      "accuracy_tier": "Strict_FB_090"
+    },
+    "W_P3_CustHold_071": {
+      "workload_id": "W_P3_CustHold_071",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_3",
+      "provider": "IQM",
+      "window_index": 3,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 11,
+      "width_qubits": 8,
+      "priority": "High_Priority_Deadline",
+      "accuracy_tier": "Standard_FB_085"
+    },
+    "W_P3_CustHold_072": {
+      "workload_id": "W_P3_CustHold_072",
+      "cohort": "Cohort_Customer_Queue_Holdout_72",
+      "assigned_module": "Experiment_2_Customer_Queue_IQM_Window_3",
+      "provider": "IQM",
+      "window_index": 3,
+      "sub_wave": "SubWave_B",
+      "request_index_in_window": 12,
+      "width_qubits": 9,
+      "priority": "Standard",
+      "accuracy_tier": "Standard_FB_085"
+    }
+  },
+  "manifest_canonical_sha256": "3dcdd9ff4d36ecc12cb76ec1409090f43554829d35ff43a7e4d666cd815d8c0f"
+}
